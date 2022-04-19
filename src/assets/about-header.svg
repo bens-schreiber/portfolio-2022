@@ -9,12 +9,10 @@
     }
 
       .b {
-        z-index: 100;
         fill: #fff;
       }
 
       .c {
-        z-index: -1;
         fill: #231f20;
         font-family: BoldTestament;
         font-size: 48.23px;

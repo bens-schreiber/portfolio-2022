@@ -7,6 +7,7 @@ interface Props {
 interface State {
     title: string,
     collapsed: boolean
+    animating: boolean
 }
 
 export default class QLButton extends React.Component<Props> {
@@ -16,6 +17,7 @@ export default class QLButton extends React.Component<Props> {
         this.state = {
             title: props.title,
             collapsed: true,
+            animating: false
         }
     }
 
@@ -36,8 +38,8 @@ export default class QLButton extends React.Component<Props> {
     }
 
     private onClick = (): void => {
-        if (anime.running.length !== 0) return;
-        this.setState({ collapsed: !this.state.collapsed });
+        if (this.state.animating) return;
+        this.setState({ animating: this.state.collapsed, collapsed: !this.state.collapsed });
         this.state.collapsed ? this.openQuicklinks() : this.closeQuicklinks();
     }
 
@@ -66,6 +68,7 @@ export default class QLButton extends React.Component<Props> {
                 (document.querySelector(`#d-toggle[data-id=${this.props.title}]`) as HTMLInputElement).checked = true;
                 this.setDisplay(".typing-text", "none");
                 document.querySelector(this.path())?.scrollIntoView();
+                this.setState({animating: false});
             })
     }
 
