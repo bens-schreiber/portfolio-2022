@@ -1,0 +1,40 @@
+.nav-menu > nav {
+    margin-top: 60px;
+    margin-left: 35px;
+    color: var(--white-color);
+    font-size: 1.5em;
+    font-family: Lato;
+}
+
+.nav-menu > nav > h1 {
+    margin-left: -25px;
+    margin-bottom: 10px;
+    background-color: black;
+}
+
+.nav-menu > nav, .nav-menu > nav > ul {
+    position: relative;
+}
+
+.nav-menu > nav > ul::after {
+    z-index: -1;
+    content: '';
+    position: absolute;
+    left: -20px;
+    top: -28px;
+    border-left: 2px solid var(--light-gray-color);
+    height: 100%;
+}
+
+.nav-menu > nav > ul > li {
+    padding: 10px 0;
+}
+
+.nav-menu > nav > ul > li::before {
+    content: '';
+    position: absolute;
+    border-bottom: 2px solid var(--light-gray-color);
+    left: -20px;
+    width: 15px;
+    height: 0.5em;
+}

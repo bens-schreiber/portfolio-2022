@@ -1,3 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@700&display=swap');
+
+@font-face {
+  font-family: "BoldTestament";
+  src: url("./assets/Bold\ Testament.woff2") format("woff2");
+}
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -5,9 +12,46 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+
+  background-color: black;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+:root {
+  --dark-gray-color: #231f20;
+  --light-gray-color: #414042;
+  --white-color: #e5e4e2;
+}
+
+.home {
+  position: relative;
+  margin: 25px;
+  height: calc(100vh - 50px);
+}
+
+#main-logo {
+  margin-top: 10vh;
+}
+
+ul {
+  padding: 0;
+  margin: 0;
+}
+
+li {
+  list-style: none;
+  text-decoration: none;
+}
+
+a {
+  text-decoration: none;
+  color: var(--white-color);
 }

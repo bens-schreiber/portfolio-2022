@@ -1,0 +1,25 @@
+.portfolio-container {
+    margin-top: 20px;
+}
+
+#about-header {
+    display: block;
+    margin: auto;
+}
+
+/* .bio-container {
+    margin-top: 10px;
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: 1fr 1fr;
+}
+
+.bio-container .bio {
+    background-color: red;
+    height: 300px;
+    grid-row: span 2;
+}
+
+.bio-container .photo2 {
+    background-color: green;
+} */
