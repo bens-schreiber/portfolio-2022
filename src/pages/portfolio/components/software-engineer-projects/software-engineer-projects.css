@@ -36,6 +36,28 @@
     width: 200px;
 }
 
+.expand-button {
+    border: 2px solid white;
+    background-color: transparent;
+    color: white;
+    font-family: Lato;
+    padding: 1em;
+    margin-top: 15px;
+    width: 100%;
+}
+
+.collapse {
+    display: none;
+}
+
+#collapse {
+    display: none;
+}
+
+#collapse:checked ~ .collapse {
+    display: block;
+}
+
 
 
 
@@ -154,6 +176,7 @@
     justify-content: center;
     position: relative;
     width: 100%;
+    padding-bottom: 10px;
 }
 
 .back-end .uml-diagram > img {
