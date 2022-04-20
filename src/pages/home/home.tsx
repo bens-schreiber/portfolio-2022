@@ -1,7 +1,7 @@
 import Logo from '../../assets/logo.svg'
 import { Quicklinks, QuicklinkItem, Contact } from './components/main/index'
-import Portfolio from './components/about/about';
-export default function Home() {
+import About from './components/about/about';
+export default function Home(): JSX.Element {
     return <>
         <div className="home">
             <div className="front-page">
@@ -21,7 +21,7 @@ export default function Home() {
                     <Contact />
                 </div>
             </div>
-            <Portfolio />
+            <About/>
             <Contact />
         </div>
     </>
