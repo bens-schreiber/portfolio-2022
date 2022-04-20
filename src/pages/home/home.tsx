@@ -1,6 +1,7 @@
 import Logo from '../../assets/logo.svg'
+import { FblaSVG, WSULogo } from './components/about/assets';
 import { Quicklinks, QuicklinkItem, Contact } from './components/main/index'
-import About from './components/about/about';
+import {About, Award} from './components/about/about';
 export default function Home(): JSX.Element {
     return <>
         <div className="home">
@@ -11,7 +12,6 @@ export default function Home(): JSX.Element {
                         <QuicklinkItem link="#" name="CS TUTORING" />
                         <QuicklinkItem link="#" name="DISCORD BOTS" />
                     </Quicklinks>
-
                     <Quicklinks title="PORTFOLIO">
                         <QuicklinkItem link="#" name="Software Engineer" />
                         <QuicklinkItem link="#" name="Mobile Development" />
@@ -21,7 +21,12 @@ export default function Home(): JSX.Element {
                     <Contact />
                 </div>
             </div>
-            <About/>
+            <About>
+                <Award img={WSULogo} title="WSU Computer Science" subtitle="Class of 2026" />
+                <Award img={FblaSVG} title="National Champion" subtitle="2021 Coding & Programming" />
+                <Award img={FblaSVG} title="WA State Champion" subtitle="2021 Coding & Programming" />
+                <Award img={FblaSVG} title="Spokane Regional Champion" subtitle={"2022 Website Design, UX Design"} />
+            </About>
             <Contact />
         </div>
     </>

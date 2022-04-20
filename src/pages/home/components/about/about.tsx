@@ -1,7 +1,12 @@
 import { AboutCollapsedHeader, WSULogo, FblaSVG } from './assets/index';
 import Careers from './careers';
+export {About, Award}
 
-export default function About(): JSX.Element {
+interface Props {
+    children: JSX.Element[] | JSX.Element
+}
+
+function About(props: Props): JSX.Element {
     return <>
         <div className="portfolio-container">
             <Careers />
@@ -10,21 +15,18 @@ export default function About(): JSX.Element {
                 <p>I am an 18 year old Computer Science major who will be attending Washington State University. I love all things engineering and design, putting a significant emphasis on being a <span>full stack engineer</span>.</p>
             </div>
             <div className="awards">
-                <Award img={WSULogo} title="WSU Computer Science" subtitle="Class of 2026" />
-                <Award img={FblaSVG} title="National Champion" subtitle="2021 Coding & Programming" />
-                <Award img={FblaSVG} title="WA State Champion" subtitle="2021 Coding & Programming" />
-                <Award img={FblaSVG} title="Spokane Regional Champion" subtitle={"2022 Website Design, UX Design"} />
+                {props.children}
             </div>
         </div>
     </>
 }
 
-interface Props {
+interface AwardProps {
     img: string,
     title: string,
     subtitle: string
 }
-function Award(props: Props): JSX.Element { 
+function Award(props: AwardProps): JSX.Element { 
     return <>
         <div className="award">
             <img alt="" src={props.img} />
