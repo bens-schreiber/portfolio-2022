@@ -1,0 +1,116 @@
+.app-dev {
+    margin-top: 50px;
+}
+
+.app-dev .headers > h1 {
+    display: block;
+    color: white;
+    margin: 0;
+    margin-top: 30px;
+    font-size: 3.8em;
+    font-family: BoldTestament;
+    text-align: center;
+}
+
+.app-dev .headers > h2 {
+    margin: 0;
+    font-family: Lato;
+    color: var(--light-gray-color);
+}
+
+.app-dev-logo-header {
+    margin-top: 15px;
+    position: relative;
+    height: 3.5em;
+    border-radius: 3px;
+    background-color: #FF710C;
+    width: 100%;
+}
+
+.app-dev-logo-header .l-container {
+    display: flex;
+    position: absolute;
+    justify-content: center;
+    width: 100%;
+    top: -20px;
+}
+
+.app-dev-logo-header .l-container > img {
+    display: block;
+    width: 90px;
+}
+
+.app-dev .expand-button {
+    border: 2px solid white;
+    background-color: transparent;
+    color: white;
+    font-family: Lato;
+    padding: 1em;
+    margin-top: 25px;
+    width: 100%;
+}
+
+.app-dev .collapse {
+    display: none;
+}
+
+.app-dev #collapse {
+    display: none;
+}
+
+.app-dev #collapse:checked ~ .collapse {
+    display: block;
+}
+
+
+.app-dev-about {
+    margin-top: 30px;
+    margin-right: 4px;
+    display: grid;
+    gap: 15px;
+}
+
+.app-dev-grid-box {
+    position: relative;
+    background-color: var(--dark-gray-color);
+    padding: 10px;
+    font-family: Lato;
+    box-shadow: #FF710C 3px 3px 0px 0px;
+    color: var(--white-color);
+}
+
+.bold-header {
+    font-family: BoldTestament;
+    font-size: 5em;
+    margin: 0;
+    color: var(--light-gray-color);
+}
+
+
+.app-dev .about {
+    display: block;
+    word-spacing: 2px;
+    font-size: 1.1em;
+}
+
+.app-dev .about > p > span {
+    border-bottom: 2px solid #FF710C
+}
+
+
+.app-dev .tech > p > span {
+    border-bottom: 2px solid #FF710C
+}
+
+.app-dev .tech-icons {
+    display: flex;
+}
+
+.app-dev .tech-icons #dart {
+    background-color: white;
+    border-radius: 5px;
+}
+
+.app-dev .tech-icons > img {
+    width: 100%;
+}

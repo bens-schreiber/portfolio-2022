@@ -12,6 +12,9 @@ import './pages/home/components/about/about.css'
 import './pages/home/home.css';
 import './pages/portfolio/portfolio.css'
 import './pages/portfolio/components/software-engineer-projects/software-engineer-projects.css'
+import './pages/portfolio/components/app-development-projects/app-development-projects.css'
+import './pages/portfolio/components/game-design-projects/game-design-project.css'
+import './pages/portfolio/components/web-design-projects/web-design-projects.css'
 
 ReactDOM.render(
   <React.StrictMode>
