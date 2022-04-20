@@ -10,6 +10,8 @@ import './pages/home/components/main/quicklinks/quicklinks.css'
 import './pages/home/components/main/contact/contact.css' 
 import './pages/home/components/about/about.css'
 import './pages/home/home.css';
+import './pages/portfolio/portfolio.css'
+import './pages/portfolio/components/software-engineer-projects/software-engineer-projects.css'
 
 ReactDOM.render(
   <React.StrictMode>

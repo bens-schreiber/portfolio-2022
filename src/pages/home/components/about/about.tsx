@@ -1,4 +1,4 @@
-import { AboutCollapsedHeader, WSULogo, FblaSVG } from './assets/index';
+import AboutCollapsedHeader from '../../../../assets/about-collapsed-header.svg';
 import Careers from './careers';
 export {About, Award}
 
