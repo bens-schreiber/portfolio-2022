@@ -13,7 +13,7 @@
       }
 
       .c {
-        fill: #231f20;
+        fill: #000;
         font-family: BoldTestament;
         font-size: 48.23px;
       }

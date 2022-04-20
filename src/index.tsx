@@ -8,7 +8,7 @@ import './components/top-nav-bar/top-nav-bar.css'
 import './components/top-nav-bar/nav-menu-items.css'
 import './components/home-page/quicklinks/quicklinks.css'
 import './components/home-page/contact/contact.css' 
-import './components/portfolio-page/portfolio-page.css'
+import './components/about/about.css'
 import TopNavBar from './components/top-nav-bar/top-nav-bar';
 
 ReactDOM.render(

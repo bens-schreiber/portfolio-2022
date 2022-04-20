@@ -1,10 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@700&display=swap');
 
-@font-face {
-  font-family: "BoldTestament";
-  src: url("./assets/Bold\ Testament.woff2") format("woff2");
-}
-
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -33,12 +28,19 @@ code {
 
 .home {
   position: relative;
-  margin: 25px;
   height: calc(100vh - 50px);
 }
 
+.front-page {
+  min-height: 100vh;
+  padding: 25px;
+  display: block;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0.9) 80%, rgba(0, 0, 0, 1) 100%), url('./assets/background.jpg') no-repeat;
+  background-size: cover;
+}
+
 #main-logo {
-  margin-top: 10vh;
+  margin-top: 40px;
 }
 
 ul {
