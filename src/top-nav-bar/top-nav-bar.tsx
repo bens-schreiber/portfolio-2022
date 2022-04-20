@@ -1,4 +1,4 @@
-import Logo2 from '../../assets/logo2.svg'
+import Logo2 from '../assets/logo2.svg'
 export default function TopNavBar(): JSX.Element {
     return <>
         <div className="top-navbar-container">

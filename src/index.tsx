@@ -4,16 +4,15 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 
-import './components/top-nav-bar/top-nav-bar.css'
-import './components/top-nav-bar/nav-menu-items.css'
-import './components/home-page/quicklinks/quicklinks.css'
-import './components/home-page/contact/contact.css' 
-import './components/about/about.css'
-import TopNavBar from './components/top-nav-bar/top-nav-bar';
+import './top-nav-bar/top-nav-bar.css'
+import './top-nav-bar/nav-menu-items.css'
+import './pages/home/components/main/quicklinks/quicklinks.css'
+import './pages/home/components/main/contact/contact.css' 
+import './pages/home/components/about/about.css'
+import './pages/home/home.css';
 
 ReactDOM.render(
   <React.StrictMode>
-    <TopNavBar />
     <App />
   </React.StrictMode>,
   document.getElementById('root')

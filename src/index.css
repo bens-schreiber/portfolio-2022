@@ -26,23 +26,6 @@ code {
   --white-color: #e5e4e2;
 }
 
-.home {
-  position: relative;
-  height: calc(100vh - 50px);
-}
-
-.front-page {
-  min-height: 100vh;
-  padding: 25px;
-  display: block;
-  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0.9) 80%, rgba(0, 0, 0, 1) 100%), url('./assets/background.jpg') no-repeat;
-  background-size: cover;
-}
-
-#main-logo {
-  margin-top: 40px;
-}
-
 ul {
   padding: 0;
   margin: 0;
