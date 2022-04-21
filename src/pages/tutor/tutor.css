@@ -69,11 +69,43 @@
 }
 
 .contact {
-    display: block;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 10px;
+
+}
+
+.contact-form-group {
+    width: 100%;
+}
+
+.contact-label{
+    color: white;
+    font-size: 0.8em;
+}
+
+.contact-input {
+    margin-right: 20px;
+}
+
+.contact-form-control{
+    border: 1px solid white;
+    padding: 10px;
+    background-color: var(--light-gray-color);
+    width: 100%;
+}
+
+.contact-form-control:focus {
+    border: none;
+    border: 1px solid white;
+    outline: none;
+    color: white;
+}
+
+.contact-send-button {
+    background: none;
     border: 2px solid white;
     color: white;
-    text-align: center;
-    font-family: Lato;
     padding: 1em;
-    font-size: 2em;
+    font-family: Lato;
 }
