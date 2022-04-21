@@ -1,7 +1,6 @@
 .all-quicklinks {
     display: grid;
     gap: 30px;
-    margin: 0 20px;
 }
 
 .quicklinks-container {

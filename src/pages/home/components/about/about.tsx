@@ -1,6 +1,6 @@
 import AboutCollapsedHeader from '../../../../assets/about-collapsed-header.svg';
 import Careers from './careers';
-export {About, Award}
+export { About, Award }
 
 interface Props {
     children: JSX.Element[] | JSX.Element
@@ -10,7 +10,7 @@ function About(props: Props): JSX.Element {
     return <>
         <div className="about-container">
 
-            <Careers />
+        <Careers />
 
             <div className="about-bio">
                 <img alt="" src={AboutCollapsedHeader} />
@@ -27,7 +27,7 @@ interface AwardProps {
     title: string,
     subtitle: string
 }
-function Award(props: AwardProps): JSX.Element { 
+function Award(props: AwardProps): JSX.Element {
     return <>
         <div className="award">
             <img alt="" src={props.img} />

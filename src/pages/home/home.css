@@ -14,3 +14,17 @@
   background: linear-gradient(to bottom, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0.9) 80%, rgba(0, 0, 0, 1) 100%), url('./assets/background.jpg') no-repeat;
   background-size: cover;
 }
+
+@media (min-width:1025px) {
+  .front-page {
+    overflow: hidden;
+    font-size: 32px;
+    padding: 50px 700px;
+    min-height: 0;
+  }
+  .main-logo-container {
+    width: 500px;
+    place-self: center;
+  }
+
+}

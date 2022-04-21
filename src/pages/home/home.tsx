@@ -6,7 +6,9 @@ export default function Home(): JSX.Element {
     return <>
         <div className="home">
             <div className="front-page">
+                <div className="main-logo-container">
                 <img id="main-logo" src={Logo} alt="" />
+                </div>
 
                 <div className="all-quicklinks">
                     <Quicklinks title="SERVICES">
