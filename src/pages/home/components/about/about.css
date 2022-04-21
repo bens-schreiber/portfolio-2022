@@ -38,8 +38,9 @@
 .award {
     margin-bottom: 30px;
     padding: 10px;
-    border: 5px solid var(--white-color);
+    border: 3px solid var(--white-color);
     border-radius: 5px;
+    box-shadow: crimson 4px 4px 0px 0px;
 }
 
 .award h1 {

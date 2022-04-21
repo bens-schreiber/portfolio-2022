@@ -1,0 +1,79 @@
+.tutor {
+    display: grid;
+    gap: 20px;
+    margin: 10px 15px;
+    margin-top: 80px;
+    position: relative;
+}
+
+.tutor h1 {
+    margin: 0;
+    color: white;
+    text-align: center;
+    font-family: BoldTestament;
+    font-size: 5em;
+}
+
+.box {
+    display: grid;
+    align-items: center;
+    color: white;
+    font-family: Lato;
+    padding: 10px;
+    border-radius: 3px;
+    background-color: var(--dark-gray-color);
+    box-shadow: var(--light-gray-color) 4px 4px 0px 0px;
+}
+
+.tutor > img {
+    display: block;
+    width: 100%;
+}
+
+.tutor > h1 {
+    font-family: BoldTestament;
+    color: white;
+    font-size: 6em;
+    margin: 0;
+    margin-top: 10px;
+    text-align: center;
+}
+
+.my-langs {
+    background-color: var(--dark-gray-color);
+    font-size: 1.5em;
+    padding: 10px;
+    color: #BC8650;
+    border-radius: 3px;
+    box-shadow: var(--light-gray-color) 4px 4px 0px 0px;
+}
+
+.my-langs li {
+    color: #9B386A;
+    padding-left: 30px;
+    margin-bottom: 3px;
+}
+
+.my-langs li:not(:last-child)::after {
+    content:",";
+    color: white;
+}
+
+.white {
+    color: white;
+}
+
+.info {
+    display: grid;
+    gap: 30px;
+}
+
+.contact {
+    display: block;
+    border: 2px solid white;
+    color: white;
+    text-align: center;
+    font-family: Lato;
+    padding: 1em;
+    font-size: 2em;
+}

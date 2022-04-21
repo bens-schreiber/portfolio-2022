@@ -104,6 +104,8 @@
 
 .app-dev .tech-icons {
     display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .app-dev .tech-icons #dart {
@@ -112,5 +114,5 @@
 }
 
 .app-dev .tech-icons > img {
-    width: 100%;
+    width: 29vw;
 }
