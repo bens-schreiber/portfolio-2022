@@ -1,27 +1,28 @@
-.portfolio-container {
+.about-container {
+    display: grid;
+    gap: 20px;
     padding: 0 25px;
 }
 
-.portfolio-container img {
+.about-container img {
     width: 100%;
 }
 
-.bio-container {
+.about-bio {
     display: flex;
     align-items: center;
     justify-content: space-between;
     border: 2px solid white;
-    margin-bottom: 30px;
     background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%,  rgba(0, 0, 0, .7) 100%), url('./assets/bens.jpg') no-repeat;
     background-size: cover;
 }
 
-.bio-container > img {
+.about-bio > img {
     padding: 10px;
     height: 500px;
 }
 
-.bio-container > p {
+.about-bio > p {
     margin-top: auto;
     font-size: 1.1em;
     color: white;
@@ -29,21 +30,20 @@
     /* visibility: hidden; */
 }
 
-.bio-container > p > span {
+.about-bio > p > span {
     color: black;
     padding: 0 3px;
     background-color: white;
 }
 
 .award {
-    margin-bottom: 30px;
     padding: 10px;
     border: 3px solid var(--white-color);
     border-radius: 5px;
     box-shadow: crimson 4px 4px 0px 0px;
 }
 
-.award h1 {
+.award > h1 {
     position: relative;
     margin: 0;
     color: white;
@@ -52,7 +52,7 @@
     font-size: 1.5em;
 }
 
-.award h2 {
+.award > h2 {
     margin: 0;
     color: white;
     text-align: center;

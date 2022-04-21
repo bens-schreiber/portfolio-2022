@@ -8,15 +8,16 @@ interface Props {
 
 function About(props: Props): JSX.Element {
     return <>
-        <div className="portfolio-container">
+        <div className="about-container">
+
             <Careers />
-            <div className="bio-container">
+
+            <div className="about-bio">
                 <img alt="" src={AboutCollapsedHeader} />
                 <p>I am an 18 year old Computer Science major who will be attending Washington State University. I love all things engineering and design, putting a significant emphasis on being a <span>full stack engineer</span>.</p>
             </div>
-            <div className="awards">
-                {props.children}
-            </div>
+
+            {props.children}
         </div>
     </>
 }

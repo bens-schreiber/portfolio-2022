@@ -7,6 +7,7 @@ export default function Home(): JSX.Element {
         <div className="home">
             <div className="front-page">
                 <img id="main-logo" src={Logo} alt="" />
+
                 <div className="all-quicklinks">
                     <Quicklinks title="SERVICES">
                         <QuicklinkItem link="#" name="CS TUTORING" />
@@ -18,8 +19,10 @@ export default function Home(): JSX.Element {
                         <QuicklinkItem link="#" name="Website Design" />
                         <QuicklinkItem link="#" name="Game Design" />
                     </Quicklinks>
-                    <Contact />
                 </div>
+
+                <Contact />
+
             </div>
             <About>
                 <Award img={WSULogo} title="WSU Computer Science" subtitle="Class of 2026" />

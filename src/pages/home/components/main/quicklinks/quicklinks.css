@@ -1,21 +1,11 @@
 .all-quicklinks {
-    margin-top: 30px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    min-height: 40vh;
+    display: grid;
     gap: 30px;
+    margin: 0 20px;
 }
 
 .quicklinks-container {
-    display: flex;
-    justify-content: center;
     font-family: Lato;
-}
-
-.dropdown-container {
-    width: 100%;
-    margin: 0 20px;
 }
 
 .dropdown-container > li > a, #d-toggle {
