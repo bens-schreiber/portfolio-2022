@@ -21,7 +21,6 @@ export default function Home(): JSX.Element {
                         <QuicklinkItem link="/portfolio" name="GAME DESIGN" />
                     </Quicklinks>
                 </div>
-
                 <Contact />
 
             </div>
@@ -29,6 +28,7 @@ export default function Home(): JSX.Element {
                 <Award img={WSULogo} title="WSU Computer Science" subtitle="Class of 2026" />
                 <Award img={FblaSVG} title="National Champion" subtitle="2021 Coding & Programming" />
                 <Award img={FblaSVG} title="WA State Champion" subtitle="2021 Coding & Programming" />
+                <Award img={FblaSVG} title="WA State Champion" subtitle="2022 Website Design" />
                 <Award img={FblaSVG} title="Spokane Regional Champion" subtitle={"2022 Website Design, UX Design"} />
             </About>
             <Contact />
