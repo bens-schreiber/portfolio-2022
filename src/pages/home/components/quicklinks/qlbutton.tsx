@@ -21,11 +21,11 @@ export default class QLButton extends React.Component<Props> {
         }
     }
 
-    private path = (path: string = ""): string => `.dropdown-button[data-title=${this.props.title}] ` + path;
+    private path = (path: string = ""): string => `.ql-dropdown-btn[data-title=${this.props.title}] ` + path;
 
     render(): JSX.Element {
         return <>
-            <button onClick={this.onClick} data-title={this.props.title} className="dropdown-button">
+            <button onClick={this.onClick} data-title={this.props.title} className="ql-dropdown-btn">
                 <div className="typing-text">
                     {"exec tree ./"}
                     <span className="cursor" />
@@ -65,7 +65,7 @@ export default class QLButton extends React.Component<Props> {
             })
             .finished.then(() => {
                 // displays all of the portfolio links
-                (document.querySelector(`#d-toggle[data-id=${this.props.title}]`) as HTMLInputElement).checked = true;
+                (document.querySelector(`#ql-dropdown-toggle[data-id=${this.props.title}]`) as HTMLInputElement).checked = true;
                 this.setDisplay(".typing-text", "none");
                 document.querySelector(this.path())?.scrollIntoView();
                 this.setState({animating: false});
@@ -73,7 +73,7 @@ export default class QLButton extends React.Component<Props> {
     }
 
     private closeQuicklinks = (): void => {
-        (document.querySelector(`#d-toggle[data-id=${this.props.title}]`) as HTMLInputElement).checked = false;
+        (document.querySelector(`#ql-dropdown-toggle[data-id=${this.props.title}]`) as HTMLInputElement).checked = false;
     }
 
     private setDisplay(query: string, value: string): void {

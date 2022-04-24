@@ -1,0 +1,118 @@
+.ql-container {
+    font-family: Lato;
+}
+
+.ql-dropdown-container .ql-item > a, #ql-dropdown-toggle {
+    display: none;
+}
+
+.ql-dropdown-btn {
+    position: relative;
+
+    display: flex;
+    justify-content: center;
+
+    width: 100%;
+    padding: 1em 0;
+    scroll-margin-top: 200px;
+
+    color: white;
+    background-color: black;
+    font-family: inherit;
+    font-size: inherit;
+    border: 2px solid var(--white-color);
+}
+
+.ql-dropdown-btn:hover {
+    cursor: pointer;
+}
+
+/* DROPDOWN DISPLAY TOGGLED*/
+#ql-dropdown-toggle:checked ~ .ql-dropdown-container {
+    position: relative;
+    display: block;
+    margin-top: 2em;
+}
+
+#ql-dropdown-toggle:checked ~ .ql-dropdown-container .ql-dropdown-btn .title-text::before {
+    content: "./";
+}
+
+#ql-dropdown-toggle:checked ~ .ql-dropdown-container .ql-dropdown-btn {
+    position: absolute;
+    left: -1.75em;
+    top: -2em;
+    justify-content: left;
+    padding: 0;
+
+    background-color: transparent;
+    color: var(--white-color);
+    border: none;
+
+    font-size: 1em;
+}
+
+
+/* Links */
+#ql-dropdown-toggle:checked ~ .ql-links .ql-item:not(:nth-child(2)) {
+    margin-top: 1em;
+}
+
+#ql-dropdown-toggle:checked ~ .ql-links .ql-item > a {
+    display: block;
+    padding: 0.5em;
+
+    background-color: black;
+    color: var(--white-color);
+    border: 2px solid var(--white-color);
+
+    text-align: center;
+    text-decoration: none;
+}
+
+#ql-dropdown-toggle:checked ~ .ql-links .ql-item > a::after {
+    content: " ❭";
+}
+
+ /* File-tree stem */
+ #ql-dropdown-toggle:checked ~ .ql-tree-stem::after {
+    content: '';
+    position: absolute;
+    top: -1.3em;
+    left: -1.7em;
+    height: 100%;
+    border-left: 0.15em solid var(--light-gray-color);
+ }
+
+/* File-tree branch */
+#ql-dropdown-toggle:checked ~ .ql-links .ql-tree-branch a::before {
+    content: '';
+    position: absolute;
+    left: -1.7em;
+    width: 1.2em;
+    height: 0.5em;
+    border-bottom: 0.15em solid var(--light-gray-color);
+ }
+
+ /*Animation */
+ .ql-dropdown-btn .typing-text {
+    display: none;
+    position: relative;
+    margin-right: 5px;
+    color: white;
+    font-size: 1em;
+ }
+
+ .ql-dropdown-btn .typing-text .cursor {
+    position: absolute;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    border-left: 2px solid white;
+    z-index: 0;
+ }
+
+ .ql-dropdown-btn .title-text {
+    z-index: 1;
+ }

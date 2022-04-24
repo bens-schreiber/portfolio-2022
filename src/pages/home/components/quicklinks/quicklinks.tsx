@@ -12,15 +12,15 @@ interface Props {
 
 export const QuicklinkItem = ({ name, link }: Item) => {
     return <>
-        <li><a href={link}>{name}</a></li>
+        <li className="ql-item ql-tree-branch"><a href={link}>{name}</a></li>
     </>
 }
 
 export const Quicklinks = (props: Props) => {
     return <>
-        <div className="quicklinks-container">
-            <input data-id={props.title} type="checkbox" id="d-toggle" />
-            <ul className="dropdown-container dropdown-links">
+        <div className="ql-container">
+            <input data-id={props.title} type="checkbox" id="ql-dropdown-toggle" />
+            <ul className="ql-dropdown-container ql-links ql-tree-stem">
                 <QLButton title={props.title} />
                 {props.children}
             </ul>
