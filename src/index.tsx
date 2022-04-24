@@ -17,6 +17,7 @@ import './pages/portfolio/components/game-design-projects/game-design-project.cs
 import './pages/portfolio/components/web-design-projects/web-design-projects.css'
 import './pages/tutor/tutor.css'
 import './pages/contact/contact-page.css'
+import './pages/portfolio/components/portfolio-item/portfolio-item.css'
 
 ReactDOM.render(
   <React.StrictMode>
