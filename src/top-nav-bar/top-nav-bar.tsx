@@ -12,13 +12,13 @@ export default function TopNavBar(): JSX.Element {
         <input type="checkbox" id="nav-menu-toggle" />
         <div className="nav-menu nav-menu-slide-in">
             <nav >
-                <h1>HOME</h1>
+                <h1><a href="/">HOME</a></h1>
                 <ul>
-                    <li><a href="#">CONTACT</a></li>
-                    <li><a href="#">ABOUT</a></li>
-                    <li><a href="#">CS TUTORING</a></li>
+                    <li><a href="/contact">CONTACT</a></li>
+                    <li><a href="/">ABOUT</a></li>
+                    <li><a href="/tutor">CS TUTORING</a></li>
                     <li><a href="#">DISCORD BOTS</a></li>
-                    <li><a href="#">PORTFOLIO</a></li>
+                    <li><a href="/portfolio">PORTFOLIO</a></li>
                 </ul>
             </nav>
         </div>

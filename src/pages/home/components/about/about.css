@@ -62,7 +62,7 @@
 
 @media (min-width:1025px) {
     .about-container {
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: auto, auto;
         padding: 0 300px;
     }
     #careers {

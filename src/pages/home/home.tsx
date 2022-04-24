@@ -12,14 +12,14 @@ export default function Home(): JSX.Element {
 
                 <div className="all-quicklinks">
                     <Quicklinks title="SERVICES">
-                        <QuicklinkItem link="#" name="CS TUTORING" />
-                        <QuicklinkItem link="#" name="DISCORD BOTS" />
+                        <QuicklinkItem link="/tutor" name="CS TUTORING" />
+                        <QuicklinkItem link="/tutor" name="DISCORD BOTS" />
                     </Quicklinks>
                     <Quicklinks title="PORTFOLIO">
-                        <QuicklinkItem link="#" name="Software Engineer" />
-                        <QuicklinkItem link="#" name="Mobile Development" />
-                        <QuicklinkItem link="#" name="Website Design" />
-                        <QuicklinkItem link="#" name="Game Design" />
+                        <QuicklinkItem link="/portfolio" name="Software Engineer" />
+                        <QuicklinkItem link="/portfolio" name="Mobile Development" />
+                        <QuicklinkItem link="/portfolio" name="Website Design" />
+                        <QuicklinkItem link="/portfolio" name="Game Design" />
                     </Quicklinks>
                 </div>
 

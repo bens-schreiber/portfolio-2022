@@ -1,9 +1,11 @@
 .tutor {
     display: grid;
-    gap: 20px;
-    margin: 10px 15px;
-    margin-top: 80px;
+    gap: 40px;
+    padding: 10px 15px;
+    margin-top: 55px;
     position: relative;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0.9) 80%, rgba(0, 0, 0, 1) 100%), url('./assets/background.jpg') no-repeat;
+    background-size: cover;
 }
 
 .tutor h1 {
@@ -26,6 +28,7 @@
 }
 
 .tutor > img {
+    padding-top: 50px;
     display: block;
     width: 100%;
 }
@@ -37,6 +40,33 @@
     margin: 0;
     margin-top: 10px;
     text-align: center;
+}
+
+.features {
+    display: grid;
+    gap: 35px;
+}
+
+.feature {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    font-size: 2em;
+    color: white;
+}
+
+.feature > h1 {
+    margin: 0;
+    font-size: 1em;
+}
+
+.feature > h2 {
+    margin: 0;
+    font-size: 0.5em;
+    max-width: 150px;
 }
 
 .my-langs {
@@ -68,7 +98,27 @@
     gap: 30px;
 }
 
-.contact {
+.inquries {
+    color: white;
+    display: flex;
+    justify-content: center;
+}
+
+.business-inquries {
+    display: grid;
+    gap: 10px;
+    grid-template-columns: min-content max-content;
+    font-size: 1.8em;
+}
+
+.business-inquries .title > p {
+    font-size: 0.5em;
+    margin: 0;
+    color: gray;
+}
+
+
+.contact-form {
     display: grid;
     grid-template-columns: 1fr;
     gap: 10px;
@@ -108,4 +158,50 @@
     color: white;
     padding: 1em;
     font-family: Lato;
+}
+
+.contact-margin {
+    display: grid;
+    gap: 40px;
+    padding: 10px 15px;
+    margin-top: 55px;
+    position: relative;
+}
+
+@media (min-width:1025px) {
+
+    #review {
+        width: 800px;
+        place-self: center;
+    }
+
+    .tutor {
+        padding: 0 300px;
+        gap: 50px;
+        grid-template-columns: 1fr;
+    }
+
+    .features {
+        grid-row: 2;
+        margin: 100px 0;
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    .contact {
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        align-items: center;
+    }
+
+    .inquries {
+        font-size: 20px;
+    }
+
+    .tutor-info > p {
+        text-align: center;
+        place-self: center;
+        width: 800px;
+        font-size: 1.2em;
+        letter-spacing: 1px;
+    }
 }

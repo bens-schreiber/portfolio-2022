@@ -27,11 +27,11 @@ export default function AppDevelopmentProjects() {
                         <p>PUApp uses a Google Stack, with an entirely hand written back-end with Googles <span>Golang</span>, hosted on a manually set up Debian server on <span>Google Cloud</span></p>
                         <p>On the Front End, PUApp uses Googles <span>Flutter</span>, written in, you guessed it, Googles <span>Dart</span>. Fun fact: Using entirely Google tools was completely an accident, only realizing it now!</p>
                     </div>
-                    <div className="tech-icons app-dev-grid-box">
-                        <img src={GolangLogo}/>
+                    {/* <div className="tech-icons app-dev-grid-box">
+                        <img src={GolangLogo} width="100"/>
                         <img id="dart" src={DartLogo}/>
                         <img src={DebianLogo}/>
-                    </div>
+                    </div> */}
                 </div>
             </div>
         </div>
