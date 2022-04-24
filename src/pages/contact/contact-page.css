@@ -1,4 +1,4 @@
-.inquries {
+.contact-inquries {
     color: white;
     display: flex;
     justify-content: center;
@@ -12,17 +12,15 @@
 }
 
 .business-inquries .title > p {
-    font-size: 0.5em;
     margin: 0;
+    font-size: 0.5em;
     color: gray;
 }
-
 
 .contact-form {
     display: grid;
     grid-template-columns: 1fr;
     gap: 10px;
-
 }
 
 .contact-form-group {
@@ -39,14 +37,13 @@
 }
 
 .contact-form-control{
-    border: 1px solid white;
-    padding: 10px;
-    background-color: var(--light-gray-color);
     width: 100%;
+    padding: 10px;
+    border: 1px solid white;
+    background-color: var(--light-gray-color);
 }
 
 .contact-form-control:focus {
-    border: none;
     border: 1px solid white;
     outline: none;
     color: white;
@@ -71,7 +68,8 @@
 @media (min-width:1025px) {
     .contact {
         display: grid;
-        grid-template-columns: 1fr 2fr;
+        grid-template-columns: 1fr 1fr;
         align-items: center;
+        padding: 0 100px;
     }
 }

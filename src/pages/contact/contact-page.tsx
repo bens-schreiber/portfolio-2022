@@ -4,7 +4,7 @@ export default function ContactPage() {
     return <>
         <div className="contact">
 
-            <div className="inquries">
+            <div className="contact-inquries">
                 <div className="business-inquries">
                     <FontAwesomeIcon icon={faEnvelopeSquare} />
                     <div className="title">
