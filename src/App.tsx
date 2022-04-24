@@ -2,7 +2,8 @@ import Home from "./pages/home/home";
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 import TopNavBar from "./top-nav-bar/top-nav-bar";
 import Portfolio from "./pages/portfolio/portfolio";
-import { TutorPage, ContactPage } from "./pages/tutor/tutor";
+import TutorPage from "./pages/tutor/tutor";
+import ContactPage from "./pages/contact/contact-page";
 function App(): JSX.Element {
   return <>
     <Router>

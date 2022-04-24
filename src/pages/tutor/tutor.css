@@ -1,14 +1,22 @@
-.tutor {
+.tutor-page {
+    position: relative;
+
     display: grid;
     gap: 40px;
+
+    margin-top: 40px;
     padding: 10px 15px;
-    margin-top: 55px;
-    position: relative;
     background: linear-gradient(to bottom, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0.9) 80%, rgba(0, 0, 0, 1) 100%), url('./assets/background.jpg') no-repeat;
     background-size: cover;
 }
 
-.tutor h1 {
+.tp-about {
+    display: grid;
+    gap: 30px;
+    place-items: center;
+}
+
+.tp-header {
     margin: 0;
     color: white;
     text-align: center;
@@ -16,72 +24,66 @@
     font-size: 5em;
 }
 
-.box {
+.tp-text-box {
     display: grid;
-    align-items: center;
-    color: white;
-    font-family: Lato;
+
     padding: 10px;
     border-radius: 3px;
     background-color: var(--dark-gray-color);
     box-shadow: var(--light-gray-color) 4px 4px 0px 0px;
+    align-items: center;
+    color: white;
+    font-family: Lato;
 }
 
-.tutor > img {
-    padding-top: 50px;
+.tutor-page > img {
     display: block;
     width: 100%;
+    padding-top: 50px;
 }
 
-.tutor > h1 {
-    font-family: BoldTestament;
-    color: white;
-    font-size: 6em;
-    margin: 0;
-    margin-top: 10px;
-    text-align: center;
-}
-
-.features {
+.tp-features {
     display: grid;
     gap: 35px;
 }
 
-.feature {
+.tp-feature {
+
     display: flex;
     flex-direction: column;
     gap: 10px;
     align-items: center;
-    text-align: center;
     justify-content: center;
+
+    text-align: center;
     font-size: 2em;
     color: white;
 }
 
-.feature > h1 {
+.tp-feature > h1 {
     margin: 0;
     font-size: 1em;
 }
 
-.feature > h2 {
+.tp-feature > h2 {
     margin: 0;
-    font-size: 0.5em;
     max-width: 150px;
+    font-size: 0.5em;
 }
 
 .my-langs {
-    background-color: var(--dark-gray-color);
-    font-size: 1.5em;
     padding: 10px;
-    color: #BC8650;
     border-radius: 3px;
+    background-color: var(--dark-gray-color);
     box-shadow: var(--light-gray-color) 4px 4px 0px 0px;
+    font-size: 1.5em;
+    color: #BC8650;
 }
 
 .my-langs li {
-    color: #9B386A;
     padding-left: 30px;
     margin-bottom: 3px;
+    color: #9B386A;
 }
 
 .my-langs li:not(:last-child)::after {
@@ -93,104 +95,28 @@
     color: white;
 }
 
-.info {
-    display: grid;
-    gap: 30px;
-}
-
-.inquries {
-    color: white;
-    display: flex;
-    justify-content: center;
-}
-
-.business-inquries {
-    display: grid;
-    gap: 10px;
-    grid-template-columns: min-content max-content;
-    font-size: 1.8em;
-}
-
-.business-inquries .title > p {
-    font-size: 0.5em;
-    margin: 0;
-    color: gray;
-}
-
-
-.contact-form {
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: 10px;
-
-}
-
-.contact-form-group {
-    width: 100%;
-}
-
-.contact-label{
-    color: white;
-    font-size: 0.8em;
-}
-
-.contact-input {
-    margin-right: 20px;
-}
-
-.contact-form-control{
-    border: 1px solid white;
-    padding: 10px;
-    background-color: var(--light-gray-color);
-    width: 100%;
-}
-
-.contact-form-control:focus {
-    border: none;
-    border: 1px solid white;
-    outline: none;
-    color: white;
-}
-
-.contact-send-button {
-    background: none;
-    border: 2px solid white;
-    color: white;
-    padding: 1em;
-    font-family: Lato;
-}
-
-.contact-margin {
-    display: grid;
-    gap: 40px;
-    padding: 10px 15px;
-    margin-top: 55px;
-    position: relative;
-}
-
 @media (min-width:1025px) {
 
-    #review {
+    #tp-review {
         width: 800px;
         place-self: center;
     }
 
-    .tutor {
+    .tutor-page {
         padding: 0 300px;
         gap: 50px;
         grid-template-columns: 1fr;
     }
 
-    .features {
+    .tp-about {
+        grid-template-columns: auto auto;
+        gap: 0;
+    }
+
+    .tp-features {
         grid-row: 2;
         margin: 100px 0;
         grid-template-columns: repeat(4, 1fr);
-    }
-
-    .contact {
-        display: grid;
-        grid-template-columns: 1fr 2fr;
-        align-items: center;
     }
 
     .inquries {

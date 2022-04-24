@@ -1,0 +1,77 @@
+.inquries {
+    color: white;
+    display: flex;
+    justify-content: center;
+}
+
+.business-inquries {
+    display: grid;
+    gap: 10px;
+    grid-template-columns: min-content max-content;
+    font-size: 1.8em;
+}
+
+.business-inquries .title > p {
+    font-size: 0.5em;
+    margin: 0;
+    color: gray;
+}
+
+
+.contact-form {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 10px;
+
+}
+
+.contact-form-group {
+    width: 100%;
+}
+
+.contact-label{
+    color: white;
+    font-size: 0.8em;
+}
+
+.contact-input {
+    margin-right: 20px;
+}
+
+.contact-form-control{
+    border: 1px solid white;
+    padding: 10px;
+    background-color: var(--light-gray-color);
+    width: 100%;
+}
+
+.contact-form-control:focus {
+    border: none;
+    border: 1px solid white;
+    outline: none;
+    color: white;
+}
+
+.contact-send-button {
+    background: none;
+    border: 2px solid white;
+    color: white;
+    padding: 1em;
+    font-family: Lato;
+}
+
+.contact-margin {
+    display: grid;
+    gap: 40px;
+    padding: 10px 15px;
+    margin-top: 55px;
+    position: relative;
+}
+
+@media (min-width:1025px) {
+    .contact {
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        align-items: center;
+    }
+}
