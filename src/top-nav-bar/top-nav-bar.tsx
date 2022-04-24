@@ -4,7 +4,7 @@ export default function TopNavBar(): JSX.Element {
         <div className="tnb">
 
             <div className="tnb-container">
-                <img id="tnb-logo" className="tnb-clickable" src={Logo2} alt="" />
+                <a href="/"><img id="tnb-logo" src={Logo2} alt="" /></a>
                 <label htmlFor="tnb-dropdown-toggle" className="tnb-dropdown-toggle-icon tnb-clickable">
                     &#9776;
                 </label>
