@@ -1,45 +1,54 @@
-.logo2-container > img {
-    padding: 10px;
-    margin-top: -45px;
-    width: 100px;
+.tnb {
+    color: var(--white-color);
 }
 
-.top-navbar-container {
-    top: 0; 
+#tnb-logo {
+    width: 150px;
+    padding: 10px;
+}
+
+.tnb-clickable {
+    cursor: pointer;
+    user-select: none;
+}
+
+.tnb-container {
     position: fixed;
     display: flex;
-    justify-content: space-between;
-    width: 100%;
-    background-color: var(--dark-gray-color);
+    top: 0;
+    width: 100%; 
     z-index: 100;
+    justify-content: space-between;
+    background-color: var(--dark-gray-color);
 }
 
-.top-navbar-container > .nav-icon {
-    color: var(--white-color);
+.tnb-dropdown-toggle-icon {
     padding: 0 5px;
-    font-size: 2.5em;
-    user-select: none;
-    right: 0;
-    cursor: pointer;
+    font-size: 3em;
 }
 
-#nav-menu-toggle {
-    display: none;
-}
-
-.nav-menu {
-    z-index: 2;
-    position: fixed;
+.tnb-nav {
     top: -100vh;
     width: 100%;
     height: 100%;
+    z-index: 2;
+    position: fixed;
     background-color: black;
 }
 
-.nav-menu-slide-in {
+.tnb-animate-dropdown {
     transition: all 350ms ease-in-out;
 }
 
-#nav-menu-toggle:checked ~ .nav-menu {
+#tnb-dropdown-toggle:checked ~ .tnb-nav {
     top: 0;
+}
+
+@media (min-width:1025px) { 
+    #tnb-logo {
+        width: 200px;
+    }
+    .tnb-dropdown-toggle-icon {
+        font-size: 4em;
+    }
 }
