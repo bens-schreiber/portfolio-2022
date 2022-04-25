@@ -7,7 +7,7 @@ export default function Portfolio(): JSX.Element {
             <PItem color="gray" path={EzQuizLogo} title="SOFTWARE ENGINEERING">
 
                 <PItem.TextContainer header="ABOUT">
-                    EzQuiz is a fairly large software engineering project I started in 2020, and finished in 2021.
+                    EzQuiz is a fairly large software engineering project I started in 2019, and finished in 2020.
                     EzQuiz was created for the <a href="https://www.fbla-pbl.org/" target="_blank" rel="noopener noreferrer">FBLA 2020-2021</a> Coding & Programming category.
                     EzQuiz creates and administers fully customizeable, secure, locally hosted quizzes.
                     See <a href="https://www.fbla-pbl.org/media/2021/08/FBLA-Rating-Sheets.pdf" target="_blank" rel="noopener noreferrer">FBLA Project Guidelines</a> for the judging guidelines.
