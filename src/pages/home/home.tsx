@@ -20,8 +20,9 @@ export default function Home(): JSX.Element {
                         <QuicklinkItem link="/portfolio" name="WEBSITE DESIGN" />
                         <QuicklinkItem link="/portfolio" name="GAME DESIGN" />
                     </Quicklinks>
+
+                    <Contact />
                 </div>
-                <Contact />
 
             </div>
             <About>
@@ -31,7 +32,6 @@ export default function Home(): JSX.Element {
                 <Award img={FblaSVG} title="WA State Champion" subtitle="2022 Website Design" />
                 <Award img={FblaSVG} title="Spokane Regional Champion" subtitle={"2022 Website Design, UX Design"} />
             </About>
-            <Contact />
         </div>
     </>
 }

@@ -1,9 +1,11 @@
 import { faEnvelopeSquare } from "@fortawesome/free-solid-svg-icons"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
+import Contact from "../home/components/contact/contact"
 export default function ContactPage() {
     return <>
-        <div className="contact">
+    <Contact/>
 
+        <div className="contact">
             <div className="contact-inquries">
                 <div className="business-inquries">
                     <FontAwesomeIcon icon={faEnvelopeSquare} />
