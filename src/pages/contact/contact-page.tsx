@@ -3,8 +3,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import Contact from "../home/components/contact/contact"
 export default function ContactPage() {
     return <>
-    <Contact/>
-
+        <Contact />
         <div className="contact">
             <div className="contact-inquries">
                 <div className="business-inquries">

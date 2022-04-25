@@ -1,5 +1,5 @@
 .contact-container {
-    margin: 0 20px;
+    margin: 20px;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
@@ -8,4 +8,10 @@
 .contact-btn {
     color: white;
     font-size: 1.5em;
+}
+
+@media (min-width:1025px) { 
+    .contact-container {
+        font-size: 1.5em;
+    }
 }
