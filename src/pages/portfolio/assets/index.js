@@ -8,4 +8,5 @@ import PUAppLogo from './puapp-logo.png';
 import DartLogo from './dart-logo.svg'
 import GolangLogo from './golang-official.svg'
 import DebianLogo from './debian.svg'
-export {EzQuizLogo, JavaLogo, Demo1, Demo2, UserFlow, UMLDiagramEzQuiz, PUAppLogo, DartLogo, GolangLogo, DebianLogo}
+import Docker from './docker.svg'
+export {EzQuizLogo, JavaLogo, Demo1, Demo2, UserFlow, UMLDiagramEzQuiz, PUAppLogo, DartLogo, GolangLogo, DebianLogo, Docker}

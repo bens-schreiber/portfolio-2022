@@ -1,3 +1,4 @@
+/*HEADER*/
 .port-header {
     display: block;
     color: white;
@@ -8,21 +9,22 @@
     text-align: center;
 }
 
+/*INITIAL COLLAPSED DISPLAY*/
 .port-sec-container {
-    margin-top: 15px;
     position: relative;
+    margin-top: 15px;
+    width: 100%;
     height: 3.5em;
     border-radius: 3px;
     background-color: #303f9f;
-    width: 100%;
 }
 
 .port-sec-logo {
     display: flex;
     position: absolute;
     justify-content: center;
-    width: 100%;
     top: -30px;
+    width: 100%;
 }
 
 .port-sec-logo > img {
@@ -30,41 +32,108 @@
 }
 
 .port-expand-button {
+    width: 100%;
+    margin-top: 70px;
+    padding: 1em;
     border: 2px solid white;
     background-color: transparent;
     color: white;
     font-family: Lato;
-    padding: 1em;
-    margin-top: 70px;
-    width: 100%;
 }
 
 #collapse, .collapsible {
     display: none;
 }
+
+/*UNCOLLAPSED DISPLAY*/
 #collapse:checked ~ .collapsible {
     display: block;
 }
 
 .port-display-all {
+    display: grid;
+    /* grid-template-columns: repeat(4, 1fr), min-content;
+    grid-template-rows: repeat(3, 1fr);  */
+    gap: 15px;
+
     margin-top: 30px;
     margin-right: 4px;
-    display: grid;
-    grid-template-columns: repeat(4, 1fr), min-content;
-    grid-template-rows: repeat(3, 1fr); 
-    gap: 15px;
 }
 
+/*BOX DESIGNS*/
 .port-display-box {
     position: relative;
-    background-color: var(--dark-gray-color);
-    color: white;
     padding: 10px;
-    font-family: Lato;
     box-shadow: #303f9f 3px 3px 0px 0px;
+    background-color: var(--dark-gray-color);
     color: var(--white-color);
+    font-family: Lato;
 }
 
 .port-display-box > img {
     width: 100%;
 }
+
+/*TEXT BOXES*/
+.port-text-container {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+.port-text-container > h1 {
+    margin: 0;
+    color: var(--light-gray-color);
+    font-size: 5em;
+    font-family: BoldTestament;
+}
+
+/*TEXT*/
+.port-text-container > p {
+    font-size: 1.2em;
+    line-height: 30px;
+}
+
+/*LINKS*/
+.port-text-container > p > a {
+    color: #303f9f;
+    font-size: 1.1em;
+    padding: 0 3px;
+    border-bottom: 3px solid #303f9f;
+}
+
+/*LISTS*/
+.port-list {
+    display: grid;
+    gap: 10px;
+}
+
+.port-list-item {
+    display: grid;
+    grid-template-columns: 75px 1fr;
+}
+
+.port-list-index {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    height: 100%;
+    width: 100%;
+    background-color: #303f9f;
+    border-radius: 3px;
+    font-size: 3em;
+    color: var(--white-color)
+}
+
+.port-list-text > h1 {
+    margin: 0;
+    padding: 0 10px;
+}
+
+.port-list-text > p {
+    margin: 0;
+    padding: 2px 10px;
+    color: gray;
+    font-size: 0.9em;
+}
+

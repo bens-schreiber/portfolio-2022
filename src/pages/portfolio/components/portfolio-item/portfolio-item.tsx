@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { Children } from 'react';
 interface PortfolioProps {
     color: string;
     path: string;
@@ -8,6 +8,11 @@ interface PortfolioProps {
 
 interface Props {
     children: React.ReactNode[] | React.ReactNode;
+}
+
+interface ListItem {
+    header: string,
+    text: string
 }
 
 class PItem extends React.Component<PortfolioProps> {
@@ -60,18 +65,54 @@ class PItem extends React.Component<PortfolioProps> {
         </div>
     }
 
-    static ImageTextContainer = (props: {path: string, children: React.ReactNode}) => {
+
+    static ImageContainer = (props: { path: string}) => {
+        return <div className="port-display-box">
+            <img alt="" src={props.path} />
+        </div>
+    }
+
+    static ImageTextContainer = (props: { path: string, children: React.ReactNode}) => {
         return <div className="port-text-container port-display-box">
-            <img alt="" src={props.path}/>
+            <img alt="" src={props.path} />
             <p>{props.children}</p>
         </div>
     }
 
-    static TextContainer = (props: {header: string, children: React.ReactNode}) => {
+    static TextContainer = (props: { header: string, children: React.ReactNode }) => {
         return <div className="port-text-container port-display-box">
             <h1>{props.header}</h1>
             <p>{props.children}</p>
         </div>
+    }
+
+    static ListContainer = (props: { children: ListItem[] }) => {
+        return <ul className="port-list">
+            {props.children.map((item, index) => {
+                return <>
+                    <li className="port-list-item">
+                        <span className="port-list-index">
+                            {index + 1}
+                        </span>
+                        <div className="port-list-text port-display-box">
+                            <h1>
+                                {props.children[index].header}
+                            </h1>
+                            <p>
+                                {props.children[index].text}
+                            </p>
+                        </div>
+                    </li>
+                </>
+            })}
+        </ul>
+    }
+
+    static VideoContainer = (props: { path: string }) => {
+        return <video className="port-display-box" controls>
+            <source src={props.path} />
+            Sorry, your browser doesn't support embedded videos.
+        </video>
     }
 
     private expandClicked = (): void => {
