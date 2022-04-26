@@ -1,5 +1,9 @@
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faChevronLeft, faChevronRight } from '@fortawesome/free-solid-svg-icons';
 import AboutCollapsedHeader from '../../../../assets/about-collapsed-header.svg';
 import Careers from './careers';
+import anime, { AnimeInstance } from 'animejs';
+import React from 'react';
 export { About, Award }
 
 interface Props {
@@ -10,11 +14,19 @@ function About(props: Props): JSX.Element {
     return <>
         <div className="abt-container">
 
-        <Careers />
-
+            <Careers />
             <div className="abt-bio">
-                <img alt="" src={AboutCollapsedHeader} />
-                <p>I am an 18 year old Computer Science major who will be attending Washington State University. I love all things engineering and design, putting a significant emphasis on being a <span>full stack engineer</span>.</p>
+                <div data-id="first-bio" className="abt-bio-item">
+                    <img alt="" src={AboutCollapsedHeader} />
+                    <p>I am an 18 year old Computer Science major from Cheney Washington who will be attending Washington State University.
+                        I love all things engineering and design, putting a significant emphasis on being a <span>full stack engineer</span>.
+                    </p>
+                </div>
+                <div data-id="second-bio" className="abt-bio-item">
+                    <p>
+                        I compete in <span>Future Business Leaders of America, or FBLA</span> where I have completed several projects from Software Engineering to Website Design
+                    </p>
+                </div>
             </div>
 
             {props.children}
@@ -29,7 +41,7 @@ interface AwardProps {
 }
 function Award(props: AwardProps): JSX.Element {
     return <>
-        <div className="abt-award">
+        <div data-value={props.title} className="abt-award">
             <img alt="" src={props.img} />
             <h1>{props.title}</h1>
             <h2>{props.subtitle}</h2>

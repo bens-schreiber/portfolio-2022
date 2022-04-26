@@ -65,14 +65,13 @@ class PItem extends React.Component<PortfolioProps> {
         </div>
     }
 
-
-    static ImageContainer = (props: { path: string}) => {
+    static ImageContainer = (props: { path: string }) => {
         return <div className="port-display-box">
             <img alt="" src={props.path} />
         </div>
     }
 
-    static ImageTextContainer = (props: { path: string, children: React.ReactNode}) => {
+    static ImageTextContainer = (props: { path: string, children: React.ReactNode }) => {
         return <div className="port-text-container port-display-box">
             <img alt="" src={props.path} />
             <p>{props.children}</p>

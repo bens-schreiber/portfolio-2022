@@ -3,6 +3,7 @@
     gap: 30px;
 
     padding: 0 25px;
+    overflow: hidden;
 }
 
 .abt-container img {
@@ -10,28 +11,44 @@
 }
 
 .abt-bio {
+    display: grid;
+    gap: 30px;
+}
+
+.abt-bio-item {
     position: relative;
     display: grid;
-    grid-template-columns: 100px 1fr;
+    gap: 50px;
 
-    background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%,  rgba(0, 0, 0, .7) 100%), url('./assets/bens.jpg') no-repeat;
-    background-size: cover;
     border: 2px solid white;
 }
 
-.abt-bio > img {
-    padding: 10px;
+.abt-bio-item[data-id="first-bio"] {
+    grid-template-columns: 30px 1fr min-content;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%,  rgba(0, 0, 0, .7) 100%), url('./assets/bens.jpg') no-repeat;
+    background-size: cover;
+}
+
+.abt-bio-item[data-id="second-bio"] {
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%,  rgba(0, 0, 0, .7) 100%), url('./assets/fbla.jpg') no-repeat;
+    background-size: cover;
     height: 500px;
 }
 
-.abt-bio > p {
+.abt-bio-item > img {
+    padding: 10px;
+    width: 80px;
+}
+
+.abt-bio-item > p {
     margin-top: auto;
     color: white;
+    padding: 10px;
     font-size: 1.1em;
     font-family: Lato;
 }
 
-.abt-bio > p > span {
+.abt-bio-item > p > span {
     padding: 0 3px;
     background-color: white;
     color: black;
@@ -70,18 +87,30 @@
         grid-template-columns: auto, auto;
         padding: 0 300px;
     }
+
     #careers {
         grid-column: span 2;
     }
+
     .abt-bio {
+        grid-template-columns: 1fr 1fr;
         grid-column: span 2;
     }
-    .abt-bio > img {
-        height: 1000px;
+
+    .abt-bio-item > img {
+        height: 800px;
     }
 
     .abt-award > img {
         width: 300px;
         place-self: center;
+    }
+
+    .abt-bio-item[data-id="second-bio"] {
+        height: auto;
+    }
+
+    .abt-award[data-value="WSU Computer Science"] {
+        grid-column: span 2;
     }
 }
