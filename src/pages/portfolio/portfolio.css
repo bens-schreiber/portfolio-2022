@@ -1,9 +1,24 @@
 .portfolio-page {
     margin-top: 30px;
     padding: 10px;
+    display: grid;
+    gap: 30px;
 }
 
-/* COLORS FOR PORT ITEMS */
+.port-item {
+    display: block;
+}
+
+@media (min-width:1025px) { 
+    .portfolio-page {
+        padding: 10px 300px;
+    }
+}
+
+/* SOFTWARE ENGINEERING */
+.port-item[data-id="SOFTWAREENGINEERING"] .port-sec-logo > img {
+    width: 200px;
+}
 .port-item[data-id="SOFTWAREENGINEERING"] .port-sec-container, 
 .port-item[data-id="SOFTWAREENGINEERING"] .port-list-index {
     background-color: #303f9f;
@@ -18,8 +33,30 @@
     border-bottom: 3px solid #303f9f;
 }
 
-@media (min-width:1025px) { 
-    .portfolio-page {
-        padding: 10px 300px;
-    }
+
+/* APP DEVELOPMENT */
+.port-item[data-id="APPDEVELOPMENT"] .port-sec-logo {
+    top: -25px;
+}
+
+.port-item[data-id="APPDEVELOPMENT"] .port-sec-logo > img {
+    width: 100px;
+}
+
+.port-item[data-id="APPDEVELOPMENT"] .port-expand-button {
+    margin-top: 85px;
+}
+
+.port-item[data-id="APPDEVELOPMENT"] .port-sec-container, 
+.port-item[data-id="APPDEVELOPMENT"] .port-list-index {
+    background-color: #e77518;
+}
+
+.port-item[data-id="APPDEVELOPMENT"] .port-display-box {
+    box-shadow: #e77518 3px 3px 0px 0px;
+}
+
+.port-item[data-id="APPDEVELOPMENT"] .port-text-container > p > a {
+    color: #e77518;
+    border-bottom: 3px solid #e77518;
 }

@@ -1,6 +1,5 @@
-import React, { Children } from 'react';
+import React from 'react';
 interface PortfolioProps {
-    color: string;
     path: string;
     title: string;
     children: React.ReactNode[] | React.ReactNode
@@ -16,7 +15,6 @@ interface ListItem {
 }
 
 class PItem extends React.Component<PortfolioProps> {
-    // private color: string;
     private path: string;
     private title: string;
     state: Props;
@@ -37,7 +35,6 @@ class PItem extends React.Component<PortfolioProps> {
             <this.Section>
                 {this.props.children}
             </this.Section>
-
         </div>
     }
 
@@ -54,7 +51,7 @@ class PItem extends React.Component<PortfolioProps> {
 
             <button onClick={this.expandClicked} data-value={this.dValue} className="port-expand-button">CLICK TO EXPAND!</button>
 
-            <input data-value={this.dValue} id="collapse" type="checkbox" />
+            <input data-value={this.dValue} id="collapse" type="checkbox"></input>
             <div className="collapsible">
                 <div className="port-display-all">
                     {props.children}

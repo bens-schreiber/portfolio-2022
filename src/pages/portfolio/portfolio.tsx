@@ -1,10 +1,10 @@
 import { PItem } from "./components/portfolio-item/portfolio-item"
-import { EzQuizLogo, JavaLogo, Demo1, Demo2, UserFlow, UMLDiagramEzQuiz, DebianLogo, Docker } from "./assets"
+import { EzQuizLogo, JavaLogo, Demo1, Demo2, UserFlow, UMLDiagramEzQuiz, DebianLogo, Docker, PUAppLogo } from "./assets"
 import { FblaSVG } from "../home/components/about/assets";
 export default function Portfolio(): JSX.Element {
     return <>
         <div className="portfolio-page">
-            <PItem color="#303f9f" path={EzQuizLogo} title="SOFTWARE ENGINEERING">
+            <PItem path={EzQuizLogo} title="SOFTWARE ENGINEERING">
 
                 <PItem.TextContainer header="ABOUT">
                     EzQuiz is a fairly large software engineering project I started in 2019, and finished in 2020.
@@ -67,16 +67,20 @@ export default function Portfolio(): JSX.Element {
 
                 <PItem.Header title="CONCLUDING THOUGHTS" />
                 <PItem.LargeTextContainer>
-                    EzQuiz was my first project-- ever.
-                    As a Junior in highschool, who had just entered what was to be months off school for the COVID-19 quarantine, I decided to spend the majority of my time learning the skills that went into this project.
-                    To begin EzQuiz, I did not know JavaFX/SpringBoot, REST, Docker, and had a shallow understanding of Object Oriented Programming. <br/> <br/>
-                    Despite this being a project for FBLA, EzQuiz was a passion project.
-                    From sending the first HTTP POST request from PostMan that successfully logged me into a remote server, to presenting at a national level competition in front of industry professionals, the expierence I had with this project is why I now pursue a career in the industry.
-                    EzQuiz pushed me more than any project has, allowing me to climb a steep learning curve, from hobbyist programming to industry standard. <br/><br/>
-                    In retrospect, the majority of the internal code of EzQuiz still holds up to time, from the hours spent learning the intracicies of Object Oriented design, and watching lectures on Datastructures and Algorithms to understand the efficiency of the algorithms. <br/><br/>
+                    EzQuiz was my first project-- ever. As a junior in highschool, who had just entered what was to be months off school for the COVID-19 quarantine, I decided to spend the majority of my time learning the skills that went into this project. To begin EzQuiz, I did not know JavaFX/SpringBoot, REST, Docker, and had a shallow understanding of Object Oriented Programming. <br /><br />
+
+                    Despite this being a project for FBLA, EzQuiz was a passion project. From sending the first HTTP POST request from PostMan that successfully logged me into a remote server, to presenting at a national level competition in front of industry professionals, the experience I had with this project is why I now pursue a career in the industry. EzQuiz pushed me more than any project has, allowing me to climb a steep learning curve, from hobbyist programming to industry standards. <br/><br/>
+
+                    In retrospect, the majority of the internal code of EzQuiz still holds up to time, from the hours spent learning the intracicies of Object-Oriented design, and watching lectures on Datastructures and Algorithms to understand the efficiency of the algorithms. <br/><br/>
+
                     One aspect of EzQuiz I was not happy with was how the back end server was implemented and executed, after fully grasping the concepts of microservices and efficient REST design. This inspired me to start my next project, PUApp.
                 </PItem.LargeTextContainer>
+            </PItem>
 
+            <PItem path={PUAppLogo} title="APP DEVELOPMENT">
+                <PItem.TextContainer header="ABOUT">
+
+                </PItem.TextContainer>
             </PItem>
         </div>
     </>

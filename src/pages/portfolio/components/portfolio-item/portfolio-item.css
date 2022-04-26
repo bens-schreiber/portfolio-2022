@@ -1,9 +1,10 @@
+
 /*HEADER*/
 .port-header {
     display: block;
     color: white;
     margin: 0;
-    margin-top: 30px;
+    margin-top: 100px;
     font-size: 3.8em;
     font-family: BoldTestament;
     text-align: center;
@@ -24,10 +25,6 @@
     justify-content: center;
     top: -30px;
     width: 100%;
-}
-
-.port-sec-logo > img {
-    width: 200px;
 }
 
 .port-expand-button {
