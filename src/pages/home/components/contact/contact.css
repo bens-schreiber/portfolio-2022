@@ -6,8 +6,25 @@
 }
 
 .contact-btn {
+    display: grid;
+    position: relative;
+    place-items: center;
     color: white;
     font-size: 1.5em;
+}
+
+.copy-tooltip {
+    position: absolute;
+    opacity: 0;
+    top: 3.5em;
+    padding: 5px;
+    width: max-content;
+    z-index: 100;
+    font-size: 0.5em;
+    background: white;
+    font-family: Lato;
+    color: black;
+    border-radius: 3px;
 }
 
 @media (min-width:1025px) { 
