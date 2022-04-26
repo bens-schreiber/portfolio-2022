@@ -78,7 +78,7 @@
  #ql-dropdown-toggle:checked ~ .ql-tree-stem::after {
     content: '';
     position: absolute;
-    top: -1.3em;
+    top: -1.2em;
     left: -1.7em;
     height: 100%;
     border-left: 0.15em solid var(--light-gray-color);

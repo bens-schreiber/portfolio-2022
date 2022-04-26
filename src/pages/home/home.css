@@ -26,6 +26,7 @@
 @media (min-width:1025px) {
   .hp-front {
     overflow: hidden;
+    margin-top: 30px;
     font-size: 32px;
     padding: 50px 700px;
     min-height: 0;

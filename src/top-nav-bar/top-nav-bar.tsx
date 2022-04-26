@@ -18,7 +18,6 @@ export default function TopNavBar(): JSX.Element {
                         <li className="tnb-branch"><a href="/contact">CONTACT</a></li>
                         <li className="tnb-branch"><a href="/">ABOUT</a></li>
                         <li className="tnb-branch"><a href="/tutor">CS TUTORING</a></li>
-                        <li className="tnb-branch"><a href="#">DISCORD BOTS</a></li>
                         <li className="tnb-branch"><a href="/portfolio">PORTFOLIO</a></li>
                     </ul>
                 </nav>

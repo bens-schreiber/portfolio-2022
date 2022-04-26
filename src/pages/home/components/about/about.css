@@ -12,13 +12,12 @@
 
 .abt-bio {
     display: grid;
-    gap: 30px;
 }
 
 .abt-bio-item {
     position: relative;
     display: grid;
-    gap: 50px;
+    gap: 10px;
 
     border: 2px solid white;
 }
@@ -36,8 +35,8 @@
 }
 
 .abt-bio-item > img {
-    padding: 10px;
-    width: 80px;
+    margin: 10px;
+    width: 30px;
 }
 
 .abt-bio-item > p {
@@ -98,7 +97,7 @@
     }
 
     .abt-bio-item > img {
-        height: 800px;
+        width: 50px;
     }
 
     .abt-award > img {
