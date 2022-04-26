@@ -1,7 +1,7 @@
 import Logo from '../../assets/logo.svg'
 import { FblaSVG, WSULogo } from './components/about/assets';
 import { QuicklinkItem, Quicklinks } from './components/quicklinks/quicklinks';
-import Contact from './components/contact/contact';
+import Contact from '../contact/components/contact';
 import { About, Award } from './components/about/about';
 export default function Home(): JSX.Element {
     return <>

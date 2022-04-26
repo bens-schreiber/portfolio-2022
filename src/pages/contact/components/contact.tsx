@@ -10,7 +10,7 @@ export default function Contact(): JSX.Element {
                 <FontAwesomeIcon icon={faEnvelope} />
                 <span className="copy-tooltip">Copied to clipboard!</span>
             </a>
-            <a href="#" id="linkedin" className="contact-btn">
+            <a href="https://www.linkedin.com/in/benjamin-schreiber-a14aa219a/" id="linkedin" className="contact-btn">
                 <FontAwesomeIcon icon={faLinkedin} />
             </a>
             <a href="https://github.com/bens-schreiber" id="github" className="contact-btn">

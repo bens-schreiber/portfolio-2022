@@ -36,7 +36,7 @@ export default function TutorPage() {
                 <div className="tp-feature anim3">
                     <FontAwesomeIcon icon={faStar} />
                     <h1>Focus</h1>
-                    <h2>Making Engineers, not Programmers</h2>
+                    <h2>Engineering, not just Programming</h2>
                 </div>
                 <div className="tp-feature anim4">
                     <FontAwesomeIcon icon={faQuestion} />

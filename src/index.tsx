@@ -7,7 +7,7 @@ import reportWebVitals from './reportWebVitals';
 import './top-nav-bar/top-nav-bar.css'
 import './top-nav-bar/nav-menu-items.css'
 import './pages/home/components/quicklinks/quicklinks.css'
-import './pages/home/components/contact/contact.css' 
+import './pages/contact/components/contact.css' 
 import './pages/home/components/about/about.css'
 import './pages/home/home.css';
 import './pages/portfolio/portfolio.css'

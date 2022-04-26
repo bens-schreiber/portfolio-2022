@@ -1,6 +1,8 @@
 .contact-inquries {
-    display: flex;
-    justify-content: center;
+    display: grid;
+    grid-template-columns: 1fr;
+    place-content: center;
+    place-items: center;
     color: white;
 }
 
@@ -68,8 +70,9 @@
 @media (min-width:1025px) {
     .contact {
         display: grid;
-        grid-template-columns: 1fr 1fr;
-        align-items: center;
+        grid-template-columns: min-content 800px;
+        place-content: center;
+        gap: 100px;
         padding: 0 100px;
     }
 }
