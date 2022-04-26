@@ -12,7 +12,6 @@ export default function Home(): JSX.Element {
                 <div className="hp-dropdown-btns">
                     <Quicklinks title="SERVICES">
                         <QuicklinkItem link="/tutor" name="CS TUTORING" />
-                        <QuicklinkItem link="/tutor" name="DISCORD BOTS" />
                     </Quicklinks>
                     <Quicklinks title="PORTFOLIO">
                         <QuicklinkItem link="/portfolio" name="SOFTWARE ENGINEER" />
