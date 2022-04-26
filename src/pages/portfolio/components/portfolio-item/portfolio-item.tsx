@@ -16,14 +16,13 @@ interface ListItem {
 }
 
 class PItem extends React.Component<PortfolioProps> {
-    color: string;
-    path: string;
-    title: string;
+    // private color: string;
+    private path: string;
+    private title: string;
     state: Props;
-    dValue: string;
+    private dValue: string;
     constructor(props: PortfolioProps) {
         super(props);
-        this.color = props.color;
         this.path = props.path;
         this.title = props.title
         this.dValue = props.title.replace(/\s/g, '')
@@ -33,7 +32,7 @@ class PItem extends React.Component<PortfolioProps> {
     }
 
     render() {
-        return <div className="port-item">
+        return <div className="port-item" data-id={this.dValue}>
             <PItem.Header title={this.title} />
             <this.Section>
                 {this.props.children}
@@ -43,7 +42,7 @@ class PItem extends React.Component<PortfolioProps> {
     }
 
     static Header(props: { title: string }): JSX.Element {
-        return <div className="port-header">{props.title}</div>
+        return <div className="port-header grid-span-2">{props.title}</div>
     }
 
     private Section = (props: { children: React.ReactNode }): JSX.Element => {
@@ -66,7 +65,7 @@ class PItem extends React.Component<PortfolioProps> {
     }
 
     static ImageContainer = (props: { path: string }) => {
-        return <div className="port-display-box">
+        return <div className="port-img-container port-display-box">
             <img alt="" src={props.path} />
         </div>
     }
@@ -78,6 +77,15 @@ class PItem extends React.Component<PortfolioProps> {
         </div>
     }
 
+
+    static LargeTextContainer = (props: { children: React.ReactNode }) => {
+        return <div className="port-text-container port-display-box grid-span-2">
+            <p>{props.children}</p>
+        </div>
+    }
+
+
+
     static TextContainer = (props: { header: string, children: React.ReactNode }) => {
         return <div className="port-text-container port-display-box">
             <h1>{props.header}</h1>
@@ -86,7 +94,7 @@ class PItem extends React.Component<PortfolioProps> {
     }
 
     static ListContainer = (props: { children: ListItem[] }) => {
-        return <ul className="port-list">
+        return <ul className="port-list grid-span-2">
             {props.children.map((item, index) => {
                 return <>
                     <li className="port-list-item">

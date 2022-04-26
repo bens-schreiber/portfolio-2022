@@ -3,6 +3,21 @@
     padding: 10px;
 }
 
+/* COLORS FOR PORT ITEMS */
+.port-item[data-id="SOFTWAREENGINEERING"] .port-sec-container, 
+.port-item[data-id="SOFTWAREENGINEERING"] .port-list-index {
+    background-color: #303f9f;
+}
+
+.port-item[data-id="SOFTWAREENGINEERING"] .port-display-box {
+    box-shadow: #303f9f 3px 3px 0px 0px;
+}
+
+.port-item[data-id="SOFTWAREENGINEERING"] .port-text-container > p > a {
+    color: #303f9f;
+    border-bottom: 3px solid #303f9f;
+}
+
 @media (min-width:1025px) { 
     .portfolio-page {
         padding: 10px 300px;
