@@ -8,7 +8,7 @@ interface Career {
 
 export default function Careers() {
     return <>
-        <object id="careers" type="image/svg+xml" onLoad={animate} data={CareerSVG}/>
+        <object id="careers" type="image/svg+xml" onLoad={animate} data={CareerSVG}>lol</object>
     </>
 }
 

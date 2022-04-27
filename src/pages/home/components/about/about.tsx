@@ -1,9 +1,5 @@
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faChevronLeft, faChevronRight } from '@fortawesome/free-solid-svg-icons';
 import AboutCollapsedHeader from '../../../../assets/about-collapsed-header.svg';
 import Careers from './careers';
-import anime, { AnimeInstance } from 'animejs';
-import React from 'react';
 export { About, Award }
 
 interface Props {

@@ -23,7 +23,7 @@ class PortItem extends React.Component<PortfolioProps> {
         return <>
             <PortItem.Header>{this.props.title}</PortItem.Header>
             <div className="port-sec-container">
-                <img src={this.props.img} id={this.props.id + "-logo"} />
+                <img alt="" src={this.props.img} id={this.props.id + "-logo"} />
             </div>
             <input type="checkbox" id="collapse" />
             <button className="port-expand-button" onClick={this.expandClicked}>CLICK TO EXPAND</button>

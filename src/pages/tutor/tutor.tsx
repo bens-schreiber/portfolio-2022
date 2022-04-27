@@ -6,7 +6,7 @@ export default function TutorPage() {
     return <>
         <div className="tutor-page">
 
-            <img id="tp-review" src={Review} />
+            <img id="tp-review" alt="" src={Review} />
 
             <h1 className="tp-header">TUTORING</h1>
             <div className="tp-about">
