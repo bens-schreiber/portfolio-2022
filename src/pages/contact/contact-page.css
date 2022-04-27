@@ -1,3 +1,11 @@
+.contact {
+    min-height: calc(100vh - 100px);
+    background: linear-gradient(rgba(0, 0, 0, 0.7) 0%, rgba(0, 0, 0, 0.8) 100%), url('../home/assets/background.jpg') no-repeat;
+    background-position: top;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
 .contact-inquries {
     display: grid;
     grid-template-columns: 1fr;
