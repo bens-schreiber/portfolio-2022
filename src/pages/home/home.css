@@ -14,7 +14,7 @@
 
   min-height: calc(100vh - 30px);
   padding: 40px;
-  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0.8) 100%), url('./assets/background.jpg') no-repeat;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.6) 0%, rgba(0, 0, 0, 0.8) 100%), url('./assets/background.jpg') no-repeat;
   background-position:center;
   background-size: cover;
   background-attachment: fixed;
@@ -22,7 +22,7 @@
 
 .hp-dropdown-btns {
   display: grid;
-  gap: 30px;
+  gap: 20px;
 }
 
 @media (min-width:1025px) {
