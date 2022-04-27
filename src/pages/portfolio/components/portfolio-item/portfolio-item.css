@@ -124,6 +124,9 @@
     color: gray;
     font-size: 0.9em;
 }
+video {
+    width: calc(100% - 20px)
+}
 
 
 @media (min-width:1025px) {
