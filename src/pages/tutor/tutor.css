@@ -6,10 +6,6 @@
 
     margin-top: 40px;
     padding: 10px 15px;
-    background: linear-gradient(rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0.8) 100%), url('../home/assets/background.jpg') no-repeat;
-    background-position:top;
-    background-size: cover;
-    background-attachment: fixed;
 }
 
 .tp-about {
@@ -108,6 +104,11 @@
         padding: 0 300px;
         gap: 50px;
         grid-template-columns: 1fr;
+
+        background: linear-gradient(rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0.8) 100%), url('../home/assets/background.jpg') no-repeat;
+        background-position:top;
+        background-size: cover;
+        background-attachment: fixed;
     }
 
     .tp-about {

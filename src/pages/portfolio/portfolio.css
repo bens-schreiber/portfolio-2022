@@ -1,10 +1,3 @@
-.portfolio-page {
-    min-height: calc(100vh - 50px);
-    background: linear-gradient(rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0.8) 100%), url('../home/assets/background.jpg') no-repeat;
-    background-position:top;
-    background-size: cover;
-    background-attachment: fixed;
-}
 
 
 .ezquiz .port-display-box {
@@ -62,5 +55,10 @@
 @media (min-width:1025px) { 
     .portfolio-page {
         padding: 10px 300px;
+
+        background: linear-gradient(rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, .8) 100%), url('../home/assets/background.jpg') no-repeat;
+        background-position:top;
+        background-size: cover;
+        background-attachment: fixed;
     }
 }
