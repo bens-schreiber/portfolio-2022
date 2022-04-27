@@ -14,8 +14,8 @@
 
   min-height: calc(100vh - 30px);
   padding: 40px;
-  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.6) 0%, rgba(0, 0, 0, 0.8) 100%), url('./assets/background.jpg') no-repeat;
-  background-position:center;
+  background: linear-gradient(rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0.8) 100%), url('../home/assets/background.jpg') no-repeat;
+  background-position:top;
   background-size: cover;
   background-attachment: fixed;
 }
