@@ -1,11 +1,13 @@
 import { PortItem } from "./components/portfolio-item/portfolio-item"
 import { EzQuizLogo, JavaLogo, Demo1, Demo2, UserFlow, UMLDiagramEzQuiz, DebianLogo, Docker, PUAppLogo, GolangLogo, DartLogo, PUAppFrontEnd } from "./assets"
 import { FblaSVG } from "../home/components/about/assets";
+import { Logo1 } from "../../assets";
 export default function Portfolio(): JSX.Element {
     return <>
         <div className="portfolio-page">
             <SoftwareEngineering></SoftwareEngineering>
             <AppDevelopment></AppDevelopment>
+            <WebDevelopment></WebDevelopment>
         </div>
     </>
 }
@@ -154,7 +156,22 @@ function AppDevelopment(): JSX.Element {
     
             <PortItem.Header>EARLY FRONT END DESIGN</PortItem.Header>
             <PortItem.ImageContainer path={PUAppFrontEnd}/>
-            
         </PortItem>
     </div>
+}
+
+function WebDevelopment():JSX.Element {
+    return <>
+        <div data-id="bmin-schreib" className="bmin-schreib port-item">
+            <PortItem img={Logo1} title="WEBSITE DEVELOPMENT" id="bmin-schreib">
+                <PortItem.ImageTextContainer path={Logo1}>
+                    This very website is the first and only website I have made. <a href="https://github.com/bens-schreiber/portfolio">Check out the github</a> to see the code.
+                    My website was developed using TypeScript and React, using inline SVG animations and the AnimeJS library.
+                </PortItem.ImageTextContainer>
+                <PortItem.ImageTextContainer path={FblaSVG}>
+                    Placed 1st in the Washington State FBLA Conference, proceeding to the national competiton in June.
+                </PortItem.ImageTextContainer>
+            </PortItem>
+        </div>
+    </>
 }

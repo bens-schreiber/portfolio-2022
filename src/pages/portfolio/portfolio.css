@@ -42,6 +42,23 @@
     width: 90px;
 }
 
+.bmin-schreib .port-display-box {
+    box-shadow: #fff 3px 3px 0 0;
+}
+
+.bmin-schreib .port-text-container > p > a {
+    border-bottom: 3px solid #fff
+}
+
+.bmin-schreib .port-list-index, .bmin-schreib .port-sec-container {
+    background-color: var(--dark-gray-color)
+}
+
+#bmin-schreib-logo {
+    position: relative;
+    width: 120px;
+}
+
 @media (min-width:1025px) { 
     .portfolio-page {
         padding: 10px 300px;
