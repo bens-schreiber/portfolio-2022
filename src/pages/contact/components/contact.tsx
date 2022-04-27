@@ -6,20 +6,20 @@ import anime from 'animejs';
 export default function Contact(): JSX.Element {
     return <>
         <div className="contact-container">
-            <a id="email" data-value="email" className="contact-btn contact-btn-copyable" onClick={() => copyToClipboard("bpschreiber2003@gmail.com", "email")}>
+            <button id="email" data-value="email" className="contact-btn contact-btn-copyable" onClick={() => copyToClipboard("bpschreiber2003@gmail.com", "email")}>
                 <FontAwesomeIcon icon={faEnvelope} />
                 <span className="copy-tooltip">Copied to clipboard!</span>
-            </a>
+            </button>
             <a href="https://www.linkedin.com/in/benjamin-schreiber-a14aa219a/" id="linkedin" className="contact-btn">
                 <FontAwesomeIcon icon={faLinkedin} />
             </a>
             <a href="https://github.com/bens-schreiber" id="github" className="contact-btn">
                 <FontAwesomeIcon icon={faGithub} />
             </a>
-            <a id="discord" data-value="discord" className="contact-btn contact-btn-copyable" onClick={() => copyToClipboard("bminschreib#5110", "discord")}>
+            <button id="discord" data-value="discord" className="contact-btn contact-btn-copyable" onClick={() => copyToClipboard("bminschreib#5110", "discord")}>
                 <FontAwesomeIcon icon={faDiscord} />
                 <span className="copy-tooltip">Copied to clipboard!</span>
-            </a>
+            </button>
         </div>
     </>
 }

@@ -1,5 +1,3 @@
-import { faEnvelopeSquare } from "@fortawesome/free-solid-svg-icons"
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import Contact from "./components/contact"
 export default function ContactPage() {
     return <>
