@@ -8,7 +8,7 @@ export default function Home(): JSX.Element {
         <div className="home-page">
             <div className="hp-front">
                 <img id="hp-front-logo" src={Logo} alt="" />
-                
+
                 <div className="hp-dropdown-btns">
                     <Quicklinks title="SERVICES">
                         <QuicklinkItem link="/tutor" name="CS TUTORING" />

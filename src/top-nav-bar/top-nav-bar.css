@@ -13,13 +13,17 @@
 }
 
 .tnb-container {
-    position: fixed;
+    position: sticky;
     display: flex;
     top: 0;
     width: 100%; 
     z-index: 100;
     justify-content: space-between;
     background-color: var(--dark-gray-color);
+}
+
+#tnb-dropdown-toggle {
+    display: none;
 }
 
 .tnb-dropdown-toggle-icon {

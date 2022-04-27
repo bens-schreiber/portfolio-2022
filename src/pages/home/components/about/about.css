@@ -1,8 +1,8 @@
 .abt-container {
     display: grid;
+    justify-content: center;
     gap: 30px;
-
-    padding: 0 25px;
+    padding: 30px;
     overflow: hidden;
 }
 
