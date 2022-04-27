@@ -15,11 +15,11 @@ export default function ContactPage() {
                 <Contact />
             </div>
 
-            <div className="contact-form">
+            <form action="contact-page.php" method="post" className="contact-form">
                 <div className="contact-form-group">
                     <label htmlFor="Name" className="contact-label">Name</label>
                     <div className="contact-input">
-                        <input type="text" id="Name" name="Name" className="contact-form-control" required />
+                        <input type="text" id="Name" name="Name" className="contact-form-control"  required />
                     </div>
                 </div>
                 <div className="contact-form-group">
@@ -35,8 +35,8 @@ export default function ContactPage() {
                         <textarea id="Message" name="Message" className="contact-form-control" rows={6} maxLength={3000} required></textarea>
                     </div>
                 </div>
-                <button className="contact-send-button">SEND</button>
-            </div>
+                <button type="submit" className="contact-send-button">SEND</button>
+            </form>
         </div>
     </>
 }
