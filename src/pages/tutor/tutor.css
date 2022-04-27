@@ -6,8 +6,10 @@
 
     margin-top: 40px;
     padding: 10px 15px;
-    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0.9) 80%, rgba(0, 0, 0, 1) 100%), url('./assets/background.jpg') no-repeat;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0.8) 100%), url('./assets/background.jpg') no-repeat;
+    background-position:center;
     background-size: cover;
+    background-attachment: fixed;
 }
 
 .tp-about {

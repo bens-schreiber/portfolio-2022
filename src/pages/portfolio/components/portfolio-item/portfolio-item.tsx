@@ -1,12 +1,9 @@
 import React from 'react';
 interface PortfolioProps {
-    path: string;
+    img: string;
     title: string;
+    id: string;
     children: React.ReactNode[] | React.ReactNode
-}
-
-interface Props {
-    children: React.ReactNode[] | React.ReactNode;
 }
 
 interface ListItem {
@@ -14,51 +11,32 @@ interface ListItem {
     text: string
 }
 
-class PItem extends React.Component<PortfolioProps> {
-    private path: string;
-    private title: string;
-    state: Props;
-    private dValue: string;
+class PortItem extends React.Component<PortfolioProps> {
+
+    props: PortfolioProps;
     constructor(props: PortfolioProps) {
         super(props);
-        this.path = props.path;
-        this.title = props.title
-        this.dValue = props.title.replace(/\s/g, '')
-        this.state = {
-            children: props.children
-        }
+        this.props = props;
     }
 
     render() {
-        return <div className="port-item" data-id={this.dValue}>
-            <PItem.Header title={this.title} />
-            <this.Section>
-                {this.props.children}
-            </this.Section>
-        </div>
-    }
-
-    static Header(props: { title: string }): JSX.Element {
-        return <div className="port-header grid-span-2">{props.title}</div>
-    }
-
-    private Section = (props: { children: React.ReactNode }): JSX.Element => {
-        return <div className="port-sec-container">
-
-            <div className="port-sec-logo">
-                <img alt="" src={this.path} />
+        return <>
+            <PortItem.Header>{this.props.title}</PortItem.Header>
+            <div className="port-sec-container">
+                <img src={this.props.img} id={this.props.id + "-logo"}/>
             </div>
-
-            <button onClick={this.expandClicked} data-value={this.dValue} className="port-expand-button">CLICK TO EXPAND!</button>
-
-            <input data-value={this.dValue} id="collapse" type="checkbox"></input>
+            <input type="checkbox" id="collapse" />
+            <button className="port-expand-button" onClick={this.expandClicked}>CLICK TO EXPAND</button>
             <div className="collapsible">
                 <div className="port-display-all">
-                    {props.children}
+                    {this.props.children}
                 </div>
             </div>
+        </>
+    }
 
-        </div>
+    static Header(props: { children: React.ReactNode }): JSX.Element {
+        return <div className="port-header grid-span-2">{props.children}</div>
     }
 
     static ImageContainer = (props: { path: string }) => {
@@ -120,11 +98,12 @@ class PItem extends React.Component<PortfolioProps> {
     }
 
     private expandClicked = (): void => {
-        var collapse: HTMLInputElement = (document.querySelector(`#collapse[data-value=${this.dValue}]`) as HTMLInputElement);
-        var btn: any = document.querySelector(`.port-expand-button[data-value=${this.dValue}]`);
+        console.log("clicked")
+        var collapse: HTMLInputElement = (document.querySelector(`.port-item[data-id="${this.props.id}"] #collapse`) as HTMLInputElement);
+        var btn: any = document.querySelector(`.port-item[data-id="${this.props.id}"] .port-expand-button`);
         btn.textContent = collapse.checked ? "CLICK TO EXPAND!" : "CLICK TO COLLAPSE";
         collapse.checked = !collapse.checked;
     }
 }
 
-export { PItem }
+export { PortItem }
