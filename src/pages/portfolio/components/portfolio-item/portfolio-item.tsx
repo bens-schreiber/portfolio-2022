@@ -40,7 +40,7 @@ class PortItem extends React.Component<PortfolioProps> {
     }
 
     static ImageContainer = (props: { path: string }) => {
-        return <div className="port-img-container port-display-box">
+        return <div className="port-img-container">
             <img alt="" src={props.path} />
         </div>
     }

@@ -60,7 +60,7 @@
     font-family: Lato;
 }
 
-.port-display-box > img {
+.port-display-box > img, .port-img-container > img {
     width: 100%;
 }
 
@@ -92,7 +92,7 @@
 /*LISTS*/
 .port-list {
     display: grid;
-    gap: 10px;
+    gap: 20px;
 }
 
 .port-list-item {
@@ -127,7 +127,7 @@
 
 @media (min-width:1025px) {
     .port-display-all {
-      grid-auto-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
     }
 
     .grid-span-2 {
@@ -136,6 +136,9 @@
 
     .port-text-container > img {
         max-height: 300px;
+        max-width: 300px;
+        padding: 20px;
+        place-self: center;
     }
 
     .port-img-container{
@@ -145,7 +148,7 @@
     }
 
     .port-img-container > img {
-        max-width: 1000px;
+        /* max-width: 500px; */
         place-self: center;
     }
 }

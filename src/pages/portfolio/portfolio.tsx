@@ -1,5 +1,5 @@
 import { PortItem } from "./components/portfolio-item/portfolio-item"
-import { EzQuizLogo, JavaLogo, Demo1, Demo2, UserFlow, UMLDiagramEzQuiz, DebianLogo, Docker, PUAppLogo } from "./assets"
+import { EzQuizLogo, JavaLogo, Demo1, Demo2, UserFlow, UMLDiagramEzQuiz, DebianLogo, Docker, PUAppLogo, GolangLogo, DartLogo, PUAppFrontEnd } from "./assets"
 import { FblaSVG } from "../home/components/about/assets";
 export default function Portfolio(): JSX.Element {
     return <>
@@ -25,7 +25,7 @@ function SoftwareEngineering(): JSX.Element {
                 Placed 3rd in the United States in 2021 for the Coding & Programming category.
             </PortItem.ImageTextContainer>
 
-            <PortItem.Header>FEATURES</PortItem.Header>
+            <PortItem.Header>APPLICATION FEATURES</PortItem.Header>
             <PortItem.ListContainer>
                 {[
                     {
@@ -95,6 +95,66 @@ function AppDevelopment(): JSX.Element {
     return <div data-id="puapp" className="puapp port-item">
         <PortItem title="APP DEVELOPMENT" img={PUAppLogo} id="puapp">
 
+            <PortItem.TextContainer header="ABOUT">
+                Pushup App, or PUApp is an ongoing project I started in 2021. 
+                The goal with PUApp is to create a simple app with a modern and secure written from scratch back end server REST and Websocket server, utilizing the microservice architecture. <br/><br/>
+                The concept of PUApp is like a social challenge. A group of people create accounts on the app, and one individual hosts a group. A Pushup Token is passed randomly to a group member,
+                and a notification is sent to the user who has been passed the token. Upon recieving the notification, the user is to complete the amount of pushups provided on the pushup token.
+                Once complete, they can send an image of where they completed the pushups, which is posted to a group board. The token is then incremented by 1, and sent to the next user.
+            </PortItem.TextContainer>
+
+            <PortItem.TextContainer header="ONGOING DEVELOPMENT">
+                PUApp is an ongoing project. As it currently stands, the front end of the app is finalized, as well as the REST services. The next step
+                is to create the Web Socket microservice, and deliver notifications to users. <a href="https://github.com/bens-schreiber/goproj">Check out the Backend</a> to see the
+                back end server, written in Golang. <a href="https://github.com/bens-schreiber/pushupapp">Check out the Front End</a> to see the UI writen in Dart.  <br/><br/>
+                The project is currently on hold, and the Google Cloud server is down until it is picked back up.
+            </PortItem.TextContainer>
+
+            <PortItem.Header>APPLICATION FEATURES</PortItem.Header>
+            <PortItem.ListContainer>
+                {[
+                    {
+                        header: "LOGIN TO AN ACCOUNT",
+                        text: "PUApp requires a user account in order to function. Usernames and passwords are cached, so users never need to log in twice."
+                    },
+                    {
+                        header: "CREATE, JOIN, MANAGE GROUPS",
+                        text: "Users can create groups and invite up to 10 friends to play along with. Users can be apart of 3 groups, and leave at any time. Group owners are capable of managing users within their group, and disbanding the group entirely."
+                    },
+                    {
+                        header: "UPLOAD PHOTOS TO A GROUP BOARD",
+                        text: "Whenever a user completes a Pushup Task, they can upload a photo from their camera. (IN DEVELOPMENT)"
+                    },
+                    {
+                        header: "PRIORITY OF SECURITY",
+                        text: "PUApp salts and hashes account information, implements a token based authentication system with token timeouts, ratelimits suspicious activity, and uses HTTPS encryption on every single request.  "
+                    },
+
+                ]}
+            </PortItem.ListContainer>
+
+            <PortItem.Header>A GOOGLE TECHNOLOGY STACK</PortItem.Header>
+            <PortItem.ImageTextContainer path={GolangLogo}>
+                PUApp has a backend written primarily in Googles Golang. Golang is a language created for the purpose of programming web services, 
+                and has incredibly intuitie libaries for REST servers.
+            </PortItem.ImageTextContainer>
+            <PortItem.ImageTextContainer path={DebianLogo}>
+                Pushup App servers are hosted entirely on Google Cloud Services, on a custom Debian machine.
+                Fun fact! PUApp was written on an Arch Linux machine, using entirely VIM.
+            </PortItem.ImageTextContainer>
+            <PortItem.ImageTextContainer path={Docker}>
+                Microservice architecture was one of the main goals when creating PUApp. 
+                Utilizing Docker and Alpine Linux, every individual container is networked together via a Docker Compose build file.
+            </PortItem.ImageTextContainer>
+            <PortItem.ImageTextContainer path={DartLogo}>
+                PUApp uses Googles Dart, taking advantage of the Flutter framework for all front end programming.
+                Flutter provides an incredible service of writing both Android and IOS applications in one single codebase.
+            </PortItem.ImageTextContainer>
+
+    
+            <PortItem.Header>EARLY FRONT END DESIGN</PortItem.Header>
+            <PortItem.ImageContainer path={PUAppFrontEnd}/>
+            
         </PortItem>
     </div>
 }
