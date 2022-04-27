@@ -15,22 +15,19 @@
 }
 
 .business-inquries {
-    display: grid;
-    gap: 10px;
-    grid-template-columns: min-content max-content;
+    text-align: center;
     font-size: 1.8em;
 }
 
 .business-inquries .title > p {
     margin: 0;
-    font-size: 0.5em;
-    color: gray;
+    font-size: 0.55em;
+    color: lightgray;
 }
 
 .contact-form {
     display: grid;
-    grid-template-columns: 1fr;
-    gap: 10px;
+    gap: 1em;
 }
 
 .contact-form-group {

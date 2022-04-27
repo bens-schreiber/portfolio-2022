@@ -6,7 +6,6 @@ export default function ContactPage() {
         <div className="contact">
             <div className="contact-inquries">
                 <div className="business-inquries">
-                    <FontAwesomeIcon icon={faEnvelopeSquare} />
                     <div className="title">
                         Business Inquries
                         <p>Reach me at bpschreiber2003@gmail.com</p>

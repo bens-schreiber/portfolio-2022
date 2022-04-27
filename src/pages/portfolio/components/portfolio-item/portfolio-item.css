@@ -1,8 +1,9 @@
 .port-item {
     display: flex;
     flex-direction: column;
-    gap: 30px;
+    gap: 2em;
     padding: 15px;
+    overflow: hidden;
 }
 
 /*HEADER*/
@@ -21,14 +22,12 @@
     position: relative;
     display: grid;
     place-content: center;
-    width: 100%;
     height: 3.5em;
     border-radius: 3px;
 }
 
 .port-expand-button {
     display: block;
-    width: 100%;
     padding: 1em;
     border: 2px solid white;
     background-color: transparent;
@@ -46,9 +45,10 @@
 }
 
 .port-display-all {
+    position: relative;
     display: grid;
-    gap: 15px;
-    margin-right: 4px;
+    grid-template-columns: 100%;
+    gap: 2em;
 }
 
 /*BOX DESIGNS*/
@@ -80,7 +80,7 @@
 /*TEXT*/
 .port-text-container > p {
     font-size: 1.2em;
-    line-height: 30px;
+    line-height: 1.5em;
 }
 
 /*LINKS*/
@@ -92,12 +92,12 @@
 /*LISTS*/
 .port-list {
     display: grid;
-    gap: 20px;
+    gap: 2em;
 }
 
 .port-list-item {
     display: grid;
-    grid-template-columns: 75px 1fr;
+    grid-template-columns: 75px minmax(0,1fr);
 }
 
 .port-list-index {
@@ -114,6 +114,7 @@
 
 .port-list-text > h1 {
     margin: 0;
+    font-size: 1.5em;
     padding: 0 10px;
 }
 
@@ -127,7 +128,8 @@
 
 @media (min-width:1025px) {
     .port-display-all {
-      grid-template-columns: 1fr 1fr;
+        font-size: 20px;
+        grid-template-columns: 1fr 1fr;
     }
 
     .grid-span-2 {
@@ -148,7 +150,7 @@
     }
 
     .port-img-container > img {
-        max-width: 500px;
+        max-width: 800px;
         place-self: center;
     }
 }
