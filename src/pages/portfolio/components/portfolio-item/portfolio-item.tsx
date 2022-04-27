@@ -7,7 +7,7 @@ interface PortfolioProps {
 }
 
 interface ListItem {
-    header: string,
+    title: string,
     text: string
 }
 
@@ -23,7 +23,7 @@ class PortItem extends React.Component<PortfolioProps> {
         return <>
             <PortItem.Header>{this.props.title}</PortItem.Header>
             <div className="port-sec-container">
-                <img src={this.props.img} id={this.props.id + "-logo"}/>
+                <img src={this.props.img} id={this.props.id + "-logo"} />
             </div>
             <input type="checkbox" id="collapse" />
             <button className="port-expand-button" onClick={this.expandClicked}>CLICK TO EXPAND</button>
@@ -60,10 +60,9 @@ class PortItem extends React.Component<PortfolioProps> {
     }
 
 
-
-    static TextContainer = (props: { header: string, children: React.ReactNode }) => {
+    static TextContainer = (props: { title: string, children: React.ReactNode }) => {
         return <div className="port-text-container port-display-box">
-            <h1>{props.header}</h1>
+            <h1>{props.title}</h1>
             <p>{props.children}</p>
         </div>
     }
@@ -78,7 +77,7 @@ class PortItem extends React.Component<PortfolioProps> {
                         </span>
                         <div className="port-list-text port-display-box">
                             <h1>
-                                {props.children[index].header}
+                                {props.children[index].title}
                             </h1>
                             <p>
                                 {props.children[index].text}
