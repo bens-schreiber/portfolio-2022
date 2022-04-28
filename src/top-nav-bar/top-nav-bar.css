@@ -1,4 +1,7 @@
 .tnb {
+    position: sticky;
+    top: 0;
+    z-index: 999;
     color: var(--white-color);
 }
 
@@ -13,13 +16,10 @@
 }
 
 .tnb-container {
-    position: sticky;
     display: flex;
-    top: 0;
     width: 100%; 
-    z-index: 100;
     justify-content: space-between;
-    background-color: var(--dark-gray-color);
+    background-color: rgba(0,0,0,0.8)
 }
 
 #tnb-dropdown-toggle {
@@ -35,7 +35,7 @@
     top: -100vh;
     width: 100%;
     height: 100%;
-    z-index: 2;
+    z-index: -1;
     position: fixed;
     background-color: black;
 }
@@ -48,7 +48,7 @@
     top: 0;
 }
 
-@media (min-width:1025px) { 
+@media (max-height: 100vw) { 
     #tnb-logo {
         width: 200px;
     }

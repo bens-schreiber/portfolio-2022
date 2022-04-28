@@ -82,7 +82,7 @@
     font-size: 1em;
 }
 
-@media (min-width:1025px) {
+@media (min-width:1025px), (max-height: 100vw) {
     .abt-container {
         grid-template-columns: auto, auto;
         padding: 0 300px;
@@ -104,6 +104,10 @@
     .abt-award > img {
         width: 300px;
         place-self: center;
+    }
+
+    .abt-bio-item {
+        gap: 50px;
     }
 
     .abt-bio-item[data-id="second-bio"] {

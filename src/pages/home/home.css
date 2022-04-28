@@ -27,7 +27,7 @@
   gap: 30px;
 }
 
-@media (max-height: 100vw) {
+@media (min-width:1025px), (max-height: 100vw) {
   .hp-front-container {
 
     min-height: calc(100vh + 30px);
@@ -41,7 +41,7 @@
   }
 
   .hp-content-width {
-    width: 60vh;
+    width: 30vw;
   }
 
 }
