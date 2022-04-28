@@ -1,7 +1,7 @@
 .contact {
-    min-height: calc(100vh - 100px);
+    min-height: calc(100vh - 85px);
+    margin: 0 30px;
 }
-
 .contact-inquries {
     display: grid;
     grid-template-columns: 1fr;
@@ -26,22 +26,14 @@
     gap: 1em;
 }
 
-.contact-form-group {
-    width: 100%;
-}
-
 .contact-label{
     color: white;
     font-size: 0.8em;
 }
 
-.contact-input {
-    margin-right: 20px;
-}
-
 .contact-form-control{
+    padding: 10px 0;
     width: 100%;
-    padding: 10px;
     border: 1px solid white;
     background-color: var(--light-gray-color);
 }
@@ -60,14 +52,7 @@
     font-family: Lato;
 }
 
-.contact-margin {
-    display: grid;
-    gap: 40px;
-    padding: 10px 15px;
-    position: relative;
-}
-
-@media (min-width:1025px) {
+@media (max-height: 100vw) {
     .contact {
         display: grid;
         grid-template-columns: min-content 800px;
