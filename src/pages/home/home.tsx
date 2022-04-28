@@ -23,7 +23,6 @@ export default function Home(): JSX.Element {
                         <Contact />
                     </div>
                 </div>
-
             </div>
             <About>
                 <Award img={WSULogo} title="WSU Computer Science" subtitle="Class of 2026" />
