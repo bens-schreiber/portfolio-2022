@@ -1,5 +1,7 @@
 import React from 'react';
 import anime from 'animejs';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faChevronDown } from '@fortawesome/free-solid-svg-icons';
 interface Props {
     title: string;
 }
@@ -33,6 +35,9 @@ export default class QLButton extends React.Component<Props> {
                 <div className="title-text">
                     {this.state.title}
                 </div>
+                <div className="ql-dropdown-icon">
+                    <FontAwesomeIcon icon={faChevronDown}/>
+                </div>
             </button>
         </>
     }
@@ -51,6 +56,7 @@ export default class QLButton extends React.Component<Props> {
                     value: ((i + 1) * 0.57) + "em",
                     duration: 100,
                 })),
+                easing: "easeInOutBack",
                 begin: () => this.setDisplay(".typing-text", "inline"),
             })
             .add({

@@ -12,6 +12,7 @@
 
 .abt-bio {
     display: grid;
+    gap: 20px;
 }
 
 .abt-bio-item {

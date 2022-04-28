@@ -1,34 +1,47 @@
 .home-page {
-  position: relative;
-  padding-top: 20px;
-
   display: grid;
-  grid-gap: 30px;
+  grid-gap: 50px;
 }
   
-.hp-front {
+.hp-front-container {
+  position: relative;
   display: grid;
-  justify-content: center;
-  gap: 40px;
-
   background-color: black;
+  min-height: 100vh;
 }
 
+.hp-front {
+  display: grid;
+  justify-self: center;
+  padding-top: 30px;
+  grid-template-rows: repeat(3, min-content);
+  gap: 50px;
+}
+
+.hp-content-width {
+  width: 40vh;
+}
 
 .hp-dropdown-btns {
   display: grid;
   gap: 30px;
 }
 
-@media (min-width:1025px) {
-  .hp-front {
+@media (max-height: 100vw) {
+  .hp-front-container {
+
+    min-height: calc(100vh + 30px);
+
     font-size: 32px;
-    min-height: 100vh;
 
     background: linear-gradient(rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, .8) 100%), url('../home/assets/background.jpg') no-repeat;
     background-position:top;
     background-size: cover;
     background-attachment: fixed;
+  }
+
+  .hp-content-width {
+    width: 60vh;
   }
 
 }

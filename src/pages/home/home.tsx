@@ -6,21 +6,22 @@ import { About, Award } from './components/about/about';
 export default function Home(): JSX.Element {
     return <>
         <div className="home-page">
-            <div className="hp-front">
-                <img id="hp-front-logo" src={Logo} alt="" />
+            <div className="hp-front-container">
+                <div className="hp-front hp-content-width">
+                    <img id="hp-front-logo" src={Logo} alt="" />
+                    <div className="hp-dropdown-btns">
+                        <Quicklinks title="SERVICES">
+                            <QuicklinkItem link="/tutor" name="CS TUTORING" />
+                        </Quicklinks>
+                        <Quicklinks title="PORTFOLIO">
+                            <QuicklinkItem link="/portfolio" name="SOFTWARE ENGINEER" />
+                            <QuicklinkItem link="/portfolio" name="MOBILE DEVELOPMENT" />
+                            <QuicklinkItem link="/portfolio" name="WEBSITE DESIGN" />
+                            <QuicklinkItem link="/portfolio" name="GAME DESIGN" />
+                        </Quicklinks>
 
-                <div className="hp-dropdown-btns">
-                    <Quicklinks title="SERVICES">
-                        <QuicklinkItem link="/tutor" name="CS TUTORING" />
-                    </Quicklinks>
-                    <Quicklinks title="PORTFOLIO">
-                        <QuicklinkItem link="/portfolio" name="SOFTWARE ENGINEER" />
-                        <QuicklinkItem link="/portfolio" name="MOBILE DEVELOPMENT" />
-                        <QuicklinkItem link="/portfolio" name="WEBSITE DESIGN" />
-                        <QuicklinkItem link="/portfolio" name="GAME DESIGN" />
-                    </Quicklinks>
-
-                    <Contact />
+                        <Contact />
+                    </div>
                 </div>
 
             </div>

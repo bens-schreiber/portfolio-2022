@@ -1,9 +1,7 @@
 .contact-container {
-    margin: 20px;
     display: flex;
     justify-content: space-evenly;
     gap: 30px;
-    align-items: center;
 }
 
 .contact-btn {
@@ -20,19 +18,12 @@
 .copy-tooltip {
     position: absolute;
     opacity: 0;
-    top: 3.5em;
     padding: 5px;
     width: max-content;
     z-index: 100;
     font-size: 0.5em;
-    background: white;
+    background: #ddd;
     font-family: Lato;
     color: black;
     border-radius: 3px;
-}
-
-@media (min-width:1025px) { 
-    .contact-container {
-        font-size: 1.5em;
-    }
 }

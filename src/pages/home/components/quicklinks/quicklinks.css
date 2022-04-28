@@ -1,5 +1,6 @@
 .ql-container {
     font-family: Lato;
+    margin: 0 20px;
 }
 
 .ql-dropdown-container .ql-item > a, #ql-dropdown-toggle {
@@ -13,7 +14,7 @@
     justify-content: center;
 
     width: 100%;
-    padding: 1em 0;
+    padding: 20px 0;
     scroll-margin-top: 200px;
 
     color: white;
@@ -21,6 +22,17 @@
     font-family: inherit;
     font-size: inherit;
     border: 2px solid var(--white-color);
+}
+
+.ql-dropdown-icon {
+    position: absolute;
+    display: grid;
+    place-content: center;
+    right: 0;
+    top: 0;
+    height: 100%;
+    border-left: 2px solid var(--white-color);
+    width: 15%
 }
 
 .ql-dropdown-btn:hover {
@@ -58,6 +70,10 @@
     margin-top: 1em;
 }
 
+#ql-dropdown-toggle:checked ~ .ql-dropdown-container .ql-dropdown-icon {
+    display: none;
+}
+
 #ql-dropdown-toggle:checked ~ .ql-links .ql-item > a {
     display: block;
     padding: 0.5em;
@@ -70,15 +86,11 @@
     text-decoration: none;
 }
 
-#ql-dropdown-toggle:checked ~ .ql-links .ql-item > a::after {
-    content: " ❭";
-}
-
  /* File-tree stem */
  #ql-dropdown-toggle:checked ~ .ql-tree-stem::after {
     content: '';
     position: absolute;
-    top: -1.2em;
+    top: -1.3em;
     left: -1.7em;
     height: 100%;
     border-left: 0.15em solid var(--light-gray-color);
