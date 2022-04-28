@@ -1,4 +1,9 @@
 
+.portfolio-page {
+    background: linear-gradient(rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, .8) 100%), url('../home/assets/background.jpg');
+    background-position:top;
+    background-size: 200%;
+}
 
 .ezquiz .port-display-box {
     box-shadow: #303f9f 3px 3px 0 0;
@@ -52,12 +57,9 @@
     width: 120px;
 }
 
-@media (min-width:1025px) { 
+@media (min-width:1025px) and (max-height: 100vw) { 
     .portfolio-page {
         padding: 10px 300px;
-
-        background: linear-gradient(rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, .8) 100%), url('../home/assets/background.jpg') no-repeat;
-        background-position:top;
         background-size: cover;
         background-attachment: fixed;
     }

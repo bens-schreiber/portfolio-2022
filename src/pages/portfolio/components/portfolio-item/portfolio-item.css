@@ -129,7 +129,7 @@ video {
 }
 
 
-@media (min-width:1025px) {
+@media (min-width:1025px) and (max-height: 100vw) {
     .port-display-all {
         font-size: 20px;
         grid-template-columns: 1fr 1fr;

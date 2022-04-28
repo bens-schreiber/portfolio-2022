@@ -5,6 +5,10 @@
     place-content: center;
     padding: 0 30px;
     gap: 40px;
+
+    background: linear-gradient(rgba(0, 0, 0, .8) 0%, rgba(0, 0, 0, 0.8) 100%), url('../home/assets/background.jpg');
+    background-size: 300%;
+    background-position:top;
 }
 
 .tp-about {
@@ -104,8 +108,6 @@
         gap: 50px;
         grid-template-columns: 1fr;
 
-        background: linear-gradient(rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0.8) 100%), url('../home/assets/background.jpg') no-repeat;
-        background-position:top;
         background-size: cover;
         background-attachment: fixed;
     }
