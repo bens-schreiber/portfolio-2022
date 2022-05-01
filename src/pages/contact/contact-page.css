@@ -1,6 +1,10 @@
 .contact {
     min-height: calc(100vh - 85px);
-    margin: 0 30px;
+    padding: 0 30px;
+
+    background: linear-gradient(rgba(0, 0, 0, 0.7) 0%, rgba(0, 0, 0, 0.8) 100%), url('../../assets/background.jpg') no-repeat;
+    background-position: top;
+    background-size: cover;
 }
 .contact-inquries {
     display: grid;
@@ -59,10 +63,6 @@
         place-content: center;
         gap: 100px;
         padding: 0 100px;
-
-        background: linear-gradient(rgba(0, 0, 0, 0.7) 0%, rgba(0, 0, 0, 0.8) 100%), url('../home/assets/background.jpg') no-repeat;
-        background-position: top;
-        background-size: cover;
         background-attachment: fixed;
     }
 }
