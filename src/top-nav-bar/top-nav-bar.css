@@ -19,7 +19,7 @@
     display: flex;
     width: 100%; 
     justify-content: space-between;
-    background-color: rgba(0,0,0,0.8)
+    background-color: rgba(0,0,0,0.9)
 }
 
 #tnb-dropdown-toggle {

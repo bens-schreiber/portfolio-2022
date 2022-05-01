@@ -38,6 +38,7 @@
 .contact-form-control{
     padding: 10px 0;
     width: 100%;
+    color: white;
     border: 1px solid white;
     background-color: var(--light-gray-color);
 }
@@ -59,7 +60,7 @@
 @media (max-height: 100vw) {
     .contact {
         display: grid;
-        grid-template-columns: min-content 800px;
+        grid-template-columns: max-content 40vw;
         place-content: center;
         gap: 100px;
         padding: 0 100px;
