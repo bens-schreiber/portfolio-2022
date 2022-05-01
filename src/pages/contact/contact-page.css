@@ -52,7 +52,7 @@
     font-family: Lato;
 }
 
-@media (min-width:1025px) and (max-height: 100vw) {
+@media (max-height: 100vw) {
     .contact {
         display: grid;
         grid-template-columns: min-content 800px;

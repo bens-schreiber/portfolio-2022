@@ -57,7 +57,7 @@
     width: 120px;
 }
 
-@media (min-width:1025px) and (max-height: 100vw) { 
+@media (max-height: 100vw) { 
     .portfolio-page {
         padding: 10px 300px;
         background-size: cover;
