@@ -20,7 +20,7 @@ function About(props: Props): JSX.Element {
                 </div>
                 <div data-id="second-bio" className="abt-bio-item">
                     <p>
-                        I compete in <span>Future Business Leaders of America, or FBLA</span> where I have completed several projects from Software Engineering to Website Design
+                        I enjoy doing Computer Science competitions such as <span>Future Business Leaders of America, or FBLA</span> where I compete in events from Software Engineering to Website Design.
                     </p>
                 </div>
             </div>

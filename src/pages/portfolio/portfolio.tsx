@@ -5,9 +5,9 @@ import { Logo1 } from "../../assets";
 export default function Portfolio(): JSX.Element {
     return <>
         <div className="portfolio-page">
-            <SoftwareEngineering></SoftwareEngineering>
-            <AppDevelopment></AppDevelopment>
-            <WebDevelopment></WebDevelopment>
+            <SoftwareEngineering/>
+            <AppDevelopment/>
+            <WebDevelopment/>
         </div>
     </>
 }
@@ -166,8 +166,8 @@ function WebDevelopment():JSX.Element {
             <PortItem img={Logo1} title="WEBSITE DEVELOPMENT" id="bmin-schreib">
 
                 <PortItem.ImageTextContainer path={Logo1}>
-                    This very website is the first and only website I have made. <a href="https://github.com/bens-schreiber/portfolio">Check out the github</a> to see the code.
-                    My website was developed using TypeScript and React, using inline SVG animations and the AnimeJS library.
+                    This website was created for an FBLA project I started my senior year of highschool, built entirely from scratch using Typescript, React, AnimeJS, and PHP.
+                    <a href="https://github.com/bens-schreiber/portfolio">Check out the github</a> to see the code.
                 </PortItem.ImageTextContainer>
 
                 <PortItem.ImageTextContainer path={FblaSVG}>
