@@ -42,6 +42,8 @@ if($_POST) {
     } else {
         echo '<p>We are sorry but the email did not go through.</p>';
     }
+
+    header("Location: index.html")
       
 } else {
     echo '<p>Something went wrong</p>';
