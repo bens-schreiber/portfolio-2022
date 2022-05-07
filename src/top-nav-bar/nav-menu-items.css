@@ -1,14 +1,17 @@
 .tnb-links {
-    margin-top: 5vh;
-    margin-left: 45px;
+    margin-top: 8vh;
+    margin-left: 38px;
     color: var(--white-color);
     font-size: 1.5em;
     font-family: Lato;
 }
 
+.tnb-tree-stem {
+    position: relative;
+}
+
 .tnb-links > h1 {
-    margin-left: -30px;
-    padding-top: 50px;
+    margin: 0 0 10px -30px;
     background-color: black;
 }
 

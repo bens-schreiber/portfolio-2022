@@ -1,3 +1,4 @@
+import anime from 'animejs'
 import Logo2 from '../assets/logo2.svg'
 export default function TopNavBar(): JSX.Element {
     return <>
@@ -5,13 +6,13 @@ export default function TopNavBar(): JSX.Element {
 
             <div className="tnb-container">
                 <a href="/"><img id="tnb-logo" src={Logo2} alt="" /></a>
-                <label htmlFor="tnb-dropdown-toggle" className="tnb-dropdown-toggle-icon tnb-clickable">
+                <label htmlFor="tnb-dropdown-toggle" id="tnb-dropdown-toggle-icon" className="clickable" onClick={onClick}>
                     &#9776;
                 </label>
             </div>
 
             <input type="checkbox" id="tnb-dropdown-toggle" />
-            <div className="tnb-nav tnb-animate-dropdown">
+            <div className="tnb-nav tnb-nav-animate-dropdown">
                 <nav className="tnb-links" >
                     <h1><a href="/">HOME</a></h1>
                     <ul className="tnb-tree-stem">
@@ -25,4 +26,13 @@ export default function TopNavBar(): JSX.Element {
 
         </div>
     </>
+}
+
+function onClick() {
+    anime({
+        targets: "#tnb-dropdown-toggle-icon",
+        rotate: [0, 360],
+        easing: "easeInOutSine",
+        duration: 400,
+    })
 }

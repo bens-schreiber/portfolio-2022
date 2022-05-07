@@ -1,5 +1,6 @@
 .tnb {
     position: sticky;
+    overflow: hidden;
     top: 0;
     z-index: 999;
     color: var(--white-color);
@@ -10,11 +11,6 @@
     padding: 10px;
 }
 
-.tnb-clickable {
-    cursor: pointer;
-    user-select: none;
-}
-
 .tnb-container {
     display: flex;
     width: 100%; 
@@ -22,12 +18,8 @@
     background-color: rgba(0,0,0,0.9)
 }
 
-#tnb-dropdown-toggle {
-    display: none;
-}
-
-.tnb-dropdown-toggle-icon {
-    padding: 0 5px;
+#tnb-dropdown-toggle-icon {
+    padding: 0 10px;
     font-size: 3em;
 }
 
@@ -40,7 +32,7 @@
     background-color: black;
 }
 
-.tnb-animate-dropdown {
+.tnb-nav-animate-dropdown {
     transition: all 350ms ease-in-out;
 }
 
@@ -52,7 +44,7 @@
     #tnb-logo {
         width: 200px;
     }
-    .tnb-dropdown-toggle-icon {
+    #tnb-dropdown-toggle-icon {
         font-size: 4em;
     }
 }
