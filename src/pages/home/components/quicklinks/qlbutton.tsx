@@ -57,7 +57,10 @@ export default class QLButton extends React.Component<Props> {
                     duration: 100,
                 })),
                 easing: "easeInOutBack",
-                begin: () => this.setDisplay(".typing-text", "inline"),
+                begin: () => {
+                    this.setDisplay(".typing-text", "inline");
+                    this.setDisplay(".ql-dropdown-icon", "none")
+                },
             })
             .add({
                 targets: this.path(".cursor"),
@@ -79,6 +82,7 @@ export default class QLButton extends React.Component<Props> {
     }
 
     private closeQuicklinks = (): void => {
+        this.setDisplay(".ql-dropdown-icon", "grid");
         (document.querySelector(`#ql-dropdown-toggle[data-id=${this.props.title}]`) as HTMLInputElement).checked = false;
     }
 

@@ -4,18 +4,10 @@
 }
   
 .hp-front-container {
-  position: relative;
   display: grid;
+  justify-items: center;
   background-color: black;
   min-height: 100vh;
-}
-
-.hp-front {
-  display: grid;
-  justify-self: center;
-  padding-top: 30px;
-  grid-template-rows: repeat(3, min-content);
-  gap: 50px;
 }
 
 .hp-front-container {
@@ -24,8 +16,15 @@
   background-size: cover;
 }
 
+.hp-front {
+  display: grid;
+  padding-top: 5vh;
+  grid-template-rows: repeat(3, min-content);
+  gap: 50px;
+}
+
 .hp-content-width {
-  width: 40vh;
+  min-width: 35vh;
 }
 
 .hp-dropdown-btns {
@@ -36,7 +35,7 @@
 @media (max-height: 100vw) {
 
   .hp-content-width {
-    width: 30vw;
+    min-width: 30vw;
   }
 
   .hp-front-container {
