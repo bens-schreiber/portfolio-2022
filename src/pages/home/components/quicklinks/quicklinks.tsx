@@ -41,7 +41,7 @@ export default class Quicklinks
             <li className="ql-item ql-tree-branch"><a href={props.link}>{props.name}</a></li>
         </>
 
-    collapse() {this.setState({collapsed: !this.state.collapsed})}
+    collapse = () => this.setState({collapsed: !this.state.collapsed})
 
     render = () =>
         <>

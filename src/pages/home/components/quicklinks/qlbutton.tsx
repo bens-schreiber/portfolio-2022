@@ -1,8 +1,9 @@
-import React from 'react';
-import anime from 'animejs';
-import When from '../../../../tools/tools';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faChevronDown } from '@fortawesome/free-solid-svg-icons';
+import { faChevronDown } from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import anime from "animejs";
+import React from "react";
+import When from "../../../../tools/tools";
+
 
 interface State {
     title: string,
@@ -60,6 +61,7 @@ export default class QLButton
     }
 
     componentDidUpdate() {
+        if (!this.state.animating) return;
         this.openQuicklinks();
     }
 
@@ -85,8 +87,8 @@ export default class QLButton
                 ],
             })
             .finished.then(() => {
-                this.props.action();
                 this.setState({ animating: false });
+                this.props.action();
             })
     }
 }
