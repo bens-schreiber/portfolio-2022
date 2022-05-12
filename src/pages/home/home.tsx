@@ -1,14 +1,14 @@
-import Logo from '../../assets/logo.svg'
-import { FblaSVG, WSULogo } from './components/about/assets';
-import Quicklinks from './components/quicklinks/quicklinks';
-import Contact from '../contact/components/contact';
-import { About, Award } from './components/about/about';
+import Contact from "../contact/components/contact";
+import { About, Award } from "./components/about/about";
+import { WSULogo, FblaSVG } from "./components/about/assets";
+import Quicklinks from "./components/quicklinks/quicklinks";
+import { Logo1 } from "../../assets";
 export default function Home(): JSX.Element {
     return <>
         <div className="home-page">
             <div className="hp-front-container">
                 <div className="hp-front hp-content-width">
-                    <img id="hp-front-logo" src={Logo} alt="" />
+                    <img id="hp-front-logo" src={Logo1} alt="" />
                     <div className="hp-dropdown-btns">
 
                         <Quicklinks title="SERVICES">

@@ -1,6 +1,8 @@
 import React from "react";
+import When from "../../../../tools/tools";
 import QLButton from "./qlbutton";
-import When from '../../../../tools/tools'
+
+
 interface Props {
     title: string;
     children: React.ReactNode[]
