@@ -4,7 +4,7 @@ export default class CareerSVG extends React.Component {
 
   topText: React.RefObject<SVGTSpanElement>;
   bottomText: React.RefObject<SVGTSpanElement>;
-  constructor(props: any) {
+  constructor(props = {}) {
     super(props);
     this.topText = React.createRef();
     this.bottomText = React.createRef();

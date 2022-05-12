@@ -1,5 +1,5 @@
 import AboutCollapsedHeader from '../../../../assets/about-collapsed-header.svg';
-import CareerSVG from './assets/careers_svg';
+import CareerSVG from './assets/careers';
 export { About, Award }
 
 const About =
