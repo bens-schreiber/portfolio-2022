@@ -1,5 +1,5 @@
 import AboutCollapsedHeader from '../../../../assets/about-collapsed-header.svg';
-import Careers from './careers';
+import CareerSVG from './assets/careers_svg';
 export { About, Award }
 
 const About =
@@ -8,7 +8,7 @@ const About =
         <>
             <div className="abt-container">
 
-                <Careers />
+                <CareerSVG />
                 <div className="abt-bio">
                     <div data-id="first-bio" className="abt-bio-item">
                         <img alt="" src={AboutCollapsedHeader} />
