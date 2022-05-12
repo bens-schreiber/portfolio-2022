@@ -5,3 +5,4 @@ export const When = (props: {
     : React.ReactElement =>
     props.condition ? props.children : <></>
 
+export default When;

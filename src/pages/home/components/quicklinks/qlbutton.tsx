@@ -1,6 +1,6 @@
 import React from 'react';
 import anime from 'animejs';
-import { When } from '../../../../tools/tools';
+import When from '../../../../tools/tools';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faChevronDown } from '@fortawesome/free-solid-svg-icons';
 
