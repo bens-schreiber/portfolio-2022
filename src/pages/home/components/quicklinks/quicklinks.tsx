@@ -19,11 +19,13 @@ export const QuicklinkItem = ({ name, link }: Item) => {
 export const Quicklinks = (props: Props) => {
     return <>
         <div className="ql-container">
-            <input data-id={props.title} type="checkbox" id="ql-dropdown-toggle" />
-            <ul className="ql-dropdown-container ql-links ql-tree-stem">
-                <QLButton title={props.title} />
+
+            <QLButton title={props.title} />
+
+            {/* <ul className="ql-expanded-container ql-links ql-tree-stem">
                 {props.children}
-            </ul>
+            </ul> */}
+
         </div>
     </>
 }

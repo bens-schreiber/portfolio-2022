@@ -2,11 +2,7 @@
     font-family: Lato;
 }
 
-.ql-dropdown-container .ql-item > a, #ql-dropdown-toggle {
-    display: none;
-}
-
-.ql-dropdown-btn {
+.ql-btn {
     position: relative;
 
     display: flex;
@@ -23,7 +19,7 @@
     border: 2px solid var(--white-color);
 }
 
-.ql-dropdown-icon {
+.ql-btn-icon {
     position: absolute;
     display: grid;
     place-content: center;
@@ -34,22 +30,23 @@
     width: 15%
 }
 
-.ql-dropdown-btn:hover {
+.ql-btn:hover {
     cursor: pointer;
 }
 
-/* DROPDOWN DISPLAY TOGGLED*/
-#ql-dropdown-toggle:checked ~ .ql-dropdown-container {
+
+/* EXPANDED DISPLAY TOGGLED*/
+.ql-expanded-container {
     position: relative;
     display: block;
     margin-top: 2em;
 }
 
-#ql-dropdown-toggle:checked ~ .ql-dropdown-container .ql-dropdown-btn .title-text::before {
+.ql-expanded-container .ql-expanded-btn .ql-title-text::before {
     content: "./";
 }
 
-#ql-dropdown-toggle:checked ~ .ql-dropdown-container .ql-dropdown-btn {
+.ql-expanded-btn {
     position: absolute;
     left: -1.75em;
     top: -2em;
@@ -65,15 +62,11 @@
 
 
 /* Links */
-#ql-dropdown-toggle:checked ~ .ql-links .ql-item:not(:nth-child(2)) {
+.ql-links .ql-item:not(:nth-child(2)) {
     margin-top: 1em;
 }
 
-#ql-dropdown-toggle:checked ~ .ql-dropdown-container .ql-dropdown-icon {
-    display: none;
-}
-
-#ql-dropdown-toggle:checked ~ .ql-links .ql-item > a {
+.ql-links .ql-item > a {
     display: block;
     padding: 0.5em;
 
@@ -86,7 +79,7 @@
 }
 
  /* File-tree stem */
- #ql-dropdown-toggle:checked ~ .ql-tree-stem::after {
+.ql-tree-stem::after {
     content: '';
     position: absolute;
     top: -1.3em;
@@ -96,7 +89,7 @@
  }
 
 /* File-tree branch */
-#ql-dropdown-toggle:checked ~ .ql-links .ql-tree-branch a::before {
+.ql-links .ql-tree-branch a::before {
     content: '';
     position: absolute;
     left: -1.7em;
@@ -106,15 +99,14 @@
  }
 
  /*Animation */
- .ql-dropdown-btn .typing-text {
-    display: none;
+.ql-typing-text {
     position: relative;
     margin-right: 5px;
     color: white;
     font-size: 1em;
  }
 
- .ql-dropdown-btn .typing-text .cursor {
+.ql-cursor {
     position: absolute;
     left: 0;
     height: 100%;
@@ -124,6 +116,6 @@
     z-index: 0;
  }
 
- .ql-dropdown-btn .title-text {
+.ql-title-text {
     z-index: 1;
  }

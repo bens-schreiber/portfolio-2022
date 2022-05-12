@@ -2,68 +2,76 @@ import React from 'react';
 import anime from 'animejs';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faChevronDown } from '@fortawesome/free-solid-svg-icons';
-interface Props {
-    title: string;
-}
 
 interface State {
     title: string,
-    collapsed: boolean
     animating: boolean
 }
 
-export default class QLButton extends React.Component<Props> {
+const When =
+    (props: { children: React.ReactElement, condition: boolean })
+        : React.ReactElement => props.condition ? props.children : <></>
+
+
+export default class QLButton extends React.Component<{title: string}> {
     state: State;
-    constructor(props: Props) {
+    animationRef: React.RefObject<HTMLElement>
+    constructor(props: {title: string}) {
         super(props);
+        this.animationRef = React.createRef();
         this.state = {
             title: props.title,
-            collapsed: true,
             animating: false
         }
     }
 
-    private path = (path: string = ""): string => `.ql-dropdown-btn[data-title=${this.props.title}] ` + path;
-
-    render(): JSX.Element {
+    render(): React.ReactElement {
         return <>
-            <button onClick={this.onClick} data-title={this.props.title} className="ql-dropdown-btn">
-                <div className="typing-text">
-                    {"exec tree ./"}
-                    <span className="cursor" />
-                </div>
-                <div className="title-text">
+            <button onClick={this.onClick} className="ql-btn">
+
+                <When condition={this.state.animating}>
+                    <div className="ql-typing-text">
+                        {"exec tree ./"}
+                        <span className="ql-cursor" ref={this.animationRef} />
+                    </div>
+                </When>
+
+                <div className="ql-title-text">
                     {this.state.title}
                 </div>
-                <div className="ql-dropdown-icon">
-                    <FontAwesomeIcon icon={faChevronDown}/>
-                </div>
+
+                <When condition={!this.state.animating}>
+                    <div className="ql-btn-icon">
+                        <FontAwesomeIcon icon={faChevronDown} />
+                    </div>
+                </When>
+
             </button>
         </>
     }
 
     private onClick = (): void => {
         if (this.state.animating) return;
-        this.setState({ animating: this.state.collapsed, collapsed: !this.state.collapsed });
-        this.state.collapsed ? this.openQuicklinks() : this.closeQuicklinks();
+        this.setState({ animating: !this.state.animating});
+    }
+
+    componentDidUpdate() {
+        this.state.animating ? this.openQuicklinks() : this.closeQuicklinks();
     }
 
     private openQuicklinks = (): void => {
+        var cursor = "." + this.animationRef.current?.className;    // Format for CSS queries
         anime.timeline()
             .add({
-                targets: this.path(".cursor"),
+                targets: cursor,
                 translateX: [...Array(9)].map((_, i) => ({
                     value: ((i + 1) * 0.57) + "em",
                     duration: 100,
                 })),
                 easing: "easeInOutBack",
-                begin: () => {
-                    this.setDisplay(".typing-text", "inline");
-                    this.setDisplay(".ql-dropdown-icon", "none")
-                },
             })
             .add({
-                targets: this.path(".cursor"),
+                targets: cursor,
                 duration: 700,
                 opacity: [
                     { value: [1, 1] },
@@ -73,21 +81,12 @@ export default class QLButton extends React.Component<Props> {
                 ],
             })
             .finished.then(() => {
-                // displays all of the portfolio links
-                (document.querySelector(`#ql-dropdown-toggle[data-id=${this.props.title}]`) as HTMLInputElement).checked = true;
-                this.setDisplay(".typing-text", "none");
-                document.querySelector(this.path())?.scrollIntoView();
-                this.setState({animating: false});
+                this.setState({ animating: false });
             })
     }
 
     private closeQuicklinks = (): void => {
-        this.setDisplay(".ql-dropdown-icon", "grid");
-        (document.querySelector(`#ql-dropdown-toggle[data-id=${this.props.title}]`) as HTMLInputElement).checked = false;
-    }
-
-    private setDisplay(query: string, value: string): void {
-        (document.querySelector(this.path(query))! as HTMLElement).style.display = value;
+        
     }
 
 
