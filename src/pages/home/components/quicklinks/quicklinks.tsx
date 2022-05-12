@@ -10,7 +10,7 @@ interface State {
     collapsed: boolean;
 }
 
-export class Quicklinks
+export default class Quicklinks
     extends React.Component<Props> {
     props: Props;
     state: State;
