@@ -8,15 +8,19 @@ interface State {
     animating: boolean
 }
 
-const When =
-    (props: { children: React.ReactElement, condition: boolean })
-        : React.ReactElement => props.condition ? props.children : <></>
+const When = (props: {
+    children: React.ReactElement,
+    condition: boolean
+})
+    : React.ReactElement =>
+    props.condition ? props.children : <></>
 
 
-export default class QLButton extends React.Component<{title: string}> {
+export default class QLButton
+    extends React.Component<{ title: string }> {
     state: State;
     animationRef: React.RefObject<HTMLElement>
-    constructor(props: {title: string}) {
+    constructor(props: { title: string }) {
         super(props);
         this.animationRef = React.createRef();
         this.state = {
@@ -52,7 +56,7 @@ export default class QLButton extends React.Component<{title: string}> {
 
     private onClick = (): void => {
         if (this.state.animating) return;
-        this.setState({ animating: !this.state.animating});
+        this.setState({ animating: !this.state.animating });
     }
 
     componentDidUpdate() {
@@ -86,7 +90,7 @@ export default class QLButton extends React.Component<{title: string}> {
     }
 
     private closeQuicklinks = (): void => {
-        
+
     }
 
 

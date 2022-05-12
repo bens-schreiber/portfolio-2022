@@ -5,27 +5,29 @@ interface Item {
     link: string;
 }
 
-interface Props {
-    title: string;
-    children: React.ReactNode[] | React.ReactNode
-}
-
 export const QuicklinkItem = ({ name, link }: Item) => {
     return <>
         <li className="ql-item ql-tree-branch"><a href={link}>{name}</a></li>
     </>
 }
 
-export const Quicklinks = (props: Props) => {
-    return <>
+const QuickLinkExpanded = (props: { title: string, children: React.ReactNode[] }) =>
+    <>
+        <ul className="ql-expanded-container ql-links ql-tree-stem">
+            <button className="ql-expanded-title">{props.title}</button>
+            {props.children}
+        </ul>
+    </>
+
+export const Quicklinks = (props: { title: string, children: React.ReactNode[] }) =>
+    <>
         <div className="ql-container">
 
             <QLButton title={props.title} />
 
-            {/* <ul className="ql-expanded-container ql-links ql-tree-stem">
+            {/* <QuickLinkExpanded title={props.title}>
                 {props.children}
-            </ul> */}
+            </QuickLinkExpanded> */}
 
         </div>
     </>
-}

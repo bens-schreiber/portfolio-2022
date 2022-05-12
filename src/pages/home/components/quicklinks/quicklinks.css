@@ -1,4 +1,4 @@
-.ql-container {
+.ql-container, .ql-expanded-container {
     font-family: Lato;
 }
 
@@ -35,27 +35,28 @@
 }
 
 
-/* EXPANDED DISPLAY TOGGLED*/
+/* EXPANDED DISPLAY*/
 .ql-expanded-container {
     position: relative;
     display: block;
     margin-top: 2em;
 }
 
-.ql-expanded-container .ql-expanded-btn .ql-title-text::before {
+.ql-expanded-container .ql-expanded-title::before {
     content: "./";
 }
 
-.ql-expanded-btn {
+.ql-expanded-title {
     position: absolute;
     left: -1.75em;
-    top: -2em;
+    top: -3em;
     justify-content: left;
     padding: 0;
 
     background-color: transparent;
     color: var(--white-color);
     border: none;
+    font-family: Lato;
 
     font-size: 1em;
 }
