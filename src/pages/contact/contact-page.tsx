@@ -1,6 +1,6 @@
 import Contact from "./components/contact"
-export default function ContactPage() {
-    return <>
+const ContactPage = (): JSX.Element =>
+    <>
         <div className="contact">
             <div className="contact-inquries">
                 <div className="business-inquries">
@@ -12,11 +12,11 @@ export default function ContactPage() {
                 <Contact />
             </div>
 
-            <form action="contact-page.php" method="post" className="contact-form">
+            <form className="contact-form">
                 <div className="contact-form-group">
                     <label htmlFor="Name" className="contact-label">Name</label>
                     <div className="contact-input">
-                        <input type="text" id="Name" name="Name" className="contact-form-control"  required />
+                        <input type="text" id="Name" name="Name" className="contact-form-control" required />
                     </div>
                 </div>
                 <div className="contact-form-group">
@@ -36,4 +36,4 @@ export default function ContactPage() {
             </form>
         </div>
     </>
-}
+export default ContactPage;

@@ -3,8 +3,8 @@ import { faDiscord, faGithub, faLinkedin } from '@fortawesome/free-brands-svg-ic
 import { faEnvelope } from '@fortawesome/free-solid-svg-icons'
 import anime from 'animejs';
 
-export default function Contact(): JSX.Element {
-    return <>
+const Contact = (): JSX.Element =>
+    <>
         <div className="contact-container">
             <button id="email" data-value="email" className="contact-btn contact-btn-copyable" onClick={() => copyToClipboard("bpschreiber2003@gmail.com", "email")}>
                 <FontAwesomeIcon icon={faEnvelope} />
@@ -22,9 +22,8 @@ export default function Contact(): JSX.Element {
             </button>
         </div>
     </>
-}
 
-function copyToClipboard(text: string, attribute: string) {
+const copyToClipboard = (text: string, attribute: string): void => {
     navigator.clipboard.writeText(text);
     anime({
         targets: `.contact-btn-copyable[data-value="${attribute}"] .copy-tooltip`,
@@ -33,3 +32,5 @@ function copyToClipboard(text: string, attribute: string) {
         opacity: ["100%", "0%"]
     })
 }
+
+export default Contact;

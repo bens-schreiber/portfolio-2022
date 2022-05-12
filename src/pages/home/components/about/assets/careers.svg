@@ -21,7 +21,7 @@
   </defs>
   <rect class="b" x="118.77" y="5.69" width="120" height="81.19" />
   <text class="c" transform="translate(121.28 41) scale(.96 1)">
-    <tspan id="top-text" style="font-family:BoldTestament;" x="130" y="0">COMPUTER </tspan>
+    <tspan id="top-text" x="130" y="0">COMPUTER </tspan>
     <tspan id="bottom-text" x="-130" y="44.52">SCIENTIST</tspan>
   </text>
 <g>
