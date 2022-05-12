@@ -35,12 +35,9 @@
     font-family: Lato;
 }
 
-#collapse, .collapsible {
-    display: none;
-}
 
 /*UNCOLLAPSED DISPLAY*/
-#collapse:checked ~ .collapsible {
+.collapsible {
     display: block;
 }
 

@@ -1,4 +1,5 @@
 import React from 'react';
+import { When } from '../../../../tools/tools'
 interface PortfolioProps {
     img: string;
     title: string;
@@ -6,34 +7,48 @@ interface PortfolioProps {
     children: React.ReactNode[] | React.ReactNode
 }
 
-interface ListItem {
-    title: string,
-    text: string
-}
-
 class PortItem extends React.Component<PortfolioProps> {
 
     props: PortfolioProps;
+    state: { collapsed: boolean }
+    buttonRef: React.RefObject<HTMLButtonElement>
     constructor(props: PortfolioProps) {
         super(props);
+        this.state = { collapsed: true }
+        this.buttonRef = React.createRef();
         this.props = props;
     }
 
-    render() {
-        return <>
-            <PortItem.Header>{this.props.title}</PortItem.Header>
+    render = () =>
+        <>
+            <PortItem.Header>
+                {this.props.title}
+            </PortItem.Header>
+
             <div className="port-sec-container">
                 <img alt="" src={this.props.img} id={this.props.id + "-logo"} />
             </div>
-            <input type="checkbox" id="collapse" />
-            <button className="port-expand-button" onClick={this.expandClicked}>CLICK TO EXPAND</button>
-            <div className="collapsible">
-                <div className="port-display-all">
-                    {this.props.children}
+
+            <button ref={this.buttonRef} className="port-expand-button" onClick={this.expandClicked}>CLICK TO EXPAND!</button>
+
+            <When condition={!this.state.collapsed}>
+                <div className="collapsible">
+                    <div className="port-display-all">
+                        {this.props.children}
+                    </div>
                 </div>
-            </div>
+            </When>
         </>
+
+
+    private expandClicked = (): void => {
+        this.setState({ collapsed: !this.state.collapsed });
+        if (this.buttonRef.current == null) return
+        this.state.collapsed ?
+            this.buttonRef.current.textContent = "CLICK TO COLLAPSE!"
+            : this.buttonRef.current.textContent = "CLICK TO EXPAND!"
     }
+
 
     static Header(props: { children: React.ReactNode }): JSX.Element {
         return <div className="port-header grid-span-2">{props.children}</div>
@@ -67,7 +82,7 @@ class PortItem extends React.Component<PortfolioProps> {
         </div>
     }
 
-    static ListContainer = (props: { children: ListItem[] }) => {
+    static ListContainer = (props: { children: { title: string, text: string }[] }) => {
         return <ul className="port-list grid-span-2">
             {props.children.map((item, index) => {
                 return <>
@@ -94,14 +109,6 @@ class PortItem extends React.Component<PortfolioProps> {
             <source src={props.path} />
             Sorry, your browser doesn't support embedded videos.
         </video>
-    }
-
-    private expandClicked = (): void => {
-        console.log("clicked")
-        var collapse: HTMLInputElement = (document.querySelector(`.port-item[data-id="${this.props.id}"] #collapse`) as HTMLInputElement);
-        var btn: any = document.querySelector(`.port-item[data-id="${this.props.id}"] .port-expand-button`);
-        btn.textContent = collapse.checked ? "CLICK TO EXPAND!" : "CLICK TO COLLAPSE";
-        collapse.checked = !collapse.checked;
     }
 }
 
