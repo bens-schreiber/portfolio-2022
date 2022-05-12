@@ -64,11 +64,6 @@ export default function TutorPage() {
                     <span className="white">{"}"}</span>
                 </div>
             </div>
-
-
-
-
         </div>
-
     </>
 }
