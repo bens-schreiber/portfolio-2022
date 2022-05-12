@@ -5,3 +5,9 @@
     grid-template-columns: min-content;
     padding: 10px;
 }
+
+@media (max-height: 100vw) {
+    .footer-container {
+        display: none;
+    }
+}
