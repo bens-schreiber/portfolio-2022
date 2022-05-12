@@ -3,7 +3,7 @@ import Contact from "../pages/contact/components/contact"
 export default function Footer(): JSX.Element {
     return <>
         <div className="footer-container">
-            <img src={Logo2}/>
+            <img src={Logo2} alt=""/>
             <Contact/>
         </div>
     </>
