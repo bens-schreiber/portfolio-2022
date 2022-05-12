@@ -17,6 +17,10 @@ export class Quicklinks
     constructor(props: Props) {
         super(props);
         this.props = props;
+
+        //Bind the collapse method to this component
+        this.collapse = this.collapse.bind(this);
+
         this.state = {
             collapsed: true
         }
@@ -35,13 +39,14 @@ export class Quicklinks
             <li className="ql-item ql-tree-branch"><a href={props.link}>{props.name}</a></li>
         </>
 
+    collapse = () => this.setState({collapsed: !this.state.collapsed})
 
     render = () =>
         <>
             <div className="ql-container">
 
                 <When condition={this.state.collapsed}>
-                    <QLButton title={this.props.title} />
+                    <QLButton title={this.props.title} action={this.collapse} />
                 </When>
 
                 <When condition={!this.state.collapsed}>

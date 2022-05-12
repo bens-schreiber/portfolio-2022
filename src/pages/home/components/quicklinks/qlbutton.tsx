@@ -9,12 +9,18 @@ interface State {
     animating: boolean
 }
 
+interface Props {
+    title: string
+    action: Function
+}
+
 
 export default class QLButton
-    extends React.Component<{ title: string }> {
+    extends React.Component<Props> {
+
     state: State;
     animationRef: React.RefObject<HTMLElement>
-    constructor(props: { title: string }) {
+    constructor(props: Props) {
         super(props);
         this.animationRef = React.createRef();
         this.state = {
@@ -54,7 +60,7 @@ export default class QLButton
     }
 
     componentDidUpdate() {
-        this.state.animating ? this.openQuicklinks() : this.closeQuicklinks();
+        this.openQuicklinks();
     }
 
     private openQuicklinks = (): void => {
@@ -79,13 +85,8 @@ export default class QLButton
                 ],
             })
             .finished.then(() => {
+                this.props.action();
                 this.setState({ animating: false });
             })
     }
-
-    private closeQuicklinks = (): void => {
-
-    }
-
-
 }
