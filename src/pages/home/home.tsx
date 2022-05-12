@@ -1,6 +1,6 @@
 import Logo from '../../assets/logo.svg'
 import { FblaSVG, WSULogo } from './components/about/assets';
-import { QuicklinkItem, Quicklinks } from './components/quicklinks/quicklinks';
+import { Quicklinks } from './components/quicklinks/quicklinks';
 import Contact from '../contact/components/contact';
 import { About, Award } from './components/about/about';
 export default function Home(): JSX.Element {
@@ -11,14 +11,14 @@ export default function Home(): JSX.Element {
                     <img id="hp-front-logo" src={Logo} alt="" />
                     <div className="hp-dropdown-btns">
                         <Quicklinks title="SERVICES">
-                            <QuicklinkItem link="/tutor" name="CS TUTORING" />
-                            <QuicklinkItem link="/tutor" name="SCHEDULE TUTORING" />
+                            <Quicklinks.Item link="/tutor" name="CS TUTORING" />
+                            <Quicklinks.Item link="/tutor" name="SCHEDULE TUTORING" />
                         </Quicklinks>
                         <Quicklinks title="PORTFOLIO">
-                            <QuicklinkItem link="/portfolio" name="SOFTWARE ENGINEER" />
-                            <QuicklinkItem link="/portfolio" name="MOBILE DEVELOPMENT" />
-                            <QuicklinkItem link="/portfolio" name="WEBSITE DESIGN" />
-                            <QuicklinkItem link="/portfolio" name="GAME DESIGN" />
+                            <Quicklinks.Item link="/portfolio" name="SOFTWARE ENGINEER" />
+                            <Quicklinks.Item link="/portfolio" name="MOBILE DEVELOPMENT" />
+                            <Quicklinks.Item link="/portfolio" name="WEBSITE DESIGN" />
+                            <Quicklinks.Item link="/portfolio" name="GAME DESIGN" />
                         </Quicklinks>
 
                         <Contact />

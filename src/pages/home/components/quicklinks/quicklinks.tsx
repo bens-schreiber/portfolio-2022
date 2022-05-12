@@ -1,33 +1,55 @@
 import React from "react";
 import QLButton from './qlbutton';
-interface Item {
-    name: string;
-    link: string;
+import { When } from '../../../../tools/tools';
+interface Props {
+    title: string;
+    children: React.ReactNode[]
 }
 
-export const QuicklinkItem = ({ name, link }: Item) => {
-    return <>
-        <li className="ql-item ql-tree-branch"><a href={link}>{name}</a></li>
-    </>
+interface State {
+    collapsed: boolean;
 }
 
-const QuickLinkExpanded = (props: { title: string, children: React.ReactNode[] }) =>
-    <>
-        <ul className="ql-expanded-container ql-links ql-tree-stem">
-            <button className="ql-expanded-title">{props.title}</button>
-            {props.children}
-        </ul>
-    </>
+export class Quicklinks
+    extends React.Component<Props> {
+    props: Props;
+    state: State;
+    constructor(props: Props) {
+        super(props);
+        this.props = props;
+        this.state = {
+            collapsed: true
+        }
+    }
 
-export const Quicklinks = (props: { title: string, children: React.ReactNode[] }) =>
-    <>
-        <div className="ql-container">
+    private QuickLinkExpanded = () =>
+        <>
+            <ul className="ql-expanded-container ql-links ql-tree-stem">
+                <button className="ql-expanded-title">{this.props.title}</button>
+                {this.props.children}
+            </ul>
+        </>
 
-            <QLButton title={props.title} />
+    public static Item = (props: {link: string, name: string}) =>
+        <>
+            <li className="ql-item ql-tree-branch"><a href={props.link}>{props.name}</a></li>
+        </>
 
-            {/* <QuickLinkExpanded title={props.title}>
-                {props.children}
-            </QuickLinkExpanded> */}
 
-        </div>
-    </>
+    render = () =>
+        <>
+            <div className="ql-container">
+
+                <When condition={this.state.collapsed}>
+                    <QLButton title={this.props.title} />
+                </When>
+
+                <When condition={!this.state.collapsed}>
+                    <this.QuickLinkExpanded />
+                </When>
+
+            </div>
+        </>
+}
+
+
