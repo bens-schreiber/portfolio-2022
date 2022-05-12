@@ -4,6 +4,7 @@ import TopNavBar from "./top-nav-bar/top-nav-bar";
 import Portfolio from "./pages/portfolio/portfolio";
 import TutorPage from "./pages/tutor/tutor";
 import ContactPage from "./pages/contact/contact-page";
+import Footer from "./footer/footer";
 function App(): JSX.Element {
   return <>
     <Router>
@@ -16,6 +17,7 @@ function App(): JSX.Element {
           <ContactPage />
         </div>} />
       </Routes>
+      <Footer/>
     </Router>
   </>
 }

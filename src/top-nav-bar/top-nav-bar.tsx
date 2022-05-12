@@ -1,5 +1,5 @@
 import anime from 'animejs'
-import Logo2 from '../assets/logo2.svg'
+import {Logo2} from "../assets/index"
 export default function TopNavBar(): JSX.Element {
     return <>
         <div className="tnb">

@@ -1,0 +1,7 @@
+.footer-container {
+    display: grid;
+    justify-content: center;
+    gap: 20px;
+    grid-template-columns: min-content;
+    padding: 10px;
+}

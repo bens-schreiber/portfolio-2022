@@ -1,2 +1,3 @@
 import Logo1 from "./logo.svg"
-export {Logo1}
+import Logo2 from "./logo2.svg"
+export {Logo1, Logo2}
