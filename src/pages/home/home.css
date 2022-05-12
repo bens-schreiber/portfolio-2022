@@ -6,7 +6,6 @@
 .hp-front-container {
   display: grid;
   justify-items: center;
-  background-color: black;
   min-height: 100vh;
 }
 
