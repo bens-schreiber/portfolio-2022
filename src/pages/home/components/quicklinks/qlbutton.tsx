@@ -69,10 +69,9 @@ export default class QLButton
     }
 
     private openQuicklinks = (): void => {
-        var cursor = "." + this.animationRef.current?.className;    // Format for CSS queries
         anime.timeline()
             .add({
-                targets: cursor,
+                targets: this.animationRef.current,
                 translateX: [...Array(9)].map((_, i) => ({
                     value: ((i + 1) * 0.57) + "em",
                     duration: 100,
@@ -80,7 +79,7 @@ export default class QLButton
                 easing: "easeInOutBack",
             })
             .add({
-                targets: cursor,
+                targets: this.animationRef.current,
                 duration: 700,
                 opacity: [
                     { value: [1, 1] },
