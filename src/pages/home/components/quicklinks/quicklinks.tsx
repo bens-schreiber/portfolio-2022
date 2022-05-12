@@ -29,7 +29,7 @@ export class Quicklinks
     private QuickLinkExpanded = () =>
         <>
             <ul className="ql-expanded-container ql-links ql-tree-stem">
-                <button className="ql-expanded-title">{this.props.title}</button>
+                <button className="ql-expanded-title clickable" onClick={this.collapse}>{this.props.title}</button>
                 {this.props.children}
             </ul>
         </>

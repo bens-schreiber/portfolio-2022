@@ -31,7 +31,7 @@ export default class QLButton
 
     render(): React.ReactElement {
         return <>
-            <button onClick={this.onClick} className="ql-btn">
+            <button onClick={this.onClick} className="ql-btn clickable">
 
                 <When condition={this.state.animating}>
                     <div className="ql-typing-text">
