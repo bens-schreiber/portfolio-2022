@@ -44,7 +44,7 @@ export default class Quicklinks
             <div className="ql-container">
 
                 <When condition={this.state.collapsed}>
-                    <QLButton title={this.props.title} action={() => this.setState({ collapsed: !this.state.collapsed })} />
+                    <QLButton title={this.props.title} action={() => {console.log('hi')}} />
                 </When>
 
                 <When condition={!this.state.collapsed}>
