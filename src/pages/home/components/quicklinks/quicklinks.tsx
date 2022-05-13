@@ -19,17 +19,22 @@ export default class Quicklinks
     constructor(props: Props) {
         super(props);
         this.props = props;
+        this.collapse = this.collapse.bind(this);
 
         this.state = {
             collapsed: true
         }
     }
 
+    collapse() {
+        this.setState({ collapsed: !this.state.collapsed });
+    }
+
     private QuickLinkExpanded = () =>
         <>
             <ul className="ql-expanded-container ql-links ql-tree-stem">
                 <button className="ql-expanded-title clickable" 
-                onClick={() => this.setState({ collapsed: !this.state.collapsed })}>{this.props.title}</button>
+                onClick={this.collapse}>{this.props.title}</button>
                 {this.props.children}
             </ul>
         </>
@@ -44,7 +49,7 @@ export default class Quicklinks
             <div className="ql-container">
 
                 <When condition={this.state.collapsed}>
-                    <QLButton title={this.props.title} action={() => {console.log('hi')}} />
+                    <QLButton title={this.props.title} action={this.collapse} />
                 </When>
 
                 <When condition={!this.state.collapsed}>

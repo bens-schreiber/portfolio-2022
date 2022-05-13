@@ -56,9 +56,8 @@ export default class QLButton
     }
 
     private onClick = (): void => {
-        this.props.action();
-        // if (this.state.animating) return;
-        // this.setState({ animating: !this.state.animating });
+        if (this.state.animating) return;
+        this.setState({ animating: !this.state.animating });
     }
 
     componentDidUpdate() {
@@ -85,7 +84,7 @@ export default class QLButton
                     { value: [0, 0] }
                 ],
             }).finished.then(() => {
-                console.log(this.props.action)
+                this.props.action();
             })
     }
 }
