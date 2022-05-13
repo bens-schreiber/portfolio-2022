@@ -27,8 +27,9 @@ export default class Quicklinks
     }
 
     collapse = () => {
-        console.log("asddfkjsadasd")
+        console.log("1")
         this.setState({ collapsed: !this.state.collapsed });
+        console.log("2")
     }
 
 
