@@ -85,7 +85,7 @@ export default class QLButton
                 ],
             })
             .finished.then(() => {
-                this.props.action();
+                // this.props.action();
             })
     }
 }
