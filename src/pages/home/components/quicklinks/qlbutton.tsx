@@ -61,10 +61,6 @@ export default class QLButton
     }
 
     componentDidUpdate() {
-        if (!this.state.animating) {
-            this.props.action();
-            return;
-        }
         this.openQuicklinks();
     }
 
@@ -89,7 +85,7 @@ export default class QLButton
                 ],
             })
             .finished.then(() => {
-                this.setState({ animating: false });
+                this.props.action();
             })
     }
 }

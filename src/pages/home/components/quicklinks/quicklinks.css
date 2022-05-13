@@ -82,7 +82,7 @@
     top: -1.3em;
     left: -1.7em;
     height: 100%;
-    border-left: 2px solid var(--white-color);
+    border-left: 2px solid var(--light-gray-color);
  }
 
 /* File-tree branch */
@@ -92,7 +92,7 @@
     left: -1.7em;
     width: 1.2em;
     height: 0.5em;
-    border-bottom: 2px solid var(--white-color);
+    border-bottom: 2px solid var(--light-gray-color);
  }
 
  /*Animation */
