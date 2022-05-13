@@ -48,9 +48,9 @@ export default class Quicklinks
         <>
             <div className="ql-container">
 
-                <When condition={this.state.collapsed}>
+                {/* <When condition={this.state.collapsed}> */}
                     <QLButton title={this.props.title} action={this.collapse} />
-                </When>
+                {/* </When> */}
 
                 <When condition={!this.state.collapsed}>
                     <this.QuickLinkExpanded />
