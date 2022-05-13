@@ -83,9 +83,7 @@ export default class QLButton
                     { value: [1, 1] },
                     { value: [0, 0] }
                 ],
-            })
-            .finished.then(() => {
-                // this.props.action();
+                complete: () => this.props.action()
             })
     }
 }
