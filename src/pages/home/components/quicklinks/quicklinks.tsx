@@ -16,7 +16,7 @@ const QuickLinkExpanded = (props: { title: string, children: React.ReactNode[], 
     <>
         <ul className="ql-expanded-container ql-links ql-tree-stem">
             <button className="ql-expanded-title clickable"
-                onClick={() => props.action}>{props.title}</button>
+                onClick={() => props.action()}>{props.title}</button>
             {props.children}
         </ul>
     </>
