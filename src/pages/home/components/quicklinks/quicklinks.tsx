@@ -26,20 +26,15 @@ export default class Quicklinks
         }
     }
 
-    collapse = () => {
-        try {
-            this.setState({ collapsed: !this.state.collapsed });
-        } catch (error) {
-            console.log(error);
-        }
-    }
+    collapse = () => this.setState({ collapsed: !this.state.collapsed });
+    
 
 
     private QuickLinkExpanded = () =>
         <>
             <ul className="ql-expanded-container ql-links ql-tree-stem">
-                <button className="ql-expanded-title clickable" 
-                onClick={this.collapse}>{this.props.title}</button>
+                <button className="ql-expanded-title clickable"
+                    onClick={this.collapse}>{this.props.title}</button>
                 {this.props.children}
             </ul>
         </>

@@ -60,8 +60,10 @@ export default class QLButton
         this.setState({ animating: !this.state.animating });
     }
 
-    componentDidUpdate() {
-        this.openQuicklinks();
+    componentDidUpdate(_: Props, prevState: State) {
+        if (prevState.animating !== this.state.animating && this.state.animating) {
+            this.openQuicklinks();
+        }
     }
 
     private openQuicklinks = (): void => {
