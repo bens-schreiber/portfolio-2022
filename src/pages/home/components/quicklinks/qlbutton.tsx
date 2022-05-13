@@ -56,8 +56,9 @@ export default class QLButton
     }
 
     private onClick = (): void => {
-        if (this.state.animating) return;
-        this.setState({ animating: !this.state.animating });
+        this.props.action();
+        // if (this.state.animating) return;
+        // this.setState({ animating: !this.state.animating });
     }
 
     componentDidUpdate() {
