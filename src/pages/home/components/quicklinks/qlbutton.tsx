@@ -57,13 +57,7 @@ export default class QLButton
 
     private onClick = (): void => {
         if (this.state.animating) return;
-        this.setState({ animating: !this.state.animating });
-    }
-
-    componentDidUpdate(_: Props, prevState: State) {
-        if (prevState.animating !== this.state.animating && this.state.animating) {
-            this.openQuicklinks();
-        }
+        this.setState({ animating: !this.state.animating }, this.openQuicklinks);
     }
 
     private openQuicklinks = (): void => {
