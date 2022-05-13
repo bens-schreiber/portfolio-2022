@@ -16,9 +16,11 @@ export default class Quicklinks
     extends React.Component<Props> {
     props: Props;
     state: State;
+    c: Function;
     constructor(props: Props) {
         super(props);
         this.props = props;
+        this.c = this.collapse.bind(this);
 
         this.state = {
             collapsed: true
@@ -33,7 +35,7 @@ export default class Quicklinks
         <>
             <ul className="ql-expanded-container ql-links ql-tree-stem">
                 <button className="ql-expanded-title clickable" 
-                onClick={this.collapse.bind(this)}>{this.props.title}</button>
+                onClick={() => this.c}>{this.props.title}</button>
                 {this.props.children}
             </ul>
         </>
@@ -48,7 +50,7 @@ export default class Quicklinks
             <div className="ql-container">
 
                 <When condition={this.state.collapsed}>
-                    <QLButton title={this.props.title} action={this.collapse.bind(this)} />
+                    <QLButton title={this.props.title} action={this.c} />
                 </When>
 
                 <When condition={!this.state.collapsed}>
