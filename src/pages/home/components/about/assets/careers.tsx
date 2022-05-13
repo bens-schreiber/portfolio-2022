@@ -11,7 +11,7 @@ export default class CareerSVG extends React.Component {
   }
 
   render = () =>
-    <svg id="a" xmlns="http://www.w3.org/2000/svg" onLoad={() => { console.log("hi") }} viewBox="0 0 236.43 95.18">
+    <svg id="careers" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 236.43 95.18">
       <defs>
         <style type="text/css">{`
       @font-face {
@@ -27,6 +27,7 @@ export default class CareerSVG extends React.Component {
         fill: #000;
         font-family: BoldTestament;
         font-size: 48.23px;
+        user-select: none;
     }`}
         </style>
       </defs>
