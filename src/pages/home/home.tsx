@@ -1,7 +1,7 @@
 import Contact from "../contact/components/contact";
 import { About, Award } from "./components/about/about";
 import { WSULogo, FblaSVG } from "./components/about/assets";
-import Quicklinks from "./components/quicklinks/quicklinks";
+import Quicklinks, { QLItem } from "./components/quicklinks/quicklinks";
 import { Logo1 } from "../../assets";
 export default function Home(): JSX.Element {
     return <>
@@ -12,15 +12,15 @@ export default function Home(): JSX.Element {
                     <div className="hp-dropdown-btns">
 
                         <Quicklinks title="SERVICES">
-                            <Quicklinks.Item link="/tutor" name="CS TUTORING" />
-                            <Quicklinks.Item link="/tutor" name="SCHEDULE TUTORING" />
+                            <QLItem link="/tutor" name="CS TUTORING" />
+                            <QLItem link="/tutor" name="SCHEDULE TUTORING" />
                         </Quicklinks>
 
                         <Quicklinks title="PORTFOLIO">
-                            <Quicklinks.Item link="/portfolio" name="SOFTWARE ENGINEER" />
-                            <Quicklinks.Item link="/portfolio" name="MOBILE DEVELOPMENT" />
-                            <Quicklinks.Item link="/portfolio" name="WEBSITE DESIGN" />
-                            <Quicklinks.Item link="/portfolio" name="GAME DESIGN" />
+                            <QLItem link="/portfolio" name="SOFTWARE ENGINEER" />
+                            <QLItem link="/portfolio" name="MOBILE DEVELOPMENT" />
+                            <QLItem link="/portfolio" name="WEBSITE DESIGN" />
+                            <QLItem link="/portfolio" name="GAME DESIGN" />
                         </Quicklinks>
 
                         <Contact />

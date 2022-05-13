@@ -12,6 +12,20 @@ interface State {
     collapsed: boolean;
 }
 
+const QuickLinkExpanded = (props: { title: string, children: React.ReactNode[], action: Function }) =>
+    <>
+        <ul className="ql-expanded-container ql-links ql-tree-stem">
+            <button className="ql-expanded-title clickable"
+                onClick={() => props.action}>{props.title}</button>
+            {props.children}
+        </ul>
+    </>
+
+export const QLItem = (props: { link: string, name: string }) =>
+    <>
+        <li className="ql-item ql-tree-branch"><a href={props.link}>{props.name}</a></li>
+    </>
+
 export default class Quicklinks
     extends React.Component<Props> {
     props: Props;
@@ -27,22 +41,6 @@ export default class Quicklinks
     }
 
     collapse = () => this.setState({ collapsed: !this.state.collapsed });
-    
-
-
-    private QuickLinkExpanded = () =>
-        <>
-            <ul className="ql-expanded-container ql-links ql-tree-stem">
-                <button className="ql-expanded-title clickable"
-                    onClick={this.collapse}>{this.props.title}</button>
-                {this.props.children}
-            </ul>
-        </>
-
-    public static Item = (props: { link: string, name: string }) =>
-        <>
-            <li className="ql-item ql-tree-branch"><a href={props.link}>{props.name}</a></li>
-        </>
 
     render = () =>
         <>
@@ -53,7 +51,9 @@ export default class Quicklinks
                 </When>
 
                 <When condition={!this.state.collapsed}>
-                    <this.QuickLinkExpanded />
+                    <QuickLinkExpanded title={this.props.title} action={this.collapse}>
+                        {this.props.children}
+                    </QuickLinkExpanded>
                 </When>
 
             </div>
