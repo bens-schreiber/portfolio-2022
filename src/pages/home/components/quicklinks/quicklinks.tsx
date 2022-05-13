@@ -26,7 +26,10 @@ export default class Quicklinks
         }
     }
 
-    collapse = () => this.setState({ collapsed: !this.state.collapsed });
+    collapse = () => {
+        console.log("asddfkjsadasd")
+        this.setState({ collapsed: !this.state.collapsed });
+    }
 
 
     private QuickLinkExpanded = () =>

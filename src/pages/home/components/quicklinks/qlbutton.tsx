@@ -85,7 +85,6 @@ export default class QLButton
                 ],
             }).finished.then(() => {
                 this.props.action();
-                this.setState({animating: false})
             })
     }
 }
