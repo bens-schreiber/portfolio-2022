@@ -27,9 +27,11 @@ export default class Quicklinks
     }
 
     collapse = () => {
-        console.log("1")
-        this.setState({ collapsed: !this.state.collapsed });
-        console.log("2")
+        try {
+            this.setState({ collapsed: !this.state.collapsed });
+        } catch (error) {
+            console.log(error);
+        }
     }
 
 
