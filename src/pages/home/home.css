@@ -8,11 +8,12 @@
   justify-items: center;
   min-height: 100vh;
 }
-
+ 
 .hp-front-container {
   background: linear-gradient(rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 1) 100%), url('../../assets/background.jpg') no-repeat;
   background-position: center;
   background-size: cover;
+ 
 }
 
 .hp-front {

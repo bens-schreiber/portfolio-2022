@@ -11,13 +11,14 @@ function App(): JSX.Element {
       <TopNavBar />
       <Routes>
         <Route path='/' element={<Home />} />
-        <Route path='/portfolio' element={<Portfolio />} />
-        <Route path="/tutor" element={<TutorPage />} />
+        <Route path='portfolio' element={<Portfolio />} />
+        <Route path="tutor" element={<TutorPage />} />
         <Route path="contact" element={<div className="contact-margin">
           <ContactPage />
         </div>} />
+        <Route path="test" element={<div className="test"></div>}/>
       </Routes>
-      <Footer/>
+      <Footer />
     </Router>
   </>
 }

@@ -8,6 +8,7 @@ export default function Home(): JSX.Element {
         <div className="home-page">
             <div className="hp-front-container">
                 <div className="hp-front hp-content-width">
+                    
                     <img id="hp-front-logo" src={Logo1} alt="" />
                     <div className="hp-dropdown-btns">
 

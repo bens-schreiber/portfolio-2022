@@ -53,7 +53,7 @@ export default class Quicklinks
                 <When condition={!this.state.collapsed}>
                     <QuickLinkExpanded title={this.props.title} action={this.collapse}>
                         {this.props.children}
-                    </QuickLinkExpanded>
+                    </QuickLinkExpanded>    
                 </When>
 
             </div>

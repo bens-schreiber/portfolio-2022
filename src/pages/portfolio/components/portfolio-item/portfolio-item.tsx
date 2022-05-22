@@ -1,5 +1,6 @@
-import React from 'react';
-import When from '../../../../tools/tools'
+import React from "react";
+import When from "../../../../tools/tools";
+
 interface PortfolioProps {
     img: string;
     title: string;
