@@ -1,11 +1,12 @@
 .hp-container {
   display: grid;
-  place-items: center;
   min-height: calc(100vh - 80px);
+  justify-content: center;
 }
 
 .hp-items {
   display: grid;
+  margin-top: 50px;
   grid-template-rows: repeat(3, min-content);
   gap: 5vh;
 }
@@ -23,6 +24,10 @@
 
   .hp-content-width {
     min-width: 30vw;
+  }
+
+  .hp-container {
+    align-content: center;
   }
 
 }
