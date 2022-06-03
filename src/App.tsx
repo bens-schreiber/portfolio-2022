@@ -17,7 +17,6 @@ function App(): JSX.Element {
             <ContactPage />
           </div>} />
       </Routes>
-      {/* <Footer /> */}
     </Router>
   </>
 }
