@@ -16,7 +16,7 @@
     display: flex;
     width: 100%; 
     justify-content: space-between;
-    background-color: rgba(0,0,0,0.9)
+    background-color: #231f20;
 }
 
 #tnb-dropdown-toggle-icon {
