@@ -13,12 +13,12 @@ function App(): JSX.Element {
         <Route path='/' element={<Home />} />
         <Route path='portfolio' element={<Portfolio />} />
         <Route path="tutor" element={<TutorPage />} />
-        <Route path="contact" element={<div className="contact-margin">
-          <ContactPage />
-        </div>} />
-        <Route path="test" element={<div className="test"></div>}/>
+        <Route path="contact" element=
+          {<div className="contact-margin">
+            <ContactPage />
+          </div>} />
       </Routes>
-      <Footer />
+      {/* <Footer /> */}
     </Router>
   </>
 }

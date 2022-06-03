@@ -55,11 +55,4 @@ input[type="checkbox"] {
   user-select: none;
 }
 
-.test {
-  width: 100%;
-  height: 100vh;
-  background-image: url("./assets/background.svg");
-  background-size: contain;
-}
-
 

@@ -5,20 +5,12 @@
   
 .hp-front-container {
   display: grid;
-  justify-items: center;
-  min-height: 100vh;
-}
- 
-.hp-front-container {
-  background: linear-gradient(rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 1) 100%), url('../../assets/background.jpg') no-repeat;
-  background-position: center;
-  background-size: cover;
- 
+  place-items: center;
+  min-height: calc(100vh - 80px);
 }
 
 .hp-front {
   display: grid;
-  padding-top: 5vh;
   grid-template-rows: repeat(3, min-content);
   gap: 50px;
 }
@@ -29,7 +21,7 @@
 
 .hp-dropdown-btns {
   display: grid;
-  gap: 30px;
+  gap: 5vh;
 }
 
 @media (max-height: 100vw) {
