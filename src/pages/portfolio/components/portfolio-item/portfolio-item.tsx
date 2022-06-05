@@ -52,7 +52,7 @@ class PortItem extends React.Component<PortfolioProps> {
 
 
     static Header(props: { children: React.ReactNode }): JSX.Element {
-        return <div className="port-header grid-span-2">{props.children}</div>
+        return <div className="section-header grid-span-2">{props.children}</div>
     }
 
     static ImageContainer = (props: { path: string }) => {

@@ -6,17 +6,6 @@
     overflow: hidden;
 }
 
-/*HEADER*/
-.port-header {
-    display: block;
-    color: white;
-    margin: 0;
-    margin-top: 50px;
-    font-size: 3.8em;
-    font-family: BoldTestament;
-    text-align: center;
-}
-
 /*INITIAL COLLAPSED DISPLAY*/
 .port-sec-container {
     position: relative;

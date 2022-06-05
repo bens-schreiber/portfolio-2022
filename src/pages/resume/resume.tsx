@@ -8,6 +8,7 @@ import JsLogo from "./assets/js.svg"
 export const Resume = () => <>
     <div className="resume-container">
         <CareerSVG />
+        <h1 className="section-header">MY TECH STACK</h1>
         <Skills>
             <Skills.Item img={JavaLogo} header="Java" desc="Springboot, JavaFX, Gradle" />
             <Skills.Item img={JsLogo} header="JavaScript" desc="React, AnimeJS" />
