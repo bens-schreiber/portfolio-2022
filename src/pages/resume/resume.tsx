@@ -12,9 +12,9 @@ export const Resume = () => <>
         <Skills>
             <Skills.Item img={JavaLogo} header="Java" desc="Springboot, JavaFX, Gradle" />
             <Skills.Item img={JsLogo} header="JavaScript" desc="React, AnimeJS" />
-            <Skills.Item img={CppLogo} header="C / C++" desc="Qt Framework" />
+            <Skills.Item img={CppLogo} header="C / C++" desc="Qt" />
             <Skills.Item img={GolangLogo} header="Go" desc="Gin, SQL" />
-            <Skills.Item img={DartLogo} header="Dart" desc="Flutter Framework" />
+            <Skills.Item img={DartLogo} header="Dart" desc="Flutter" />
         </Skills>
     </div>
 </>
