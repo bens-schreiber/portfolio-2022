@@ -1,0 +1,41 @@
+.resume-container {
+    display: grid;
+    place-items: center;
+    gap: 5vh;
+    margin: 0 5vh;
+}
+
+#careers {
+    padding-top: 5vh;
+}
+
+.skills {
+    display: grid;
+    place-items: center;
+    gap: 20px;
+    color: white;
+    font-family: Lato;
+    text-align: center;
+}
+
+.skills-icon {
+    padding: 10px;
+    font-size: 4rem;
+    text-align: center;
+}
+
+.skills-item > p {
+    padding: 0px;
+    margin: 0px;
+    color: white;
+    font-size: 1rem;
+}
+
+.skills-item > h1 {
+    margin: 0px;
+    font-size: 1.25rem;
+}
+
+.skills-item > img {
+    max-width: 4rem;
+}
