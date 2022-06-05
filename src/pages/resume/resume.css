@@ -18,12 +18,6 @@
     text-align: center;
 }
 
-.skills-icon {
-    padding: 10px;
-    font-size: 4rem;
-    text-align: center;
-}
-
 .skills-item > p {
     padding: 0px;
     margin: 0px;
@@ -38,4 +32,6 @@
 
 .skills-item > img {
     max-width: 4rem;
+    min-width: 4rem;
+    padding: 10px;
 }
