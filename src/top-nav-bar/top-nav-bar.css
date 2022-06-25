@@ -1,22 +1,17 @@
 .tnb {
     position: sticky;
     overflow: hidden;
-    background-color: rgba(0,0,0,0.9);
+    background-color: rgba(0,0,0,0.3);
     top: 0;
     z-index: 999;
     color: var(--white-color);
     max-height: 80px;
 }
 
-#tnb-logo {
-    width: 150px;
-    padding: 10px;
-}
-
 .tnb-container {
     display: flex;
     width: 100%; 
-    justify-content: space-between;
+    justify-content: right;
 }
 
 #tnb-dropdown-toggle-icon {
@@ -30,7 +25,7 @@
     height: 100%;
     z-index: -1;
     position: fixed;
-    background-color: black;
+    background-color: var(--background-color);
 }
 
 .tnb-nav-animate-dropdown {

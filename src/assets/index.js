@@ -1,3 +1,4 @@
-import Logo1 from "./logo.svg"
-import Logo2 from "./logo2.svg"
-export {Logo1, Logo2}
+import Logo1 from "./logo-1.svg"
+import Logo2 from "./logo-2.svg"
+import Logo from "./logo.svg"
+export {Logo1, Logo2, Logo}

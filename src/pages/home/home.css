@@ -1,33 +1,25 @@
 .hp-container {
   display: grid;
-  min-height: calc(100vh - 80px);
-  justify-content: center;
+  margin: 1vmax 5vmax;
 }
 
 .hp-items {
   display: grid;
-  margin-top: 50px;
-  grid-template-rows: repeat(3, min-content);
-  gap: 5vh;
-}
-
-.hp-content-width {
-  min-width: 35vh;
+  gap: 6vmax;
 }
 
 .hp-dropdown-btns {
   display: grid;
-  gap: 5vh;
+  margin: 0 2vmax;
+  gap: 3vmax;
 }
 
+
+
 @media (max-height: 100vw) {
-
-  .hp-content-width {
-    min-width: 30vw;
-  }
-
   .hp-container {
-    align-content: center;
+    margin: 0 5vw;
+    min-height: 100vh;
+    place-content:  center;
   }
-
 }

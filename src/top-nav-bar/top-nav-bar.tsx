@@ -12,7 +12,6 @@ export default class TopNavBar extends React.Component {
             <div className="tnb">
 
                 <div className="tnb-container">
-                    <a href="/"><img id="tnb-logo" src={Logo2} alt="" /></a>
                     <label ref={this.menuRef} htmlFor="tnb-dropdown-toggle" id="tnb-dropdown-toggle-icon"
                         onClick={() => anime({
                             targets: this.menuRef.current,

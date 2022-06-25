@@ -12,7 +12,7 @@
 
 .tnb-links > h1 {
     margin: 0 0 10px -30px;
-    background-color: black;
+    background-color: var(--background-color);
 }
 
 .tnb-links, .tree-stem {

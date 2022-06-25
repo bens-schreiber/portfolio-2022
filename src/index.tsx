@@ -14,6 +14,7 @@ import './pages/contact/contact-page.css'
 import './pages/portfolio/components/portfolio-item/portfolio-item.css'
 import './footer/footer.css'
 import './pages/resume/resume.css'
+import './pages/home/components/page-header/page-header.css'
 
 ReactDOM.render(
   <React.StrictMode>

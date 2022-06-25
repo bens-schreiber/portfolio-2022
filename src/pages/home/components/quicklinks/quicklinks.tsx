@@ -12,6 +12,8 @@ interface State {
     collapsed: boolean;
 }
 
+//TODO: text jiggle to emphasize clickable
+
 const QuickLinkExpanded = (props: { title: string, children: React.ReactNode[], action: Function }) =>
     <>
         <ul className="ql-expanded-container ql-links ql-tree-stem">
