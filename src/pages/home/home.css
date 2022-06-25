@@ -1,25 +1,15 @@
 .hp-container {
-  display: grid;
   margin: 1vmax 5vmax;
 }
 
-.hp-items {
-  display: grid;
-  gap: 6vmax;
-}
-
 .hp-dropdown-btns {
-  display: grid;
   margin: 0 2vmax;
-  gap: 3vmax;
 }
-
-
 
 @media (max-height: 100vw) {
   .hp-container {
     margin: 0 5vw;
     min-height: 100vh;
-    place-content:  center;
+    place-content: center;
   }
 }

@@ -16,7 +16,7 @@ export default class Skills extends React.Component {
     }
 
     render = () =>
-        <ul ref={this.animationRef} className="skills">
+        <ul ref={this.animationRef} className="skills section-inner-grid">
             {this.props.children}
         </ul>
 

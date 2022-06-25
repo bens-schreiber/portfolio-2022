@@ -4,11 +4,11 @@ import { Logo, Logo1 } from "../../assets";
 export default function Home(): JSX.Element {
     return <>
         <div className="hp-container">
-            <div className="hp-items hp-content-width">
+            <div className="section-grid">
 
                 <img src={Logo} alt=""/>
 
-                <div className="hp-dropdown-btns">
+                <div className="hp-dropdown-btns section-inner-grid">
 
                     <Quicklinks title="SERVICES">
                         <QLItem link="/tutor" name="CS TUTORING" />

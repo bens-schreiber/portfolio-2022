@@ -1,31 +1,18 @@
-import CareerSVG from "./assets/careers"
+import { Logo, LogoUnanimated } from "../../assets"
+import { EzQuizLogo, PUAppLogo } from "../portfolio/assets"
+import { JavaLogo, JsLogo, CppLogo, GolangLogo, DartLogo, CareerSVG, ResumeAbout, ResumeSchool, FBLA, Intellitect } from "./assets"
 import Skills from "./components/skills"
-import CppLogo from "./assets/cpp.svg"
-import DartLogo from "./assets/dart.svg"
-import JavaLogo from "./assets/java.svg"
-import GolangLogo from "./assets/golang.svg"
-import JsLogo from "./assets/js.svg"
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
-import { faAddressCard, faBookmark } from "@fortawesome/free-regular-svg-icons"
-import React from "react"
 export const Resume = () => <>
-    <div className="resume-container">
+    <div className="resume-container section-grid">
         <CareerSVG />
 
-        <div className="info-container">   
-            <InfoItem icon={["fa", "book"]}>
-                I am from Cheney, Washington. I graduated from Cheney Highschool with a GPA of 3.8 / 4.0
-            </InfoItem>
-            <InfoItem icon={faBookmark}>
-                Class of 2026 at Washington State University, pursuing a Bachelor in Computer Science.
-            </InfoItem>
-            <InfoItem className="grid-span-2" icon={faAddressCard}>
-                <a href="/contact">Contact me here</a> or at bpschreiber2003@gmail.com
-            </InfoItem>
+        <div className="resume-items">
+            <img src={ResumeAbout} alt="" />
+            <img src={ResumeSchool} alt="" />
         </div>
 
-        <div className="skills-container">
-            <div className="section-header">MY TECH STACK</div>
+        <div className="skills-container section-inner-grid">
+            <div className="section-header">MY LANGUAGES & FRAMEWORKS</div>
             <Skills>
                 <Skills.Item img={JavaLogo} header="Java" desc="Springboot, JavaFX, Gradle" />
                 <Skills.Item img={JsLogo} header="JavaScript" desc="React, AnimeJS" />
@@ -34,11 +21,33 @@ export const Resume = () => <>
                 <Skills.Item img={DartLogo} header="Dart" desc="Flutter" />
             </Skills>
         </div>
+
+
+        <div className="accolades-container section-grid">
+            <div className="section-header">MY ACCOLADES</div>
+            <div className="accolades section-grid">
+                <div className="fbla section-inner-grid">
+                    <img src={FBLA} alt="" />
+                    <h1>Coding and Programming State Champion - 2021</h1>
+                    <h1>Coding and Programming 3rd Nationally - 2021</h1>
+                    <h1>Website Design Regional Champion - 2022</h1>
+                    <h1>Website Design State Champion - 2022</h1>
+                </div>
+                <div className="intellitect section-inner-grid">
+                    <img src={Intellitect} />
+                    <h1>Intellitect Scholar Winner 2022</h1>
+                </div>
+            </div>
+        </div>
+
+        <div className="projects-container section-grid">
+            <div className="section-header">MY PROJECTS</div>
+            <div className="projects section-inner-grid">
+                <img src={PUAppLogo}/>
+                <img src={LogoUnanimated}/>
+                <img src={EzQuizLogo}/>
+            </div>
+        </div>
+
     </div>
 </>
-
-const InfoItem = (props: { icon: any, children: React.ReactNode, className?:string}) =>
-    <div className={"info-item " + props.className}>
-        <FontAwesomeIcon className="icon" icon={props.icon} />
-        <p>{props.children}</p>
-    </div>
