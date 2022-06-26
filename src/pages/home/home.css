@@ -1,15 +1,10 @@
 .hp-container {
   min-height: 80vh;
   margin: 10px 2em;
-
 }
 
-#careers {
+.hp-container #careers {
   display: none;
-}
-
-.hp-container > .section-grid {
-  gap: 0;
 }
 
 @media (max-height: 100vw) {
@@ -19,12 +14,11 @@
     place-content: center;
   }
 
-  #careers {
+  .hp-container #careers {
     display: block;
   }
 
   .hp-container > .section-grid {
-    gap: 5vw;
     width: 65vw;
   }
 

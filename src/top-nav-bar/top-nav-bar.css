@@ -1,17 +1,24 @@
 .tnb {
     position: sticky;
     overflow: hidden;
-    background-color: rgba(0,0,0,0.3);
     top: 0;
     z-index: 999;
     color: var(--white-color);
+    border-bottom: 2px solid var(--secondary-green-color);
     max-height: 80px;
 }
 
 .tnb-container {
     display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color:var(--dark-gray-color);
     width: 100%; 
-    justify-content: right;
+}
+
+#tnb-logo {
+    width: 150px;
+    padding: 0 10px;
 }
 
 #tnb-dropdown-toggle-icon {
@@ -20,12 +27,12 @@
 }
 
 .tnb-nav {
-    top: -200vh;
+    top: -100vh;
     width: 100%;
-    height: 100%;
+    height: 40%;
     z-index: -1;
     position: fixed;
-    background-color: var(--background-color);
+    background-color: var(--dark-gray-color);
 }
 
 .tnb-nav-animate-dropdown {
@@ -33,7 +40,7 @@
 }
 
 #tnb-dropdown-toggle:checked ~ .tnb-nav {
-    top: 0;
+    top: 20px;
 }
 
 @media (max-height: 100vw) { 
