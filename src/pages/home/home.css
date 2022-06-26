@@ -1,5 +1,5 @@
 .hp-container {
-  min-height: 80vh;
+  height: 90vh;
   margin: 10px 2em;
 }
 
@@ -10,8 +10,9 @@
 @media (max-height: 100vw) {
 
   .hp-container {
-    display: flex;
+    display: grid;
     place-content: center;
+    margin: 0;
   }
 
   .hp-container #careers {
