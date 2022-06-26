@@ -43,11 +43,6 @@
     content: "./";
 }
 
-.ql-expanded-container .ql-expanded-title::after {
-    content: "\⌃";
-    margin-left: 0.5em;
-}
-
 .ql-expanded-title {
     position: absolute;
     left: -1.75em;
