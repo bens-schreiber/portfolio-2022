@@ -3,7 +3,6 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 import TopNavBar from "./top-nav-bar/top-nav-bar";
 import Portfolio from "./pages/portfolio/portfolio";
 import ContactPage from "./pages/contact/contact-page";
-import Footer from "./footer/footer";
 import { Resume } from "./pages/resume/resume";
 function App(): JSX.Element {
   return <>

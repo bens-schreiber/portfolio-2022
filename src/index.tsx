@@ -12,7 +12,6 @@ import './pages/home/home.css';
 import './pages/portfolio/portfolio.css'
 import './pages/contact/contact-page.css'
 import './pages/portfolio/components/portfolio-item/portfolio-item.css'
-import './footer/footer.css'
 import './pages/resume/resume.css'
 
 ReactDOM.render(

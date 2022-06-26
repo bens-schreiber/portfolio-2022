@@ -1,7 +1,6 @@
 import { PortItem } from "./components/portfolio-item/portfolio-item"
 import { EzQuizLogo, JavaLogo, Demo1, Demo2, UserFlow, UMLDiagramEzQuiz, DebianLogo, Docker, PUAppLogo, GolangLogo, DartLogo, PUAppFrontEnd } from "./assets"
-// import { FblaSVG } from "../home/components/about/assets";
-import { Logo, Logo1, LogoUnanimated } from "../../assets";
+import { LogoUnanimated } from "../../assets";
 export default function Portfolio(): JSX.Element {
     return <>
         <div className="portfolio-page section-grid">

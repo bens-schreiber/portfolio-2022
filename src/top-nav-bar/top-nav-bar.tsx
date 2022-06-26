@@ -1,6 +1,6 @@
 import anime from 'animejs'
 import React from 'react'
-import { Logo2 } from "../assets/index"
+// import { Logo2 } from "../assets/index"
 export default class TopNavBar extends React.Component {
     menuRef: React.RefObject<HTMLLabelElement>
     constructor(props = {}) {

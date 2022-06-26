@@ -36,7 +36,7 @@
 .ql-expanded-container {
     position: relative;
     display: block;
-    margin-top: 3em;
+    margin: 8vmax 0 5vmax 0;
 }
 
 .ql-expanded-container .ql-expanded-title::before {

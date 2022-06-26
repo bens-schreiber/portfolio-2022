@@ -1,6 +1,6 @@
 import Contact from "../contact/components/contact";
 import Quicklinks, { QLItem } from "./components/quicklinks/quicklinks";
-import { Logo, Logo1 } from "../../assets";
+import { Logo} from "../../assets";
 export default function Home(): JSX.Element {
     return <>
         <div className="hp-container">
@@ -10,22 +10,20 @@ export default function Home(): JSX.Element {
 
                 <div className="hp-dropdown-btns section-inner-grid">
 
-                    <Quicklinks title="SERVICES">
+                    <Quicklinks title="HIRE ME">
                         <QLItem link="/tutor" name="CS TUTORING" />
-                        <QLItem link="/tutor" name="SCHEDULE TUTORING" />
+                        <QLItem link="/tutor" name="RESUME" />
                     </Quicklinks>
 
-                    <Quicklinks title="RESUME">
+                    <Quicklinks title="ABOUT ME">
                         <QLItem link="/portfolio" name="RESUME" />
-                             <QLItem link="/portfolio" name="ABOUT ME" />
                         <QLItem link="/portfolio" name="CONTACT" />
                     </Quicklinks>
 
-                    <Quicklinks title="PORTFOLIO">
+                    <Quicklinks title="MY PORTFOLIO">
                         <QLItem link="/portfolio" name="SOFTWARE ENGINEER" />
                         <QLItem link="/portfolio" name="MOBILE DEVELOPMENT" />
                         <QLItem link="/portfolio" name="WEBSITE DESIGN" />
-                        <QLItem link="/portfolio" name="GAME DESIGN" />
                     </Quicklinks>
 
                 </div>
