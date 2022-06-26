@@ -1,7 +1,7 @@
 .port-item {
     display: flex;
     flex-direction: column;
-    gap: 2vmax;
+    gap: 3vmax;
 }
 
 /*INITIAL COLLAPSED DISPLAY*/
@@ -23,7 +23,7 @@
     position: relative;
     display: grid;
     grid-template-columns: 100%;
-    gap: 2em;
+    gap: 3em;
 }
 
 /*BOX DESIGNS*/
