@@ -1,7 +1,7 @@
 .port-item {
     display: flex;
     flex-direction: column;
-    gap: 2em;
+    gap: 2vmax;
 }
 
 /*INITIAL COLLAPSED DISPLAY*/
@@ -11,15 +11,6 @@
     place-content: center;
     height: 3.5em;
     border-radius: 3px;
-}
-
-.port-expand-button {
-    display: block;
-    padding: 1em;
-    border: 2px solid var(--light-gray-color);
-    background-color: transparent;
-    color: var(--white-color);
-    font-family: Lato;
 }
 
 
@@ -54,7 +45,7 @@
 
 .port-text-container > h1 {
     margin: 0;
-    color: var(--light-gray-color);
+    color: var(--dark-gray-color);
     font-size: 5em;
     font-family: BoldTestament;
 }
@@ -103,7 +94,7 @@
 .port-list-text > p {
     margin: 0;
     padding: 2px 10px;
-    color: gray;
+    color: var(--light-gray-color);
     font-size: 0.9em;
 }
 video {

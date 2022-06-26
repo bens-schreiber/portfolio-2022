@@ -38,11 +38,11 @@
 }
 
 .bmin-schreib .port-display-box {
-    box-shadow: #fff 3px 3px 0 0;
+    box-shadow: var(--secondary-green-color) 3px 3px 0 0;
 }
 
 .bmin-schreib .port-text-container > p > a {
-    border-bottom: 3px solid #fff
+    border-bottom: 3px solid var(--secondary-green-color);
 }
 
 .bmin-schreib .port-list-index, .bmin-schreib .port-sec-container {

@@ -31,6 +31,14 @@
   gap: 2vmax;
 }
 
+.button-outlined {
+  background: none;
+  border: 2px solid var(--light-gray-color);
+  color: var(--white-color);
+  padding: 1em;
+  font-family: Lato;
+}
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -53,7 +61,7 @@ code {
 
 :root {
     color: var(--white-color);
-    
+
   --background-color: #121212;
   --primary-green-color: #1db662;
   --secondary-green-color: #70cd91;

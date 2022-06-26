@@ -3,7 +3,7 @@ import emailjs from 'emailjs-com';
 const ContactPage = (): JSX.Element =>
     <>
         <div className="contact">
-            <div className="contact-inquries">
+            <div className="contact-inquries section-inner-grid">
                 <div className="business-inquries">
                     <div className="title">
                         Business Inquries
@@ -33,7 +33,7 @@ const ContactPage = (): JSX.Element =>
                         <textarea id="message" name="message" className="contact-form-control" rows={6} maxLength={3000} required></textarea>
                     </div>
                 </div>
-                <button type="submit" className="contact-send-button">SEND</button>
+                <button type="submit" className="button-outlined">SEND</button>
             </form>
         </div>
     </>

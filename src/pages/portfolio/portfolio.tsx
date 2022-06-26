@@ -23,9 +23,9 @@ function SoftwareEngineering(): JSX.Element {
                 See <a href="https://www.fbla-pbl.org/media/2021/08/FBLA-Rating-Sheets.pdf" target="_blank" rel="noopener noreferrer">FBLA Project Guidelines</a> for the judging guidelines.
             </PortItem.ImageTextContainer>
 
-            <PortItem.ImageTextContainer path={EzQuizLogo}>
+            <PortItem.TextContainer title="COMPETITION">
                 Placed 3rd in the United States in 2021 for the Coding & Programming category.
-            </PortItem.ImageTextContainer>
+            </PortItem.TextContainer>
 
             <PortItem.Header>APPLICATION FEATURES</PortItem.Header>
             <PortItem.ListContainer>
@@ -165,14 +165,14 @@ function WebDevelopment():JSX.Element {
         <div data-id="bmin-schreib" className="bmin-schreib port-item">
             <PortItem img={LogoUnanimated} title="WEBSITE DEVELOPMENT" id="bmin-schreib">
 
-                <PortItem.ImageTextContainer path={Logo1}>
-                    This website was created for an FBLA project I started my senior year of highschool, built entirely from scratch using Typescript, React, AnimeJS, and PHP.
+                <PortItem.ImageTextContainer path={LogoUnanimated}>
+                    This website was created to be entered in the state round of FBLA in the Web Design category. It was built entirely from scratch using Typescript, React, AnimeJS, and PHP.
                     <a href="https://github.com/bens-schreiber/portfolio">Check out the github</a> to see the code.
                 </PortItem.ImageTextContainer>
 
-                <PortItem.ImageTextContainer path={EzQuizLogo}>
-                    Placed 1st in the Washington State FBLA Conference, proceeding to the national competiton in June.
-                </PortItem.ImageTextContainer>
+                <PortItem.TextContainer title="COMPETITION">
+                    Placed 1st in the Washington State FBLA Conference, proceeding to the national competiton in June of 2022.
+                </PortItem.TextContainer>
                 
             </PortItem>
         </div>

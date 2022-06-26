@@ -30,7 +30,7 @@ class PortItem extends React.Component<PortfolioProps> {
                 <img alt="" src={this.props.img} id={this.props.id + "-logo"} />
             </div>
 
-            <button ref={this.buttonRef} className="port-expand-button" onClick={this.expandClicked}>CLICK TO EXPAND!</button>
+            <button ref={this.buttonRef} className="button-outlined" onClick={this.expandClicked}>CLICK TO EXPAND!</button>
 
             <When condition={!this.state.collapsed}>
                 <div className="collapsible">
