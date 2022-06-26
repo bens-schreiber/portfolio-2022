@@ -7,12 +7,16 @@ import Skills from "./components/skills"
 export const Resume = () => <>
     <div className="resume-container section-grid">
 
-        <button className="floating-pdf-download-btn">
-            <FontAwesomeIcon icon={faFilePdf}/>
-        </button>
+        <div className="section-header">
+            BEN SCHREIBER - RESUME
+        </div>
+
+        <a href="/home/benjamin/projects/portfolio/src/pages/resume/assets/BenjaminSchreiber_Resume.pdf" download="BenjaminSchreiber_Resume" className="floating-pdf-download-btn">
+            <FontAwesomeIcon icon={faFilePdf} />
+        </a>
 
         <div className="resume-items">
-            <img src={ResumeAboutSection} alt=""/>
+            <img src={ResumeAboutSection} alt="" />
         </div>
 
         <div className="skills-container section-inner-grid">
@@ -27,30 +31,41 @@ export const Resume = () => <>
         </div>
 
 
-        <div className="accolades-container section-inner-grid">
-            <div className="section-header">Accolades</div>
-            <div className="fbla">
-                <img src={FBLA} alt=""/>
-                <ul className="items">
-                    <li>Coding & Programming WA State Champion <span>2021</span></li>
-                    <li>Coding & Programming 3rd in Nation <span>2021</span></li>
-                    <li>Website Deisgn Regional Champion <span>2022</span></li>
-                    <li>Website Deisgn WA State Champion <span>2022</span></li>
-                </ul>
+        <div className="pa section-inner-grid">
+            <div className="accolades-container section-inner-grid">
+                <div className="section-header">Accolades</div>
+                <div className="fbla item">
+                    <img src={FBLA} alt="" />
+                    <ul className="items">
+                        <li>Coding & Programming WA State Champion <span>2021</span></li>
+                        <li>Coding & Programming 3rd in Nation <span>2021</span></li>
+                        <li>Website Deisgn Regional Champion <span>2022</span></li>
+                        <li>Website Deisgn WA State Champion <span>2022</span></li>
+                    </ul>
+                </div>
+                <div className="scholarships item">
+                    <img src={Intellitect} />
+                    <ul className="items">
+                        <li>Intellitect Scholar Winner<span>2022</span></li>
+                    </ul>
+                </div>
             </div>
-            <div className="scholarships">
-                <img src={Intellitect}/>
-                <ul className="items">
-                    <li>Intellitect Scholar Winner<span>2022</span></li>
-                </ul>
-            </div>
-        </div>
 
-        <div className="projects-container section-inner-grid">
-            <div className="section-header">Projects</div>
-            <img src={PUAppLogo} alt="" />
-            <img src={EzQuizLogo} alt="" />
-            <img src={LogoUnanimated} alt="" />
+            <div className="projects-container section-inner-grid">
+                <div className="section-header">Projects</div>
+                <div className="item">
+                    <img src={PUAppLogo} alt="" />
+                    <a href="/portfolio">PushApp / PUApp</a>
+                </div>
+                <div className="item">
+                    <img src={EzQuizLogo} alt="" />
+                    <a href="/portfolio">EzQuiz</a>
+                </div>
+                <div className="item">
+                    <img src={LogoUnanimated} alt="" />
+                    <a href="/portfolio">bmin-schreib</a>
+                </div>
+            </div>
         </div>
     </div>
 </>

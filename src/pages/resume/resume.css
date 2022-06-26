@@ -66,8 +66,16 @@
     color: var(--light-gray-color);
 }
 
-.projects-container img {
-    max-width: 200px;
+.projects-container a {
+    text-align: center;
+    font-size: 2em;
+    text-decoration: underline;
+    color: var(--light-gray-color);
+}
+
+.projects-container .item {
+    display: grid;
+    place-content: center;
 }
 
 /* DESKTOP SCREENS */
@@ -84,4 +92,23 @@
     .skills {
         grid-template-columns: repeat(5, 1fr)
     }
+
+    .accolades-container .item {
+        grid-column: span 2;
+    }
+
+    .projects-container .item {
+        grid-column: span 2;
+    }
+
+    .pa {
+        grid-template-columns: 1fr;
+        grid-column: span 2;
+        padding-bottom: 100px;
+    }
+
+    .pa img {
+        max-width: 500px;
+    }
+    
    }
