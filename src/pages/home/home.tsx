@@ -1,14 +1,17 @@
 import Contact from "../contact/components/contact";
 import Quicklinks, { QLItem } from "./components/quicklinks/quicklinks";
-import { Logo} from "../../assets";
+import { Logo } from "../../assets";
+import { CareerSVG } from "../resume/assets";
 export default function Home(): JSX.Element {
     return <>
         <div className="hp-container">
             <div className="section-grid">
 
-                <img src={Logo} alt=""/>
+                <img id="logo" src={Logo} alt=""/>
 
                 <div className="hp-dropdown-btns section-inner-grid">
+
+                    <CareerSVG/>
 
                     <Quicklinks title="HIRE ME">
                         <QLItem link="/tutor" name="CS TUTORING" />
@@ -26,9 +29,8 @@ export default function Home(): JSX.Element {
                         <QLItem link="/portfolio" name="WEBSITE DESIGN" />
                     </Quicklinks>
 
+                    <Contact />
                 </div>
-
-                <Contact />
 
             </div>
         </div>

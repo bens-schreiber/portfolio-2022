@@ -1,15 +1,34 @@
 .hp-container {
-  margin: 1vmax 5vmax;
+  min-height: 80vh;
+  margin: 10px 2em;
+
 }
 
-.hp-dropdown-btns {
-  margin: 0 2vmax;
+#careers {
+  display: none;
+}
+
+.hp-container > .section-grid {
+  gap: 0;
 }
 
 @media (max-height: 100vw) {
+
   .hp-container {
-    margin: 0 5vw;
-    min-height: 100vh;
+    display: flex;
     place-content: center;
+  }
+
+  #careers {
+    display: block;
+  }
+
+  .hp-container > .section-grid {
+    gap: 5vw;
+    width: 65vw;
+  }
+
+  .hp-dropdown-btns {
+    grid-template-columns: 1fr;
   }
 }

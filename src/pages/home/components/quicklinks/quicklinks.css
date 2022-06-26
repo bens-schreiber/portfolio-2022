@@ -36,7 +36,7 @@
 .ql-expanded-container {
     position: relative;
     display: block;
-    margin: 8vmax 0 5vmax 0;
+    margin-top: 5vmax;
 }
 
 .ql-expanded-container .ql-expanded-title::before {
@@ -121,4 +121,11 @@
 
 .ql-title-text {
     z-index: 1;
+ }
+
+
+ @media (max-height: 100vw) { 
+    .ql-expanded-container {
+        margin-top: 1vmax;
+    }
  }
