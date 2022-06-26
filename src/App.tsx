@@ -4,6 +4,7 @@ import TopNavBar from "./top-nav-bar/top-nav-bar";
 import Portfolio from "./pages/portfolio/portfolio";
 import ContactPage from "./pages/contact/contact-page";
 import { Resume } from "./pages/resume/resume";
+import { TutorPage } from "./pages/tutor/tutor";
 function App(): JSX.Element {
   return <>
     <Router>
@@ -12,7 +13,7 @@ function App(): JSX.Element {
         <Route path='/' element={<Home />} />
         <Route path='resume' element={<Resume />} />
         <Route path='portfolio' element={<Portfolio />} />
-        {/* <Route path="tutor" element={<TutorPage />} /> */}
+        <Route path="tutor" element={<TutorPage />} />
         <Route path="contact" element=
           {<div className="contact-margin">
             <ContactPage />

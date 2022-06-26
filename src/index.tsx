@@ -13,6 +13,7 @@ import './pages/portfolio/portfolio.css'
 import './pages/contact/contact-page.css'
 import './pages/portfolio/components/portfolio-item/portfolio-item.css'
 import './pages/resume/resume.css'
+import './pages/tutor/tutor.css'
 
 ReactDOM.render(
   <React.StrictMode>
