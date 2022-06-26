@@ -1,19 +1,16 @@
 .resume-container {
     display: grid;
-    gap: 5vmax;
+    gap: 6vmax;
     place-items: center;
     margin: 0 5vmax;
     font-family: Lato;
+    overflow: hidden;
 }
 
 .resume-items {
-    display: grid;
-    gap: 5vmax;
-    width: 100%;
-}
-
-#careers {
-    padding-top: 5vh;
+    margin-top: 5vmax;
+    min-width: 125%;
+    margin-left: 25%;
 }
 
 .skills {
@@ -36,7 +33,42 @@
     padding: 10px;
 }
 
-.accolades-container h1 {
+.accolades-container {
+    gap: 50px;
+}
+
+.accolades-container ul {
+    display: grid;
+    gap: 20px;
+}
+
+.accolades-container li {
     text-align: center;
     font-size: 1.5em;
 }
+
+.accolades-container span {
+    display: block;
+    font-size: 0.75em;
+    color: var(--light-gray-color);
+}
+
+.projects-container img {
+    max-width: 200px;
+}
+
+/* DESKTOP SCREENS */
+@media (max-height: 100vw) {
+
+    .resume-container {
+        margin: 0 10vmax;
+    }
+
+    .skills-container {
+        grid-template-columns: 1fr;
+    }
+
+    .skills {
+        grid-template-columns: repeat(5, 1fr)
+    }
+   }

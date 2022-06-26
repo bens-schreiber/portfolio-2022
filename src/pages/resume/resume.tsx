@@ -1,14 +1,12 @@
 import { Logo, LogoUnanimated } from "../../assets"
 import { EzQuizLogo, PUAppLogo } from "../portfolio/assets"
-import { JavaLogo, JsLogo, CppLogo, GolangLogo, DartLogo, CareerSVG, ResumeAbout, ResumeSchool, FBLA, Intellitect } from "./assets"
+import { JavaLogo, JsLogo, CppLogo, GolangLogo, DartLogo, CareerSVG, ResumeAbout, ResumeSchool, FBLA, Intellitect, ResumeAboutSection } from "./assets"
 import Skills from "./components/skills"
 export const Resume = () => <>
     <div className="resume-container section-grid">
-        <CareerSVG />
 
         <div className="resume-items">
-            <img src={ResumeAbout} alt="" />
-            <img src={ResumeSchool} alt="" />
+            <img src={ResumeAboutSection} alt=""/>
         </div>
 
         <div className="skills-container section-inner-grid">
@@ -23,31 +21,30 @@ export const Resume = () => <>
         </div>
 
 
-        <div className="accolades-container section-grid">
-            <div className="section-header">MY ACCOLADES</div>
-            <div className="accolades section-grid">
-                <div className="fbla section-inner-grid">
-                    <img src={FBLA} alt="" />
-                    <h1>Coding and Programming State Champion - 2021</h1>
-                    <h1>Coding and Programming 3rd Nationally - 2021</h1>
-                    <h1>Website Design Regional Champion - 2022</h1>
-                    <h1>Website Design State Champion - 2022</h1>
-                </div>
-                <div className="intellitect section-inner-grid">
-                    <img src={Intellitect} />
-                    <h1>Intellitect Scholar Winner 2022</h1>
-                </div>
+        <div className="accolades-container section-inner-grid">
+            <div className="section-header">Accolades</div>
+            <div className="fbla">
+                <img src={FBLA} alt=""/>
+                <ul className="items">
+                    <li>Coding & Programming WA State Champion <span>2021</span></li>
+                    <li>Coding & Programming 3rd in Nation <span>2021</span></li>
+                    <li>Website Deisgn Regional Champion <span>2022</span></li>
+                    <li>Website Deisgn WA State Champion <span>2022</span></li>
+                </ul>
+            </div>
+            <div className="scholarships">
+                <img src={Intellitect}/>
+                <ul className="items">
+                    <li>Intellitect Scholar Winner<span>2022</span></li>
+                </ul>
             </div>
         </div>
 
-        <div className="projects-container section-grid">
-            <div className="section-header">MY PROJECTS</div>
-            <div className="projects section-inner-grid">
-                <img src={PUAppLogo}/>
-                <img src={LogoUnanimated}/>
-                <img src={EzQuizLogo}/>
-            </div>
+        <div className="projects-container section-inner-grid">
+            <div className="section-header">Projects</div>
+            <img src={PUAppLogo} alt="" />
+            <img src={EzQuizLogo} alt="" />
+            <img src={LogoUnanimated} alt="" />
         </div>
-
     </div>
 </>

@@ -10,7 +10,6 @@
   display: block;
   color: white;
   margin: 0;
-  margin-top: 50px;
   font-size: 3.8em; 
   font-family: BoldTestament;
   text-align: center;
@@ -44,6 +43,11 @@
   .section-grid, .section-inner-grid {
     place-content: center;
     grid-template-columns: 1fr 1fr;
+  }
+
+  .section-header {
+      grid-column: span 2;
+    font-size: 5em;
   }
  }
 

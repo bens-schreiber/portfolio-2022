@@ -8,5 +8,6 @@ import ResumeAbout from "./resume-about.svg";
 import ResumeSchool from "./resume-school.svg";
 import FBLA from "./fbla.svg"
 import Intellitect from "./intellitect.svg";
+import ResumeAboutSection from "./resume-about-section.svg"
 
-export {JavaLogo, JsLogo, GolangLogo, ResumeAbout, DartLogo, CareerSVG, CppLogo, ResumeSchool, FBLA, Intellitect}
+export {JavaLogo, JsLogo, GolangLogo, ResumeAbout, DartLogo, CareerSVG, CppLogo, ResumeSchool, FBLA, Intellitect, ResumeAboutSection}
