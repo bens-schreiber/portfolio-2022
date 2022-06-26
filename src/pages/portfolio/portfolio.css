@@ -1,8 +1,6 @@
-
 .portfolio-page {
-    background: linear-gradient(rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, .8) 100%), url('../../assets/background.jpg');
-    background-position:top;
-    background-size: 200%;
+    padding-bottom: 50px;
+    margin: 0 5vmax;
 }
 
 .ezquiz .port-display-box {
@@ -22,13 +20,12 @@
     width: 200px;
 }
 
-
 .puapp .port-display-box {
     box-shadow: #ee680e 3px 3px 0 0;
 }
 
 .puapp .port-text-container > p > a {
-    border-bottom: 3px solid #ee680e
+    border-bottom: 3px solid #ee680e;
 }
 
 .puapp .port-list-index, .puapp .port-sec-container {
@@ -49,18 +46,10 @@
 }
 
 .bmin-schreib .port-list-index, .bmin-schreib .port-sec-container {
-    background-color: var(--dark-gray-color)
+    background-color: var(--primary-green-color);
 }
 
 #bmin-schreib-logo {
     position: relative;
-    width: 120px;
-}
-
-@media (max-height: 100vw) { 
-    .portfolio-page {
-        padding: 10px 300px;
-        background-size: cover;
-        background-attachment: fixed;
-    }
+    width: 250px;
 }

@@ -1,10 +1,10 @@
 import { PortItem } from "./components/portfolio-item/portfolio-item"
 import { EzQuizLogo, JavaLogo, Demo1, Demo2, UserFlow, UMLDiagramEzQuiz, DebianLogo, Docker, PUAppLogo, GolangLogo, DartLogo, PUAppFrontEnd } from "./assets"
 // import { FblaSVG } from "../home/components/about/assets";
-import { Logo1 } from "../../assets";
+import { Logo, Logo1, LogoUnanimated } from "../../assets";
 export default function Portfolio(): JSX.Element {
     return <>
-        <div className="portfolio-page">
+        <div className="portfolio-page section-grid">
             <SoftwareEngineering/>
             <AppDevelopment/>
             <WebDevelopment/>
@@ -163,7 +163,7 @@ function AppDevelopment(): JSX.Element {
 function WebDevelopment():JSX.Element {
     return <>
         <div data-id="bmin-schreib" className="bmin-schreib port-item">
-            <PortItem img={Logo1} title="WEBSITE DEVELOPMENT" id="bmin-schreib">
+            <PortItem img={LogoUnanimated} title="WEBSITE DEVELOPMENT" id="bmin-schreib">
 
                 <PortItem.ImageTextContainer path={Logo1}>
                     This website was created for an FBLA project I started my senior year of highschool, built entirely from scratch using Typescript, React, AnimeJS, and PHP.

@@ -2,8 +2,6 @@
     display: flex;
     flex-direction: column;
     gap: 2em;
-    padding: 15px;
-    overflow: hidden;
 }
 
 /*INITIAL COLLAPSED DISPLAY*/
@@ -18,9 +16,9 @@
 .port-expand-button {
     display: block;
     padding: 1em;
-    border: 2px solid white;
+    border: 2px solid var(--light-gray-color);
     background-color: transparent;
-    color: white;
+    color: var(--white-color);
     font-family: Lato;
 }
 
@@ -40,8 +38,6 @@
 /*BOX DESIGNS*/
 .port-display-box{
     padding: 10px;
-
-    background-color: var(--dark-gray-color);
     color: var(--white-color);
     font-family: Lato;
 }
