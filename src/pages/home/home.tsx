@@ -15,12 +15,13 @@ export default function Home(): JSX.Element {
 
                     <Quicklinks title="HIRE ME">
                         <QLItem link="/tutor" name="CS TUTORING" />
-                        <QLItem link="/tutor" name="RESUME" />
+                        <QLItem link="/resume" name="RESUME" />
+                        <QLItem link="/contact" name="CONTACT" />
                     </Quicklinks>
 
                     <Quicklinks title="ABOUT ME">
                         <QLItem link="/portfolio" name="RESUME" />
-                        <QLItem link="/portfolio" name="CONTACT" />
+                        <QLItem link="/portfolio" name="MY PROJECTS" />
                     </Quicklinks>
 
                     <Quicklinks title="MY PORTFOLIO">
