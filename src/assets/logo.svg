@@ -31,6 +31,7 @@
       .cls-4 {
         fill: none;
         stroke: #16381f;
+        fill: #121212;
         stroke-width: 5px;
       }
 
