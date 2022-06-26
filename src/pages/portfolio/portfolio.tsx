@@ -3,7 +3,7 @@ import { EzQuizLogo, JavaLogo, Demo1, Demo2, UserFlow, UMLDiagramEzQuiz, DebianL
 import { LogoUnanimated } from "../../assets";
 export default function Portfolio(): JSX.Element {
     return <>
-        <div className="portfolio-page section-grid">
+        <div className="portfolio-page">
             <SoftwareEngineering/>
             <AppDevelopment/>
             <WebDevelopment/>
