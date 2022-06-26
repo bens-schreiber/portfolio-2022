@@ -1,10 +1,23 @@
 .resume-container {
+    position: relative;
     display: grid;
     gap: 6vmax;
     place-items: center;
     margin: 0 5vmax;
     font-family: Lato;
     overflow: hidden;
+}
+
+.floating-pdf-download-btn {
+    position: fixed;
+    background-color: var(--primary-green-color);
+    border: none;
+    color: var(--white-color);
+    border-radius: 100px;
+    right: 15px;
+    bottom: 50px;
+    padding: 7px 20px;
+    font-size: 4em;
 }
 
 .resume-items {

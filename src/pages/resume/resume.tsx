@@ -1,9 +1,15 @@
+import { faFilePdf } from "@fortawesome/free-solid-svg-icons"
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { Logo, LogoUnanimated } from "../../assets"
 import { EzQuizLogo, PUAppLogo } from "../portfolio/assets"
 import { JavaLogo, JsLogo, CppLogo, GolangLogo, DartLogo, CareerSVG, ResumeAbout, ResumeSchool, FBLA, Intellitect, ResumeAboutSection } from "./assets"
 import Skills from "./components/skills"
 export const Resume = () => <>
     <div className="resume-container section-grid">
+
+        <button className="floating-pdf-download-btn">
+            <FontAwesomeIcon icon={faFilePdf}/>
+        </button>
 
         <div className="resume-items">
             <img src={ResumeAboutSection} alt=""/>
