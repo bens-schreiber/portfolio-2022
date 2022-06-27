@@ -2,14 +2,12 @@ import { faFilePdf } from "@fortawesome/free-solid-svg-icons"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { LogoUnanimated } from "../../assets"
 import { EzQuizLogo, PUAppLogo } from "../portfolio/assets"
-import { JavaLogo, JsLogo, CppLogo, GolangLogo, DartLogo, CareerSVG, ResumeAbout, ResumeSchool, FBLA, Intellitect, ResumeAboutSection } from "./assets"
+import { JavaLogo, JsLogo, CppLogo, GolangLogo, DartLogo, FBLA, Intellitect, ResumeAboutSection, ResumePageHeader } from "./assets"
 import Skills from "./components/skills"
 export const Resume = () => <>
     <div className="resume-container section-grid">
 
-        <div className="section-header">
-            BENJAMIN SCHREIBER RESUME
-        </div>
+        <img id="resume-page-header" src={ResumePageHeader} alt="" />
 
         <a href="/home/benjamin/projects/portfolio/src/pages/resume/assets/BenjaminSchreiber_Resume.pdf" download="BenjaminSchreiber_Resume" className="floating-pdf-download-btn">
             <FontAwesomeIcon icon={faFilePdf} />
