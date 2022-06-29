@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 450.61 273.83">
+<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 350.61 273.83">
   <defs>
     <style>
       .cls-1 {
@@ -11,9 +11,7 @@
       }
 
       .cls-3 {
-        fill: #212121;
-        stroke: #212121;
-        stroke-miterlimit: 10;
+        fill: #616161;
       }
 
       .cls-4 {

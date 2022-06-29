@@ -7,6 +7,6 @@ import JsLogo from "./js.svg"
 import FBLA from "./fbla.svg"
 import Intellitect from "./intellitect.svg";
 import ResumeAboutSection from "./resume-about-section.svg"
-import ResumePageHeader from "./resume-page-header.svg"
+import ResumePageHeader from "./resume-header.svg"
 
 export {JavaLogo, JsLogo, GolangLogo, DartLogo, CareerSVG, CppLogo, FBLA, Intellitect, ResumeAboutSection, ResumePageHeader}

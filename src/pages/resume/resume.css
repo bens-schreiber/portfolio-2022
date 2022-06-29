@@ -3,9 +3,14 @@
     display: grid;
     gap: 5vmax;
     place-items: center;
+    place-content: center;
     margin: 5vmax;
     font-family: Lato;
     overflow: hidden;
+}
+
+#page-header-img {
+    padding: 5vmax;
 }
 
 .floating-pdf-download-btn {
@@ -15,18 +20,9 @@
     color: var(--white-color);
     border-radius: 100px;
     right: 15px;
-    bottom: 50px;
+    bottom: 15px;
     padding: 7px 20px;
     font-size: 4em;
-}
-
-#resume-page-header {
-    max-width: 800px;
-}
-
-.resume-items {
-    min-width: 125%;
-    margin-left: 25%;
 }
 
 .skills {
@@ -49,9 +45,9 @@
     padding: 10px;
 }
 
-.accolades-container {
-    gap: 50px;
-}
+/* .accolades-container {
+    gap: 100px;
+} */
 
 .accolades-container ul {
     display: grid;
@@ -73,7 +69,7 @@
     text-align: center;
     font-size: 2em;
     text-decoration: underline;
-    color: var(--light-gray-color);
+    color: var(--white-color);
 }
 
 .projects-container .item {
@@ -89,11 +85,8 @@
         margin-bottom: 5vmax;
     }
 
-    #resume-page-header {
-        grid-column: span 2;
-    }
-
     .skills-container {
+        grid-column: span 2;
         grid-template-columns: 1fr;
     }
 

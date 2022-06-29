@@ -14,11 +14,12 @@ interface State {
 
 //TODO: text jiggle to emphasize clickable
 
-const QuickLinkExpanded = (props: { title: string, children: React.ReactNode[], action: Function }) =>
+const QuickLinkExpanded = (props: { title: string, children: React.ReactNode[], action: Function, ref_: React.RefObject<any> }) =>
     <>
         <ul className="ql-expanded-container ql-links ql-tree-stem">
-            <button className="ql-expanded-title clickable"
-                onClick={() => props.action()}>{props.title}</button>
+            <button ref={props.ref_} className="ql-expanded-title clickable"
+                onClick={() => props.action()}>{props.title}
+            </button>
             {props.children}
         </ul>
     </>
@@ -32,9 +33,11 @@ export default class Quicklinks
     extends React.Component<Props> {
     props: Props;
     state: State;
+    ref: React.RefObject<any>;
     constructor(props: Props) {
         super(props);
         this.props = props;
+        this.ref = React.createRef();
         this.collapse = this.collapse.bind(this);
 
         this.state = {
@@ -42,7 +45,8 @@ export default class Quicklinks
         }
     }
 
-    collapse = () => this.setState({ collapsed: !this.state.collapsed });
+    collapse = () => 
+        this.setState({ collapsed: !this.state.collapsed });
 
     render = () =>
         <>
@@ -53,13 +57,15 @@ export default class Quicklinks
                 </When>
 
                 <When condition={!this.state.collapsed}>
-                    <QuickLinkExpanded title={this.props.title} action={this.collapse}>
+                    <QuickLinkExpanded ref_={this.ref} title={this.props.title} action={this.collapse}>
                         {this.props.children}
                     </QuickLinkExpanded>    
                 </When>
 
             </div>
         </>
+
+    componentDidUpdate = () => !this.state.collapsed ? this.ref.current?.scrollIntoView() : null;
 }
 
 

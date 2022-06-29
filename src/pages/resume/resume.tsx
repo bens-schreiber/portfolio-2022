@@ -7,15 +7,15 @@ import Skills from "./components/skills"
 export const Resume = () => <>
     <div className="resume-container section-grid">
 
-        <img id="resume-page-header" src={ResumePageHeader} alt="" />
-
         <a href="/home/benjamin/projects/portfolio/src/pages/resume/assets/BenjaminSchreiber_Resume.pdf" download="BenjaminSchreiber_Resume" className="floating-pdf-download-btn">
             <FontAwesomeIcon icon={faFilePdf} />
         </a>
 
-        <div className="resume-items">
-            <img src={ResumeAboutSection} alt="" />
-        </div>
+        <img id="page-header-img" src={ResumePageHeader} alt="" />
+
+        
+        <img src={ResumeAboutSection} alt=""/>
+
 
         <div className="skills-container section-inner-grid">
             <div className="section-header">MY LANGUAGES & FRAMEWORKS</div>
@@ -27,7 +27,6 @@ export const Resume = () => <>
                 <Skills.Item img={DartLogo} header="Dart" desc="Flutter" />
             </Skills>
         </div>
-
 
         <div className="pa section-inner-grid">
             <div className="accolades-container section-inner-grid">

@@ -117,10 +117,3 @@
 .ql-title-text {
     z-index: 1;
  }
-
-
- @media (max-height: 100vw) { 
-    .ql-expanded-container {
-        margin-top: 1vmax;
-    }
- }
