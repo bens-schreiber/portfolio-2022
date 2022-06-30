@@ -7,7 +7,7 @@ import Skills from "./components/skills"
 export const Resume = () => <>
     <div className="resume-container section-grid">
 
-        <a href="/home/benjamin/projects/portfolio/src/pages/resume/assets/BenjaminSchreiber_Resume.pdf" download="BenjaminSchreiber_Resume" className="floating-pdf-download-btn">
+        <a href="C:\dev\portfolio\src\pages\resume\assets\BenjaminSchreiber_Resume.pdf" download="BenjaminSchreiber_Resume" className="floating-pdf-download-btn">
             <FontAwesomeIcon icon={faFilePdf} />
         </a>
 

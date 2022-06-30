@@ -1,4 +1,4 @@
-import {Contact} from "./components/contact"
+import { Contact } from "./components/contact"
 import emailjs from 'emailjs-com';
 const ContactPage = (): JSX.Element =>
     <>
@@ -13,30 +13,32 @@ const ContactPage = (): JSX.Element =>
                 <Contact />
             </div>
 
-            <form className="contact-form" onSubmit={sendEmail}>
-                <div className="contact-form-group">
-                    <label htmlFor="user_name" className="contact-label">Name</label>
-                    <div className="contact-input">
-                        <input type="text" id="user_name" name="user_name" className="contact-form-control" required />
-                    </div>
-                </div>
-                <div className="contact-form-group">
-                    <label htmlFor="user_email" className="contact-label">Email Address</label>
-                    <div className="contact-input">
-                        <input type="email" id="user_email" name="user_email" className="contact-form-control" required />
-                    </div>
-                </div>
-
-                <div className="contact-form-group">
-                    <label htmlFor="message" className="contact-label">Message</label>
-                    <div className="contact-input">
-                        <textarea id="message" name="message" className="contact-form-control" rows={6} maxLength={3000} required></textarea>
-                    </div>
-                </div>
-                <button type="submit" className="button-outlined">SEND</button>
-            </form>
+            <ContactForm/>
         </div>
     </>
+
+export const ContactForm = () => <form className="contact-form" onSubmit={sendEmail}>
+    <div className="contact-form-group">
+        <label htmlFor="user_name" className="contact-label">Name</label>
+        <div className="contact-input">
+            <input type="text" id="user_name" name="user_name" className="contact-form-control" required />
+        </div>
+    </div>
+    <div className="contact-form-group">
+        <label htmlFor="user_email" className="contact-label">Email Address</label>
+        <div className="contact-input">
+            <input type="email" id="user_email" name="user_email" className="contact-form-control" required />
+        </div>
+    </div>
+
+    <div className="contact-form-group">
+        <label htmlFor="message" className="contact-label">Message</label>
+        <div className="contact-input">
+            <textarea id="message" name="message" className="contact-form-control" rows={6} maxLength={3000} required></textarea>
+        </div>
+    </div>
+    <button type="submit" className="button-outlined">SEND</button>
+</form>
 
 function sendEmail(e: any): void {
     e.preventDefault();

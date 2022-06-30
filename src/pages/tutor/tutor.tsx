@@ -1,8 +1,14 @@
 import { faBook, faClock, faDollarSign, faMapLocation, faPerson, faThumbsUp } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import React from "react";
+import ApiCalendar from "react-google-calendar-api";
+import { ContactForm } from "../contact/contact-page";
 import { Quote } from "./assets";
+ 
 
-export const TutorPage = () => <div className="tutor-container section-grid">
+export class TutorPage extends React.Component {
+
+    render = () => <div className="tutor-container section-grid">
     <img src={Quote} alt="" />
     <ul className="facts section-inner-grid">
         <li>
@@ -14,7 +20,7 @@ export const TutorPage = () => <div className="tutor-container section-grid">
         <li>
             <FontAwesomeIcon className="icon"  icon={faBook} />
             <h1>Why Ben?</h1>
-            <p>I teach Computer Science as a science, not a set of directions</p>
+            <p>I teach Computer Science in a unique and fun way, helping you explore the science.</p>
         </li>
 
         <li>
@@ -41,4 +47,7 @@ export const TutorPage = () => <div className="tutor-container section-grid">
             <p>Sign up with the Calendar!</p>
         </li>
     </ul>
+    <h1 className="section-header">CONTACT ME</h1>
+    <ContactForm/>
 </div>
+}

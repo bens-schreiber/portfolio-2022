@@ -1,3 +1,13 @@
+.tutor-container .contact-form {
+    place-self: center;
+    min-width: 50vw;
+    grid-column: span 2;
+}
+
+.tutor-container .section-header {
+    grid-column: span 2;
+}
+
 .tutor-container {
     margin: 2vmax;
 }
