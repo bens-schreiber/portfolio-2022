@@ -41,7 +41,7 @@ export const Resume = () => <>
                     </ul>
                 </div>
                 <div className="scholarships item">
-                    <img src={Intellitect} />
+                    <img alt="" src={Intellitect} />
                     <ul className="items">
                         <li>Intellitect Scholar Winner<span>2022</span></li>
                     </ul>

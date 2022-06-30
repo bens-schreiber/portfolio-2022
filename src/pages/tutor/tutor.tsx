@@ -1,7 +1,6 @@
-import { faBook, faClock, faDollarSign, faMapLocation, faPerson, faThumbsUp } from "@fortawesome/free-solid-svg-icons";
+import { faBook, faClock, faDollarSign, faMapLocation, faPerson } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import React from "react";
-import ApiCalendar from "react-google-calendar-api";
 import { ContactForm } from "../contact/contact-page";
 import { Quote } from "./assets";
  
