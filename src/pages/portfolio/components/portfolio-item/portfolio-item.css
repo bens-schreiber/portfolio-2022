@@ -1,20 +1,7 @@
 .port-item {
     display: flex;
     flex-direction: column;
-    gap: 2em;
-    padding: 15px;
-    overflow: hidden;
-}
-
-/*HEADER*/
-.port-header {
-    display: block;
-    color: white;
-    margin: 0;
-    margin-top: 50px;
-    font-size: 3.8em;
-    font-family: BoldTestament;
-    text-align: center;
+    gap: 3vmax;
 }
 
 /*INITIAL COLLAPSED DISPLAY*/
@@ -24,15 +11,6 @@
     place-content: center;
     height: 3.5em;
     border-radius: 3px;
-}
-
-.port-expand-button {
-    display: block;
-    padding: 1em;
-    border: 2px solid white;
-    background-color: transparent;
-    color: white;
-    font-family: Lato;
 }
 
 
@@ -45,14 +23,12 @@
     position: relative;
     display: grid;
     grid-template-columns: 100%;
-    gap: 2em;
+    gap: 3em;
 }
 
 /*BOX DESIGNS*/
 .port-display-box{
     padding: 10px;
-
-    background-color: var(--dark-gray-color);
     color: var(--white-color);
     font-family: Lato;
 }
@@ -68,10 +44,12 @@
 }
 
 .port-text-container > h1 {
+    display: block;
     margin: 0;
     color: var(--light-gray-color);
     font-size: 5em;
     font-family: BoldTestament;
+    font-weight: normal;
 }
 
 /*TEXT*/
@@ -118,7 +96,7 @@
 .port-list-text > p {
     margin: 0;
     padding: 2px 10px;
-    color: gray;
+    color: var(--light-gray-color);
     font-size: 0.9em;
 }
 video {

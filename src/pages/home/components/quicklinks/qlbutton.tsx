@@ -61,6 +61,7 @@ export default class QLButton
     }
 
     private openQuicklinks = (): void => {
+        this.animationRef.current?.scrollIntoView();
         anime.timeline()
             .add({
                 targets: this.animationRef.current,

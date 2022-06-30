@@ -1,0 +1,114 @@
+.resume-container {
+    position: relative;
+    display: grid;
+    gap: 5vmax;
+    place-items: center;
+    place-content: center;
+    margin: 5vmax;
+    font-family: Lato;
+    overflow: hidden;
+}
+
+#page-header-img {
+    padding: 5vmax;
+}
+
+.floating-pdf-download-btn {
+    position: fixed;
+    background-color: var(--primary-green-color);
+    border: none;
+    color: var(--white-color);
+    border-radius: 100px;
+    right: 15px;
+    bottom: 15px;
+    padding: 7px 20px;
+    font-size: 4em;
+}
+
+.skills {
+    text-align: center;
+}
+
+.skills-item > p {
+    padding: 0px;
+    margin: 0px;
+    font-size: 1rem;
+}
+
+.skills-item > h1 {
+    margin: 0px;
+    font-size: 1.25rem;
+}
+
+.skills-item > img {
+    width: 4rem;
+    padding: 10px;
+}
+
+/* .accolades-container {
+    gap: 100px;
+} */
+
+.accolades-container ul {
+    display: grid;
+    gap: 20px;
+}
+
+.accolades-container li {
+    text-align: center;
+    font-size: 1.5em;
+}
+
+.accolades-container span {
+    display: block;
+    font-size: 0.75em;
+    color: var(--light-gray-color);
+}
+
+.projects-container a {
+    text-align: center;
+    font-size: 2em;
+    text-decoration: underline;
+    color: var(--white-color);
+}
+
+.projects-container .item {
+    display: grid;
+    place-content: center;
+}
+
+/* DESKTOP SCREENS */
+@media (max-height: 100vw) {
+
+    .resume-container {
+        margin: 0 10vmax;
+        margin-bottom: 5vmax;
+    }
+
+    .skills-container {
+        grid-column: span 2;
+        grid-template-columns: 1fr;
+    }
+
+    .skills {
+        grid-template-columns: repeat(5, 1fr)
+    }
+
+    .accolades-container .item {
+        grid-column: span 2;
+    }
+
+    .projects-container .item {
+        grid-column: span 2;
+    }
+
+    .pa {
+        grid-template-columns: 1fr;
+        grid-column: span 2;
+    }
+
+    .pa img {
+        max-width: 500px;
+    }
+    
+   }

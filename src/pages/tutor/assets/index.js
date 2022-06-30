@@ -1,2 +1,2 @@
-import Review from './review.svg';
-export {Review}
+import Quote from "./beckett-quote.svg"
+export {Quote}

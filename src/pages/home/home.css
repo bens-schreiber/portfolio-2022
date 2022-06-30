@@ -1,45 +1,28 @@
-.home-page {
-  display: grid;
-  grid-gap: 50px;
-}
-  
-.hp-front-container {
-  display: grid;
-  justify-items: center;
-  min-height: 100vh;
-}
- 
-.hp-front-container {
-  background: linear-gradient(rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 1) 100%), url('../../assets/background.jpg') no-repeat;
-  background-position: center;
-  background-size: cover;
- 
+.hp-container {
+  margin: 10px 2em;
 }
 
-.hp-front {
-  display: grid;
-  padding-top: 5vh;
-  grid-template-rows: repeat(3, min-content);
-  gap: 50px;
-}
-
-.hp-content-width {
-  min-width: 35vh;
-}
-
-.hp-dropdown-btns {
-  display: grid;
-  gap: 30px;
+.hp-container #careers {
+  display: none;
 }
 
 @media (max-height: 100vw) {
 
-  .hp-content-width {
-    min-width: 30vw;
+  .hp-container {
+    display: grid;
+    place-content: center;
+    margin-top: 10vh;
   }
 
-  .hp-front-container {
-    background-attachment: fixed;
+  .hp-container #careers {
+    display: block;
   }
 
+  .hp-container > .section-grid {
+    width: 65vw;
+  }
+
+  .hp-dropdown-btns {
+    grid-template-columns: 1fr;
+  }
 }

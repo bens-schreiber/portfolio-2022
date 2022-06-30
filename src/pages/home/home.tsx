@@ -1,40 +1,41 @@
-import Contact from "../contact/components/contact";
-import { About, Award } from "./components/about/about";
-import { WSULogo, FblaSVG } from "./components/about/assets";
+import {UnanimatedContact } from "../contact/components/contact";
 import Quicklinks, { QLItem } from "./components/quicklinks/quicklinks";
-import { Logo1 } from "../../assets";
+import { Logo } from "../../assets";
+import { CareerSVG } from "../resume/assets";
+import React from "react";
 export default function Home(): JSX.Element {
     return <>
-        <div className="home-page">
-            <div className="hp-front-container">
-                <div className="hp-front hp-content-width">
-                    
-                    <img id="hp-front-logo" src={Logo1} alt="" />
-                    <div className="hp-dropdown-btns">
+        <div className="hp-container">
+            <div className="section-grid">
 
-                        <Quicklinks title="SERVICES">
-                            <QLItem link="/tutor" name="CS TUTORING" />
-                            <QLItem link="/tutor" name="SCHEDULE TUTORING" />
+                <img id="logo" src={Logo} alt="" />
+
+                <div className="hp-dropdown-btns section-inner-grid">
+
+                    <CareerSVG />
+
+
+                    <Quicklinks title="HIRE ME">
+                            <QLItem link="/portfolio" name="RESUME" />
+                            <QLItem link="/portfolio" name="MY PROJECTS" />
+                            <QLItem link="/contact" name="CONTACT" />
                         </Quicklinks>
 
-                        <Quicklinks title="PORTFOLIO">
+                        <Quicklinks title="TUTORING">
+                            <QLItem link="/tutor" name="CS TUTORING" />
+                            <QLItem link="/contact" name="CONTACT" />
+                        </Quicklinks>
+
+                        <Quicklinks title="MY PORTFOLIO">
                             <QLItem link="/portfolio" name="SOFTWARE ENGINEER" />
                             <QLItem link="/portfolio" name="MOBILE DEVELOPMENT" />
                             <QLItem link="/portfolio" name="WEBSITE DESIGN" />
-                            <QLItem link="/portfolio" name="GAME DESIGN" />
                         </Quicklinks>
 
-                        <Contact />
-                    </div>
+                    <UnanimatedContact />
                 </div>
+
             </div>
-            <About>
-                <Award img={WSULogo} title="WSU Computer Science" subtitle="Class of 2026" />
-                <Award img={FblaSVG} title="National Champion" subtitle="2021 Coding & Programming" />
-                <Award img={FblaSVG} title="WA State Champion" subtitle="2021 Coding & Programming" />
-                <Award img={FblaSVG} title="WA State Champion" subtitle="2022 Website Design" />
-                <Award img={FblaSVG} title="Spokane Regional Champion" subtitle={"2022 Website Design, UX Design"} />
-            </About>
         </div>
     </>
 }
