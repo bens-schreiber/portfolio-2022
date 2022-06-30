@@ -28,7 +28,7 @@ export default class Skills extends React.Component {
                 targets: element,
                 translateX: [10, -10, 0],
                 easing: "easeInOutCirc",
-                endDelay: 5000 - (index * 150)
+                endDelay: 2000 - (index * 150)
             })
         });
     }

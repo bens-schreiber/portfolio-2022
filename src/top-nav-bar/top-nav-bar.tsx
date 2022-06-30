@@ -1,6 +1,7 @@
 import anime from 'animejs'
 import React from 'react'
 import { LogoCompact } from '../assets';
+import {Contact} from '../pages/contact/components/contact';
 export default class TopNavBar extends React.Component {
     menuRef: React.RefObject<HTMLLabelElement>
     constructor(props = {}) {
@@ -39,6 +40,7 @@ export default class TopNavBar extends React.Component {
                             <li className="tnb-branch"><a href="/portfolio">PORTFOLIO</a></li>
                         </ul>
                     </nav>
+                    <Contact/>
                 </div>
             </div>
         </>

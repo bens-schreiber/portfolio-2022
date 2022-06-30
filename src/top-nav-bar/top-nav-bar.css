@@ -12,27 +12,17 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background-color:var(--dark-gray-color);
+    background-color:var(--background-color);
     width: 100%; 
 }
 
 #tnb-logo {
     width: 150px;
-    padding: 0 10px;
 }
 
 #tnb-dropdown-toggle-icon {
     padding: 0 10px;
     font-size: 3em;
-}
-
-.tnb-nav {
-    top: -100vh;
-    width: 100%;
-    height: 40%;
-    z-index: -1;
-    position: fixed;
-    background-color: var(--dark-gray-color);
 }
 
 .tnb-nav-animate-dropdown {

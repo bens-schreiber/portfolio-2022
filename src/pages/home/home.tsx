@@ -1,8 +1,7 @@
-import Contact from "../contact/components/contact";
+import {UnanimatedContact } from "../contact/components/contact";
 import Quicklinks, { QLItem } from "./components/quicklinks/quicklinks";
 import { Logo } from "../../assets";
 import { CareerSVG } from "../resume/assets";
-import { MultiRef } from "../../tools/tools";
 import React from "react";
 export default function Home(): JSX.Element {
     return <>
@@ -33,7 +32,7 @@ export default function Home(): JSX.Element {
                             <QLItem link="/portfolio" name="WEBSITE DESIGN" />
                         </Quicklinks>
 
-                    <Contact />
+                    <UnanimatedContact />
                 </div>
 
             </div>

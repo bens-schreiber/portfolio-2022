@@ -44,10 +44,12 @@
 }
 
 .port-text-container > h1 {
+    display: block;
     margin: 0;
-    color: var(--dark-gray-color);
+    color: var(--light-gray-color);
     font-size: 5em;
     font-family: BoldTestament;
+    font-weight: normal;
 }
 
 /*TEXT*/
