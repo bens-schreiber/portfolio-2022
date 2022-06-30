@@ -14,9 +14,8 @@ export default function Home(): JSX.Element {
 
                     <CareerSVG />
 
-
                     <Quicklinks title="HIRE ME">
-                            <QLItem link="/portfolio" name="RESUME" />
+                            <QLItem link="/resume" name="RESUME" />
                             <QLItem link="/portfolio" name="MY PROJECTS" />
                             <QLItem link="/contact" name="CONTACT" />
                         </Quicklinks>
