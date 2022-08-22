@@ -1,4 +1,4 @@
-import { Contact, UnanimatedContact } from "./components/contact"
+import { UnanimatedContact } from "./components/contact"
 import emailjs from 'emailjs-com';
 const ContactPage = (): JSX.Element =>
     <>
