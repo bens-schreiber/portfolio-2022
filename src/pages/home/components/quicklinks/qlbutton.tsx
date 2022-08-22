@@ -36,7 +36,7 @@ export default class QLButton
 
                 <When condition={this.state.animating}>
                     <div className="ql-typing-text">
-                        {"exec tree ./"}
+                        {"curl https://"}
                         <span className="ql-cursor" ref={this.animationRef} />
                     </div>
                 </When>
