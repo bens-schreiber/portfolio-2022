@@ -1,4 +1,4 @@
-import { Contact } from "./components/contact"
+import { Contact, UnanimatedContact } from "./components/contact"
 import emailjs from 'emailjs-com';
 const ContactPage = (): JSX.Element =>
     <>
@@ -10,7 +10,7 @@ const ContactPage = (): JSX.Element =>
                         <p>Reach me at bpschreiber2003@gmail.com</p>
                     </div>
                 </div>
-                <Contact />
+                <UnanimatedContact />
             </div>
 
             <ContactForm/>
