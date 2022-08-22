@@ -38,6 +38,10 @@
   font-family: Lato;
 }
 
+.hidden {
+  display: none;
+}
+
 /* DESKTOP SCREENS */
 @media (max-height: 100vw) {
   .section-grid, .section-inner-grid {
