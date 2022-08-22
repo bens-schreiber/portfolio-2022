@@ -4,6 +4,7 @@ import TopNavBar from "./top-nav-bar/top-nav-bar";
 import Portfolio from "./pages/portfolio/portfolio";
 import ContactPage from "./pages/contact/contact-page";
 import { Resume } from "./pages/resume/resume";
+// TODO: 404 page
 function App(): JSX.Element {
   return <>
     <Router>

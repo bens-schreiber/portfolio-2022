@@ -54,7 +54,6 @@ export default class Quicklink
 
 
     private openQuicklinks = (): void => {
-        console.log("asdasdasd");
         this.animationRef.current?.scrollIntoView();
         anime.timeline()
             .add({
@@ -76,6 +75,10 @@ export default class Quicklink
                 ],
             }).finished.then(() => {
                 this.anchorRef.current.click();
+
+                // When you click the back arrow to return to the previous page the state is still animating, so even though
+                // we are navigating to a new page, this should still be ran.
+                this.setState({animating: false})
             });
     }
 }
