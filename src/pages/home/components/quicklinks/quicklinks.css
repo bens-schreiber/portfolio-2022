@@ -1,4 +1,4 @@
-.ql-container, .ql-expanded-container {
+.ql-container {
     font-family: Lato;
 }
 
@@ -30,71 +30,6 @@
     border-left: 2px solid var(--light-gray-color);
     width: 15%
 }
-
-
-/* EXPANDED DISPLAY*/
-.ql-expanded-container {
-    position: relative;
-    display: block;
-    margin-top: 5vmax;
-}
-
-.ql-expanded-container .ql-expanded-title::before {
-    content: "./";
-}
-
-.ql-expanded-title {
-    position: absolute;
-    left: -1.75em;
-    top: -3em;
-    justify-content: left;
-    padding: 0;
-
-    background-color: transparent;
-    color: var(--secondary-green-color);
-    border: none;
-    font-family: Lato;
-
-    font-size: 1em;
-}
-
-
-/* Links */
-/* Padding between each quicklink */
-.ql-links .ql-item:not(:nth-child(2)) {
-    margin-top: 1em;
-}
-
-.ql-links .ql-item > a {
-    display: block;
-    padding: 0.5em;
-
-    background-color: transparent;
-    color: var(--white-color);
-
-    border: 2px solid var(--light-gray-color);
-    text-align: center;
-}
-
- /* File-tree stem */
-.ql-tree-stem::after {
-    content: '';
-    position: absolute;
-    top: -1.3em;
-    left: -1.7em;
-    height: 100%;
-    border-left: 2px solid var(--light-gray-color);
- }
-
-/* File-tree branch */
-.ql-links .ql-tree-branch a::before {
-    content: '';
-    position: absolute;
-    left: -1.7em;
-    width: 1.2em;
-    height: 0.5em;
-    border-bottom: 2px solid var(--light-gray-color);
- }
 
  /*Animation */
 .ql-typing-text {
