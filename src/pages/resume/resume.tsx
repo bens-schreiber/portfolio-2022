@@ -1,25 +1,25 @@
 import { faFilePdf } from "@fortawesome/free-solid-svg-icons"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
-import { LogoUnanimated } from "../../assets"
-import { EzQuizLogo, PUAppLogo } from "../portfolio/assets"
-import { JavaLogo, JsLogo, CppLogo, GolangLogo, DartLogo, FBLA, Intellitect, ResumeAboutSection, ResumePageHeader } from "./assets"
+import { JavaLogo, JsLogo, CppLogo, GolangLogo, DartLogo, FBLA, Intellitect, ResumeAboutSection, ResumePageHeader, CSLogo } from "./assets"
 import Skills from "./components/skills"
 export const Resume = () => <>
     <div className="resume-container section-grid">
 
-        <a href="C:\dev\portfolio\src\pages\resume\assets\BenjaminSchreiber_Resume.pdf" download="BenjaminSchreiber_Resume" className="floating-pdf-download-btn">
+        <a href="src/pages/resume/assets/benschreiber_resume.pdf" download="benschreiber_resume" target="_blank"
+            type="application/octet-stream" className="floating-pdf-download-btn">
             <FontAwesomeIcon icon={faFilePdf} />
         </a>
 
         <img id="page-header-img" src={ResumePageHeader} alt="" />
 
-        
-        <img src={ResumeAboutSection} alt=""/>
+
+        <img src={ResumeAboutSection} alt="" />
 
 
         <div className="skills-container section-inner-grid">
             <div className="section-header">MY LANGUAGES & FRAMEWORKS</div>
             <Skills>
+                <Skills.Item img={CSLogo} header="C#" desc="ASP.NET" />
                 <Skills.Item img={JavaLogo} header="Java" desc="Springboot, JavaFX, Gradle" />
                 <Skills.Item img={JsLogo} header="JavaScript" desc="React, AnimeJS" />
                 <Skills.Item img={CppLogo} header="C / C++" desc="Qt" />
@@ -30,14 +30,26 @@ export const Resume = () => <>
 
         <div className="pa section-inner-grid">
             <div className="accolades-container section-inner-grid">
-                <div className="section-header">Accolades</div>
+                <div className="section-header">WORK EXPERIENCE</div>
+                <div className="fbla item">
+                    <img src={Intellitect} alt="" />
+                    <ul className="items">
+                        <li>Intern at IntelliTect<span>June 2022 - Present</span></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div className="pa section-inner-grid">
+            <div className="accolades-container section-inner-grid">
+                <div className="section-header">ACCOLADES</div>
                 <div className="fbla item">
                     <img src={FBLA} alt="" />
                     <ul className="items">
                         <li>Coding & Programming WA State Champion <span>2021</span></li>
-                        <li>Coding & Programming 3rd in Nation <span>2021</span></li>
-                        <li>Website Deisgn Regional Champion <span>2022</span></li>
-                        <li>Website Deisgn WA State Champion <span>2022</span></li>
+                        <li>Coding & Programming 3rd Nationally <span>2021</span></li>
+                        <li>Website Design Regional Champion <span>2022</span></li>
+                        <li>Website Design WA State Champion <span>2022</span></li>
                     </ul>
                 </div>
                 <div className="scholarships item">
@@ -45,22 +57,6 @@ export const Resume = () => <>
                     <ul className="items">
                         <li>Intellitect Scholar Winner<span>2022</span></li>
                     </ul>
-                </div>
-            </div>
-
-            <div className="projects-container section-inner-grid">
-                <div className="section-header">Projects</div>
-                <div className="item">
-                    <img src={PUAppLogo} alt="" />
-                    <a href="/portfolio">PushApp / PUApp</a>
-                </div>
-                <div className="item">
-                    <img src={EzQuizLogo} alt="" />
-                    <a href="/portfolio">EzQuiz</a>
-                </div>
-                <div className="item">
-                    <img src={LogoUnanimated} alt="" />
-                    <a href="/portfolio">bmin-schreib</a>
                 </div>
             </div>
         </div>

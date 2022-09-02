@@ -2,6 +2,7 @@ import { faChevronRight } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import anime from "animejs";
 import React from "react";
+import { Link } from "react-router-dom";
 import When from "../../../../tools/tools";
 
 export default class Quicklink
@@ -44,7 +45,7 @@ export default class Quicklink
                     </div>
                 </div>
             </div>
-            <a ref={this.anchorRef} className="hidden" href={this.props.href}>{this.props.title}</a>
+            <Link ref={this.anchorRef} className="hidden" to={this.props.href}>{this.props.title}</Link>
         </>
 
     private onClick = (): void => {

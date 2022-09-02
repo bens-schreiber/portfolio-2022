@@ -106,8 +106,8 @@ function AppDevelopment(): JSX.Element {
 
             <PortItem.TextContainer title="ONGOING DEVELOPMENT">
                 PUApp is an ongoing project. As it currently stands, the front end of the app is finalized, as well as the REST services. The next step
-                is to create the Web Socket microservice, and deliver notifications to users. <a href="https://github.com/bens-schreiber/goproj">Check out the Backend</a> to see the
-                back end server, written in Golang. <a href="https://github.com/bens-schreiber/pushupapp">Check out the Front End</a> to see the UI writen in Dart.  <br/><br/>
+                is to create the Web Socket microservice, and deliver notifications to users. <a href="https://github.com/bens-schreiber/old-pushup-backend">Check out the Backend</a> to see the
+                back end server, written in Golang. <br/><br/>
                 The project is currently on hold, and the Google Cloud server is down until it is picked back up.
             </PortItem.TextContainer>
 
