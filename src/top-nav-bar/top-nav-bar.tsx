@@ -1,5 +1,6 @@
 import anime from 'animejs'
 import React from 'react'
+import { Link } from 'react-router-dom';
 import { LogoCompact } from '../assets';
 import { Contact } from '../pages/contact/components/contact';
 export default class TopNavBar extends React.Component {
@@ -15,7 +16,7 @@ export default class TopNavBar extends React.Component {
 
                 <div className="tnb-container">
 
-                    <a href="/"><img id="tnb-logo" src={LogoCompact} alt="" /></a>
+                    <Link to="/"><img id="tnb-logo" src={LogoCompact} alt="" /></Link>
 
                     <label ref={this.menuRef} htmlFor="tnb-dropdown-toggle" id="tnb-dropdown-toggle-icon"
                         onClick={() => anime({
